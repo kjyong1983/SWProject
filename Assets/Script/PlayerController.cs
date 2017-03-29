@@ -8,7 +8,8 @@ public class PlayerController : MonoBehaviour {
     float v, h;
     Rigidbody rb;
     public float moveSpeed;
-    float playerMoveSpeed;
+    float playerdx;
+    float playerdy;
     bool readyToWarp;
     public bool ReadyToWarp
     {
@@ -45,19 +46,36 @@ public class PlayerController : MonoBehaviour {
         if (h > 0.2 || h < -0.2)
         {
             //rb.velocity = new Vector3(h * moveSpeed * Time.deltaTime, rb.velocity.y);
-            playerMoveSpeed = h * moveSpeed * Time.deltaTime;
+            playerdx = h * moveSpeed * Time.deltaTime;
         }
         else
         {
-            if (Mathf.Abs(playerMoveSpeed) > 0)
+            if (Mathf.Abs(playerdx) > 0)
             {
-                playerMoveSpeed = 0;
+                playerdx = 0;
                 //Mathf.Lerp(playerMoveSpeed, 0, 0.5f);
             }
 
         }
 
-        rb.velocity = new Vector3(playerMoveSpeed, rb.velocity.y, rb.velocity.z);
+        if (v > 0.2 || v < -0.2)
+        {
+            //rb.velocity = new Vector3(h * moveSpeed * Time.deltaTime, rb.velocity.y);
+            playerdy = v * moveSpeed * Time.deltaTime;
+        }
+        else
+        {
+            if (Mathf.Abs(playerdy) > 0)
+            {
+                playerdy = 0;
+                //Mathf.Lerp(playerMoveSpeed, 0, 0.5f);
+            }
+
+        }
+
+
+
+        rb.velocity = new Vector3(playerdx, playerdy, rb.velocity.z);
 
 
 
