@@ -27,25 +27,22 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        //h = Input.GetAxis("Horizontal");
         h = Input.GetAxis("Horizontal");
         v = Input.GetAxis("Vertical");
 
-        move(v, h);
+        Move(v, h);
 
         if (readyToWarp && Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("warp");
-            //transform.position = 
         }
 
     }
 
-    void move(float v, float h)
+    void Move(float v, float h)
     {
         if (h > 0.2 || h < -0.2)
         {
-            //rb.velocity = new Vector3(h * moveSpeed * Time.deltaTime, rb.velocity.y);
             playerdx = h * moveSpeed * Time.deltaTime;
         }
         else
@@ -53,14 +50,12 @@ public class PlayerController : MonoBehaviour {
             if (Mathf.Abs(playerdx) > 0)
             {
                 playerdx = 0;
-                //Mathf.Lerp(playerMoveSpeed, 0, 0.5f);
             }
 
         }
 
         if (v > 0.2 || v < -0.2)
         {
-            //rb.velocity = new Vector3(h * moveSpeed * Time.deltaTime, rb.velocity.y);
             playerdy = v * moveSpeed * Time.deltaTime;
         }
         else
@@ -68,7 +63,6 @@ public class PlayerController : MonoBehaviour {
             if (Mathf.Abs(playerdy) > 0)
             {
                 playerdy = 0;
-                //Mathf.Lerp(playerMoveSpeed, 0, 0.5f);
             }
 
         }
@@ -77,9 +71,11 @@ public class PlayerController : MonoBehaviour {
 
         rb.velocity = new Vector3(playerdx, playerdy, rb.velocity.z);
 
+    }
 
-
-
+    public void Move(Vector3 normDiff)
+    {
+        Move(normDiff.y, normDiff.x);
     }
 
     private void OnTriggerEnter(Collider other)

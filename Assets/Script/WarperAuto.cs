@@ -5,9 +5,6 @@ using UnityEngine;
 public class WarperAuto : MonoBehaviour {
 
     public GameObject dest;
-    //static bool isActivated = true;
-    //static float elapsedTime = 0f;
-    //float timeLimit = 30f;
 
 	// Use this for initialization
 	void Start () {
@@ -16,17 +13,8 @@ public class WarperAuto : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        //if (!isActivated)
-        //{
-        //    elapsedTime += Time.deltaTime;
-        //}
 
-        //if (elapsedTime > timeLimit)
-        //{
-        //    isActivated = true;
-        //}
-
-	}
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -40,7 +28,6 @@ public class WarperAuto : MonoBehaviour {
             else
                 return;
             
-            //isActivated = false;
             other.transform.position = dest.transform.position;
             Debug.Log("teleport");
         }
