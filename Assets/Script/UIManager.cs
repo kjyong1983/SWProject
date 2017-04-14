@@ -22,10 +22,34 @@ public class UIManager : MonoBehaviour {
         Debug.Log("Go to game Screen");
     }
 
-    public void OpenInGameMenu()
+    public void OpenGameMenu()
     {
-        //RectTransform GameMenu = 
+        GameObject gameMenu = GameObject.Find("GameMenu");
+        RectTransform gameMenuPos = gameMenu.GetComponent<RectTransform>();
+
+        RectTransform canvas = GameObject.Find("Canvas").GetComponent<RectTransform>();
+
+        if (gameMenu == null)
+        {
+            Debug.Log("null");
+        }
+
+        gameMenuPos.position = new Vector3(canvas.rect.width/2, canvas.rect.height/2, 0);
+
+        //gameMenu.gameObject.SetActive(true);
         Debug.Log("Open InGame Menu");
+
+    }
+
+    public void CloseGameMenu()
+    {
+        GameObject gameMenu = GameObject.Find("GameMenu");
+        RectTransform gameMenuPos = gameMenu.GetComponent<RectTransform>();
+
+        RectTransform canvas = GameObject.Find("Canvas").GetComponent<RectTransform>();
+
+        gameMenuPos.position = new Vector3(canvas.rect.width*2, canvas.rect.height*2, 0);
+
     }
 
 }
