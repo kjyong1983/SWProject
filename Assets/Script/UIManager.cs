@@ -52,4 +52,9 @@ public class UIManager : MonoBehaviour {
 
     }
 
+    public void GoToTitle()
+    {
+        SceneManager.LoadScene(0);
+    }
+
 }
