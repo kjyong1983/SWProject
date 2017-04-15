@@ -26,17 +26,10 @@ public class UIManager : MonoBehaviour {
     {
         GameObject gameMenu = GameObject.Find("GameMenu");
         RectTransform gameMenuPos = gameMenu.GetComponent<RectTransform>();
-
         RectTransform canvas = GameObject.Find("Canvas").GetComponent<RectTransform>();
-
-        if (gameMenu == null)
-        {
-            Debug.Log("null");
-        }
 
         gameMenuPos.position = new Vector3(canvas.rect.width/2, canvas.rect.height/2, 0);
 
-        //gameMenu.gameObject.SetActive(true);
         Debug.Log("Open InGame Menu");
 
     }
@@ -45,7 +38,6 @@ public class UIManager : MonoBehaviour {
     {
         GameObject gameMenu = GameObject.Find("GameMenu");
         RectTransform gameMenuPos = gameMenu.GetComponent<RectTransform>();
-
         RectTransform canvas = GameObject.Find("Canvas").GetComponent<RectTransform>();
 
         gameMenuPos.position = new Vector3(canvas.rect.width*2, canvas.rect.height*2, 0);
@@ -55,6 +47,26 @@ public class UIManager : MonoBehaviour {
     public void GoToTitle()
     {
         SceneManager.LoadScene(0);
+    }
+
+    public void OpenTitleDialogue()
+    {
+        GameObject Dialogue = GameObject.Find("TitleDialogue");
+        RectTransform DialoguePos = Dialogue.GetComponent<RectTransform>();
+        RectTransform canvas = GameObject.Find("Canvas").GetComponent<RectTransform>();
+
+        DialoguePos.position = new Vector3(canvas.rect.width / 2, canvas.rect.height / 2, 0);
+
+    }
+
+    public void CloseTitleDialogue()
+    {
+        GameObject Dialogue = GameObject.Find("TitleDialogue");
+        RectTransform DialoguePos = Dialogue.GetComponent<RectTransform>();
+        RectTransform canvas = GameObject.Find("Canvas").GetComponent<RectTransform>();
+
+        DialoguePos.position = new Vector3(canvas.rect.width * 2, canvas.rect.height * 2, 0);
+
     }
 
 }
