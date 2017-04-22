@@ -6,9 +6,18 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour {
 
+    GameObject gameMenu;
+    GameObject titleMenuDialogue;
+
 	// Use this for initialization
 	void Start () {
-		
+        gameMenu = GameObject.Find("GameMenu");
+        titleMenuDialogue = GameObject.Find("TitleDialogue");
+
+        gameMenu.SetActive(false);
+        titleMenuDialogue.SetActive(false);
+
+
 	}
 	
 	// Update is called once per frame
@@ -24,24 +33,13 @@ public class UIManager : MonoBehaviour {
 
     public void OpenGameMenu()
     {
-        GameObject gameMenu = GameObject.Find("GameMenu");
-        RectTransform gameMenuPos = gameMenu.GetComponent<RectTransform>();
-        RectTransform canvas = GameObject.Find("Canvas").GetComponent<RectTransform>();
-
-        gameMenuPos.position = new Vector3(canvas.rect.width/2, canvas.rect.height/2, 0);
-
+        gameMenu.SetActive(true);
         Debug.Log("Open InGame Menu");
-
     }
 
     public void CloseGameMenu()
     {
-        GameObject gameMenu = GameObject.Find("GameMenu");
-        RectTransform gameMenuPos = gameMenu.GetComponent<RectTransform>();
-        RectTransform canvas = GameObject.Find("Canvas").GetComponent<RectTransform>();
-
-        gameMenuPos.position = new Vector3(canvas.rect.width*2, canvas.rect.height*2, 0);
-
+        gameMenu.SetActive(false);
     }
 
     public void GoToTitle()
@@ -51,21 +49,13 @@ public class UIManager : MonoBehaviour {
 
     public void OpenTitleDialogue()
     {
-        GameObject Dialogue = GameObject.Find("TitleDialogue");
-        RectTransform DialoguePos = Dialogue.GetComponent<RectTransform>();
-        RectTransform canvas = GameObject.Find("Canvas").GetComponent<RectTransform>();
-
-        DialoguePos.position = new Vector3(canvas.rect.width / 2, canvas.rect.height / 2, 0);
-
+        titleMenuDialogue.SetActive(true);
     }
 
     public void CloseTitleDialogue()
     {
-        GameObject Dialogue = GameObject.Find("TitleDialogue");
-        RectTransform DialoguePos = Dialogue.GetComponent<RectTransform>();
-        RectTransform canvas = GameObject.Find("Canvas").GetComponent<RectTransform>();
 
-        DialoguePos.position = new Vector3(canvas.rect.width * 2, canvas.rect.height * 2, 0);
+        titleMenuDialogue.SetActive(false);
 
     }
 
