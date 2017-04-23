@@ -13,7 +13,7 @@ public class BGMManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+        //for debugging
         if (Input.GetKeyDown(KeyCode.M))
         {
             if (bgmSource.mute)
