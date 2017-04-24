@@ -15,26 +15,31 @@ public class UIManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        gameMenu = GameObject.Find("GameMenu");
-        titleMenuDialogue = GameObject.Find("TitleDialogue");
-        settingDialogue = GameObject.Find("settingDialogue");
-        minimap = GameObject.Find("Minimap");
 
-        bgmManager = GameObject.Find("BGMManager");
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            gameMenu = GameObject.Find("GameMenu");
+            titleMenuDialogue = GameObject.Find("TitleDialogue");
+            settingDialogue = GameObject.Find("settingDialogue");
+            minimap = GameObject.Find("Minimap");
 
-        gameMenu.SetActive(false);
-        titleMenuDialogue.SetActive(false);
-        settingDialogue.SetActive(false);
-        minimap.SetActive(false);
+            bgmManager = GameObject.Find("BGMManager");
 
-	}
+            gameMenu.SetActive(false);
+            titleMenuDialogue.SetActive(false);
+            settingDialogue.SetActive(false);
+            minimap.SetActive(false);
+
+        }
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
 		
 	}
 
-    public void OnStart()
+    public void StartGame()
     {
         SceneManager.LoadScene(1);
         Debug.Log("Go to game Screen");
