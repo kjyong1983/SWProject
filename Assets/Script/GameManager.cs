@@ -17,6 +17,9 @@ public class GameManager : MonoBehaviour {
         }
     }
 
+    public bool showGrid = true;
+
+
 	// Use this for initialization
 	void Start () {
 		
@@ -26,4 +29,24 @@ public class GameManager : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    private void OnDrawGizmos()
+    {
+
+        if (showGrid)
+        {
+            Gizmos.color = Color.yellow;
+
+            for (int i = 0; i < 100; i++)
+            {
+                for (int j = 0; j < 100; j++)
+                {
+                    Gizmos.DrawWireCube(new Vector3(transform.position.x + j, transform.position.y + i), new Vector3(1f, 1f));
+                }
+            }
+
+        }
+
+    }
+
 }
