@@ -924,11 +924,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4023309482128384, guid: 142f8f3bd4576d846857871ea5536be5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1
+      value: 1.44
       objectReference: {fileID: 0}
     - target: {fileID: 4023309482128384, guid: 142f8f3bd4576d846857871ea5536be5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 88
+      value: 87.75
       objectReference: {fileID: 0}
     - target: {fileID: 4023309482128384, guid: 142f8f3bd4576d846857871ea5536be5, type: 2}
       propertyPath: m_LocalPosition.z
@@ -956,11 +956,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4023309482128384, guid: 142f8f3bd4576d846857871ea5536be5, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.1
+      value: 0.0625
       objectReference: {fileID: 0}
     - target: {fileID: 4023309482128384, guid: 142f8f3bd4576d846857871ea5536be5, type: 2}
       propertyPath: m_LocalScale.y
-      value: 0.1
+      value: 0.0625
       objectReference: {fileID: 0}
     - target: {fileID: 4023309482128384, guid: 142f8f3bd4576d846857871ea5536be5, type: 2}
       propertyPath: m_LocalScale.z
@@ -1070,7 +1070,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5b2891495b12ea4fa2e071dfae72a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showGrid: 0
+  showGrid: 1
 --- !u!4 &751304870
 Transform:
   m_ObjectHideFlags: 0
@@ -3854,7 +3854,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1975802260
 MonoBehaviour:
   m_ObjectHideFlags: 0
