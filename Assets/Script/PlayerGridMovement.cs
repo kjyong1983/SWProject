@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,6 +10,7 @@ public class PlayerGridMovement : MonoBehaviour {
     Vector3 startPos;
     Vector3 endPos;
     float t;
+    float v, h;
 
     public float walkSpeed; //3f
 
@@ -19,9 +21,18 @@ public class PlayerGridMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        h = Input.GetAxis("Horizontal");
+        v = Input.GetAxis("Vertical");
+        
+        GetInput(h, v);
+        
+	}
+
+    private void GetInput(float h, float v)
+    {
         if (!isMoving)
         {
-            input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+            input = new Vector2(h, v);
             if (Mathf.Abs(input.x) > Mathf.Abs(input.y))
             {
                 input.y = 0;
@@ -36,7 +47,7 @@ public class PlayerGridMovement : MonoBehaviour {
                 StartCoroutine(Move(transform));
             }
         }
-	}
+    }
 
     IEnumerator Move(Transform entity)
     {
