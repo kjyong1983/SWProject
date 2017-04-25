@@ -20,7 +20,7 @@ public class WarperAuto : MonoBehaviour {
     {
         if (other.CompareTag("Player"))
         {
-            var player = other.GetComponent<PlayerController>();
+            var player = other.GetComponent<Warp>();
             if (player.ReadyToWarp)
             {
                 player.ReadyToWarp = false;
@@ -37,7 +37,7 @@ public class WarperAuto : MonoBehaviour {
     {
         if (other.CompareTag("Player"))
         {
-            var player = other.GetComponent<PlayerController>();
+            var player = other.GetComponent<Warp>();
 
             if (!player.ReadyToWarp)
             {
