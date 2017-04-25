@@ -1,27 +1,18 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
     GameObject itactObject;
-    float v, h;
     Rigidbody rb;
+    float v, h;
     public float moveSpeed;
-    float playerdx;
-    float playerdy;
-    bool readyToWarp;
-    public bool ReadyToWarp
-    {
-        get { return readyToWarp; }
-        set { readyToWarp = value; }
-    }
-
 
     // Use this for initialization
     void Start () {
         rb = GetComponent<Rigidbody>();
-        ReadyToWarp = true;
 	}
 	
 	// Update is called once per frame
@@ -32,15 +23,14 @@ public class PlayerController : MonoBehaviour {
 
         Move(v, h);
 
-        if (readyToWarp && Input.GetKeyDown(KeyCode.Space))
-        {
-            Debug.Log("warp");
-        }
-
     }
 
     void Move(float v, float h)
     {
+        float playerdx = 0;
+        float playerdy = 0;
+
+
         if (h > 0.2 || h < -0.2)
         {
             playerdx = h * moveSpeed * Time.deltaTime;
@@ -66,9 +56,7 @@ public class PlayerController : MonoBehaviour {
             }
 
         }
-
-
-
+        
         rb.velocity = new Vector3(playerdx, playerdy, rb.velocity.z);
 
     }
