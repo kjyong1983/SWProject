@@ -15,7 +15,8 @@ public class PlayerInteract : MonoBehaviour {
         interactCollider.AddComponent<BoxCollider>();
         interactCollider.transform.SetParent(gameObject.transform);
         interactCollider.GetComponent<BoxCollider>().isTrigger = true;
-
+        interactCollider.GetComponent<BoxCollider>().size = new Vector3(0.9f, 0.9f, 0.9f);
+        interactCollider.AddComponent<InteractTrigger>();
 	}
 	
 	// Update is called once per frame
@@ -44,4 +45,10 @@ public class PlayerInteract : MonoBehaviour {
                 break;
         }
     }
+    
+    public void InteractObject()
+    {
+        Debug.Log("interact!");
+    }
+    
 }
