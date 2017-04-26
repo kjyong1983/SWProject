@@ -954,54 +954,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4023309482128384, guid: 142f8f3bd4576d846857871ea5536be5, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.0625
-      objectReference: {fileID: 0}
-    - target: {fileID: 4023309482128384, guid: 142f8f3bd4576d846857871ea5536be5, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.0625
-      objectReference: {fileID: 0}
-    - target: {fileID: 4023309482128384, guid: 142f8f3bd4576d846857871ea5536be5, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4423320841115632, guid: 142f8f3bd4576d846857871ea5536be5, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4423320841115632, guid: 142f8f3bd4576d846857871ea5536be5, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114271543570912162, guid: 142f8f3bd4576d846857871ea5536be5,
-        type: 2}
-      propertyPath: Offset.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114271543570912162, guid: 142f8f3bd4576d846857871ea5536be5,
-        type: 2}
-      propertyPath: Offset.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4873816755418806, guid: 142f8f3bd4576d846857871ea5536be5, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4873816755418806, guid: 142f8f3bd4576d846857871ea5536be5, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114794290882051848, guid: 142f8f3bd4576d846857871ea5536be5,
-        type: 2}
-      propertyPath: Offset.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114794290882051848, guid: 142f8f3bd4576d846857871ea5536be5,
-        type: 2}
-      propertyPath: Offset.y
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 142f8f3bd4576d846857871ea5536be5, type: 2}
   m_IsPrefabParent: 0
