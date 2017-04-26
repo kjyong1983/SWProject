@@ -1185,63 +1185,15 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 4706940379193270, guid: fc324f4b8f73afa48937fae2266c9438, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4706940379193270, guid: fc324f4b8f73afa48937fae2266c9438, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4706940379193270, guid: fc324f4b8f73afa48937fae2266c9438, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114764352517936140, guid: fc324f4b8f73afa48937fae2266c9438,
-        type: 2}
-      propertyPath: walkSpeed
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114764352517936140, guid: fc324f4b8f73afa48937fae2266c9438,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114764352517936140, guid: fc324f4b8f73afa48937fae2266c9438,
-        type: 2}
-      propertyPath: moveSpeed
-      value: 0.2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fc324f4b8f73afa48937fae2266c9438, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &766410308 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1996190170354842, guid: fc324f4b8f73afa48937fae2266c9438,
+--- !u!114 &766410314 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114281952590298858, guid: fc324f4b8f73afa48937fae2266c9438,
     type: 2}
   m_PrefabInternal: {fileID: 766410307}
---- !u!114 &766410309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 766410308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eee96df45cab0f048b417225b292a40a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &766410314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 766410308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c462f13f184703847a21879a2d82a96d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &830444695
 GameObject:
   m_ObjectHideFlags: 0
@@ -3194,6 +3146,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1607691630}
+  - component: {fileID: 1607691631}
   m_Layer: 0
   m_Name: IntactObj
   m_TagString: Item
@@ -3215,6 +3168,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1607691631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1607691629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac4d6a7abc3652e4cb616a339f295bf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 12313
 --- !u!1 &1626951847
 GameObject:
   m_ObjectHideFlags: 0
@@ -3558,12 +3523,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
+      - m_Target: {fileID: 766410314}
+        m_MethodName: InteractObject
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
