@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        dir = Direction.down;
 	}
 	
 	// Update is called once per frame
@@ -27,7 +28,7 @@ public class PlayerController : MonoBehaviour {
         v = Input.GetAxis("Vertical");
 
         GetInput(h, v);
-
+        SetDirection(input);
     }
 
     private void GetInput(float h, float v)
@@ -49,6 +50,28 @@ public class PlayerController : MonoBehaviour {
                 StartCoroutine(Move(transform));
             }
         }
+    }
+
+    void SetDirection(Vector2 input)
+    {
+        if (input.x < 0 && input.y == 0)
+        {
+            dir = Direction.left;
+        }
+        if (input.x > 0 && input.y == 0)
+        {
+            dir = Direction.right;
+        }
+        if (input.x == 0 && input.y > 0)
+        {
+            dir = Direction.up;
+        }
+        if (input.x == 0 && input.y < 0)
+        {
+            dir = Direction.down;
+        }
+
+
     }
 
     IEnumerator Move(Transform entity)
