@@ -7,11 +7,9 @@ public class PlayerController : MonoBehaviour {
 
     public enum Direction { up, down, left, right};
     public Direction dir;
-    Rigidbody rb;
     Vector2 input;
     float v, h;
-    public float moveSpeed;
-    public float walkSpeed; //3f
+    public float moveSpeed; //3f
     bool isMoving = false;
     Vector3 startPos;
     Vector3 endPos;
@@ -20,7 +18,6 @@ public class PlayerController : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        rb = GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
@@ -29,44 +26,7 @@ public class PlayerController : MonoBehaviour {
         h = Input.GetAxis("Horizontal");
         v = Input.GetAxis("Vertical");
 
-        Move(v, h);
         GetInput(h, v);
-
-    }
-
-    void Move(float v, float h)
-    {
-        float playerdx = 0;
-        float playerdy = 0;
-
-
-        if (h > 0.2 || h < -0.2)
-        {
-            playerdx = h * moveSpeed * Time.deltaTime;
-        }
-        else
-        {
-            if (Mathf.Abs(playerdx) > 0)
-            {
-                playerdx = 0;
-            }
-
-        }
-
-        if (v > 0.2 || v < -0.2)
-        {
-            playerdy = v * moveSpeed * Time.deltaTime;
-        }
-        else
-        {
-            if (Mathf.Abs(playerdy) > 0)
-            {
-                playerdy = 0;
-            }
-
-        }
-        
-        rb.velocity = new Vector3(playerdx, playerdy, rb.velocity.z);
 
     }
 
@@ -96,12 +56,12 @@ public class PlayerController : MonoBehaviour {
         isMoving = true;
         startPos = entity.position;
         t = 0f;
-        float interval = 0.5f;
+        float interval = 1f;
         endPos = new Vector3(startPos.x + System.Math.Sign(input.x), startPos.y + System.Math.Sign(input.y), startPos.z);
 
         while (t < interval)
         {
-            t += Time.deltaTime + walkSpeed;
+            t += (Time.deltaTime + moveSpeed)/2;
             entity.position = Vector3.Lerp(startPos, endPos, t);
             yield return null;
         }
@@ -113,7 +73,6 @@ public class PlayerController : MonoBehaviour {
 
     public void Move(Vector3 normDiff)
     {
-        //Move(normDiff.y, normDiff.x);
         GetInput(normDiff.x, normDiff.y);
     }
 
