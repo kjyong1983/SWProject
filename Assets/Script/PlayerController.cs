@@ -7,7 +7,9 @@ public class PlayerController : MonoBehaviour {
 
     public enum Direction { up, down, left, right};
     public Direction dir;
-    Vector2 input;
+    public Direction prevDir;
+    bool sameDir = true;
+    [SerializeField]Vector2 input;
     float v, h;
     public float moveSpeed; //3f
     bool isMoving = false;
@@ -26,12 +28,14 @@ public class PlayerController : MonoBehaviour {
 
         h = Input.GetAxis("Horizontal");
         v = Input.GetAxis("Vertical");
-
+        
         GetInput(h, v);
-        SetDirection(input);
+
+
+        //콜백으로 prevDir과 dir이 같은지 확인해서 CheckDirection에 넘김.
     }
 
-    private void GetInput(float h, float v)
+    public void GetInput(float h, float v)
     {
         if (!isMoving)
         {
@@ -45,15 +49,57 @@ public class PlayerController : MonoBehaviour {
                 input.x = 0;
             }
 
+
+            SetDirection(input);
+
+            //방향 전환했을 때 멈춰서 방향만 바꾸는거 만들어야함.
             if (input != Vector2.zero)
             {
-                StartCoroutine(Move(transform));
+                if(!CheckDirection())
+                {
+                    //방향전환만 한다.
+                    prevDir = dir;
+                    Debug.Log("change direction");
+                }
+                else if (CheckDirection())
+                { 
+                    StartCoroutine(Move(transform, input));
+                    
+                }
+
             }
         }
     }
 
+    private IEnumerator Wait()
+    {
+        isMoving = true;
+        Debug.Log("wait");
+        yield return new WaitForSeconds(0.1f);
+        isMoving = false;
+        yield break;
+    }
+
+    private bool CheckDirection()
+    {
+        if (prevDir == dir)
+        {
+            return true;
+        }
+        else
+        {
+            Debug.Log("change direction");
+            StartCoroutine(Wait());
+            return false;
+        }
+
+        //return prevDir == dir;
+    }
+
     void SetDirection(Vector2 input)
     {
+        sameDir = CheckDirection();
+
         if (input.x < 0 && input.y == 0)
         {
             dir = Direction.left;
@@ -71,10 +117,9 @@ public class PlayerController : MonoBehaviour {
             dir = Direction.down;
         }
 
-
     }
 
-    IEnumerator Move(Transform entity)
+    IEnumerator Move(Transform entity, Vector2 input)
     {
         isMoving = true;
         startPos = entity.position;

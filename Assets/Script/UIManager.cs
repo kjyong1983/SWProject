@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour {
     GameObject titleMenuDialogue;
     GameObject settingDialogue;
     GameObject minimap;
+    GameObject conversationDialogue;
 
     GameObject bgmManager;
 
@@ -22,6 +23,8 @@ public class UIManager : MonoBehaviour {
             titleMenuDialogue = GameObject.Find("TitleDialogue");
             settingDialogue = GameObject.Find("settingDialogue");
             minimap = GameObject.Find("Minimap");
+            conversationDialogue = GameObject.Find("ConversationDialogue");
+
 
             bgmManager = GameObject.Find("BGMManager");
 
@@ -29,7 +32,7 @@ public class UIManager : MonoBehaviour {
             titleMenuDialogue.SetActive(false);
             settingDialogue.SetActive(false);
             minimap.SetActive(false);
-
+            conversationDialogue.SetActive(false);
         }
 
     }

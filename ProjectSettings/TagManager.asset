@@ -43,3 +43,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Foreground
+    uniqueID: 1484783777
+    locked: 0
+  - name: Main
+    uniqueID: 185641309
+    locked: 0
+  - name: Dialogue
+    uniqueID: 2826019599
+    locked: 0
