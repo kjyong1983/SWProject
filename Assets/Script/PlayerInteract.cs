@@ -46,9 +46,14 @@ public class PlayerInteract : MonoBehaviour {
         }
     }
     
-    public void InteractObject()
+    public void GetInteract()
     {
-        Debug.Log("interact!");
+        var interactTrigger = FindObjectOfType<InteractTrigger>();
+        if (interactTrigger.IsObstacle)
+        {
+            Debug.Log("interact!");
+
+        }
     }
     
 }
