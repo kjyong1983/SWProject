@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class InteractTrigger : MonoBehaviour {
 
-    [SerializeField]GameObject objectInfo;
+    [SerializeField] GameObject objectInfo;
+    bool isObstacle;
+    public bool IsObstacle
+    {
+        get; set;
+    }
 
 	// Use this for initialization
 	void Start () {
@@ -24,18 +29,22 @@ public class InteractTrigger : MonoBehaviour {
             Debug.Log("Item Dectected");
             objectInfo = other.transform.parent.gameObject;
             Debug.Log(objectInfo.GetComponent<Item>().id);
+            IsObstacle = true;
         }
         if (other.gameObject.CompareTag("Wall"))
         {
             objectInfo = other.transform.parent.gameObject;
             Debug.Log("Wall Dectected");
+            IsObstacle = true;
         }
         objectInfo = other.transform.parent.gameObject;
+        IsObstacle = true;
 
     }
 
     public void OnTriggerExit(Collider other)
     {
         objectInfo = null;
+        IsObstacle = false;
     }
 }

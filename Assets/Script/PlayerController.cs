@@ -9,25 +9,34 @@ public class PlayerController : MonoBehaviour {
     public Direction dir;
     public Direction prevDir;
     bool sameDir = true;
+
     [SerializeField]Vector2 input;
+    public Vector2 Input { get; set; }
+    Vector2 lastInput;
+    public Vector2 LastInput { get; set; }
     float v, h;
     public float moveSpeed; //3f
+
     bool isMoving = false;
+    public bool IsMoving { set; get; }
     Vector3 startPos;
     Vector3 endPos;
-    float t;
+    //float t;
+
+    PlayerAnimator anim;
 
 
     // Use this for initialization
     void Start () {
         dir = Direction.down;
+        anim = GetComponent<PlayerAnimator>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-        h = Input.GetAxis("Horizontal");
-        v = Input.GetAxis("Vertical");
+        h = UnityEngine.Input.GetAxis("Horizontal");
+        v = UnityEngine.Input.GetAxis("Vertical");
         
         GetInput(h, v);
 
@@ -39,17 +48,21 @@ public class PlayerController : MonoBehaviour {
     {
         if (!isMoving)
         {
+            anim.SetIsMoving(isMoving);
             input = new Vector2(h, v);
             if (Mathf.Abs(input.x) > Mathf.Abs(input.y))
             {
                 input.y = 0;
+                //LastInput = new Vector2(input.x, 0);
             }
             else
             {
                 input.x = 0;
+                //LastInput = new Vector2(0, input.y);
             }
 
-
+            anim.SetMove(input);
+            anim.SetLastMove(input);
             SetDirection(input);
 
             //방향 전환했을 때 멈춰서 방향만 바꾸는거 만들어야함.
@@ -61,14 +74,28 @@ public class PlayerController : MonoBehaviour {
                     prevDir = dir;
                     Debug.Log("change direction");
                 }
-                else if (CheckDirection())
-                { 
+                else if (CheckDirection() && CheckObstacle())
+                {
+                    Debug.Log("Obstacle Detected");
+                    StartCoroutine(Wait());
+                }
+                else if (CheckDirection() && !CheckObstacle())
+                {
                     StartCoroutine(Move(transform, input));
-                    
+                    //벽에 부딫히는 소리
                 }
 
             }
         }
+        anim.SetIsMoving(isMoving);
+
+    }
+
+    private bool CheckObstacle()
+    {
+        var interactObject = FindObjectOfType<InteractTrigger>();
+
+        return interactObject.IsObstacle;
     }
 
     private IEnumerator Wait()
@@ -121,6 +148,7 @@ public class PlayerController : MonoBehaviour {
 
     IEnumerator Move(Transform entity, Vector2 input)
     {
+        float t;
         isMoving = true;
         startPos = entity.position;
         t = 0f;
