@@ -28,7 +28,7 @@ public class WarperAuto : MonoBehaviour {
             else
                 return;
             
-            other.transform.position = dest.transform.position;
+            other.transform.position = dest.transform.position;//rigidbody가 맨 위에 있어야 작동함.
             Debug.Log("teleport");
         }
     }
