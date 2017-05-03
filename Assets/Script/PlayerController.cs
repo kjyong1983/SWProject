@@ -11,9 +11,9 @@ public class PlayerController : MonoBehaviour {
     bool sameDir = true;
 
     [SerializeField]Vector2 input;
-    public Vector2 Input { get; set; }
+    //public Vector2 Input { get; set; }
     Vector2 lastInput;
-    public Vector2 LastInput { get; set; }
+    //public Vector2 LastInput { get; set; }
     float v, h;
     public float moveSpeed; //3f
 
@@ -30,6 +30,7 @@ public class PlayerController : MonoBehaviour {
     void Start () {
         dir = Direction.down;
         anim = GetComponent<PlayerAnimator>();
+        anim.SetLastMove(new Vector2(0, -1));
 	}
 	
 	// Update is called once per frame
@@ -61,8 +62,9 @@ public class PlayerController : MonoBehaviour {
                 //LastInput = new Vector2(0, input.y);
             }
 
+            lastInput = new Vector2(input.x, input.y);
             anim.SetMove(input);
-            anim.SetLastMove(input);
+            anim.SetLastMove(DirToVector2(prevDir));
             SetDirection(input);
 
             //방향 전환했을 때 멈춰서 방향만 바꾸는거 만들어야함.
@@ -86,9 +88,27 @@ public class PlayerController : MonoBehaviour {
                 }
 
             }
+            //anim.SetLastMove(lastInput);
+
         }
         anim.SetIsMoving(isMoving);
+    }
 
+    Vector2 DirToVector2(Direction dir)
+    {
+        switch (dir)
+        {
+            case Direction.up:
+                return new Vector2(0, 1);
+            case Direction.down:
+                return new Vector2(0, -1);
+            case Direction.left:
+                return new Vector2(-1, 0);
+            case Direction.right:
+                return new Vector2(1, 0);
+            default:
+                return new Vector2(0, -1);
+        }
     }
 
     private bool CheckObstacle()
@@ -152,7 +172,7 @@ public class PlayerController : MonoBehaviour {
         isMoving = true;
         startPos = entity.position;
         t = 0f;
-        float interval = 1f;
+        const float interval = 1f;
         endPos = new Vector3(startPos.x + System.Math.Sign(input.x), startPos.y + System.Math.Sign(input.y), startPos.z);
 
         while (t < interval)
