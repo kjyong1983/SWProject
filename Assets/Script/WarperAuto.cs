@@ -5,45 +5,54 @@ using UnityEngine;
 public class WarperAuto : MonoBehaviour {
 
     public GameObject dest;
+    [SerializeField] private bool warpReady = false;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Use this for initialization
+    void Start() {
 
     }
 
-    private void OnTriggerEnter(Collider other)
+    // Update is called once per frame
+    void Update() {
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            var player = other.GetComponent<Warp>();
-            if (player.ReadyToWarp)
-            {
-                player.ReadyToWarp = false;
-            }
-            else
-                return;
-            
+            other.gameObject.GetComponent<PlayerController>().fadeTrigger = true;
+            Debug.Log("fadeTrigger");
+            //Debug.Break();
             other.transform.position = dest.transform.position;//rigidbody가 맨 위에 있어야 작동함.
-            Debug.Log("teleport");
+            Debug.Log("Warp");
         }
+
+
+        //if (other.CompareTag("Player") && !other.GetComponent<PlayerController>().IsMoving)
+        //{
+        //    StartCoroutine(WaitWarpObject());
+        //    if (warpReady)
+        //    {
+        //        other.transform.position = dest.transform.position;//rigidbody가 맨 위에 있어야 작동함.
+        //    }
+        //    warpReady = false;
+
+        //    Debug.Log("teleport");
+        //}
     }
 
-    private void OnTriggerExit(Collider other)
+    IEnumerator WaitWarpObject(/*GameObject gameObj*/)
     {
-        if (other.CompareTag("Player"))
-        {
-            var player = other.GetComponent<Warp>();
+        yield return new WaitForSeconds(1f);
+        warpReady = true;
+        yield break;
+    }
 
-            if (!player.ReadyToWarp)
-            {
-                player.ReadyToWarp = true;
-            }
-        }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+
     }
 
 }

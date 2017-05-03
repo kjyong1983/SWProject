@@ -23,12 +23,15 @@ public class PlayerController : MonoBehaviour {
     Vector3 endPos;
     //float t;
 
+    public bool fadeTrigger = false;
+
     PlayerAnimator anim;
 
 
     // Use this for initialization
     void Start () {
         dir = Direction.down;
+        prevDir = Direction.down;
         anim = GetComponent<PlayerAnimator>();
         anim.SetLastMove(DirToVector2(prevDir));
 	}
@@ -41,8 +44,6 @@ public class PlayerController : MonoBehaviour {
         
         GetInput(h, v);
 
-
-        //콜백으로 prevDir과 dir이 같은지 확인해서 CheckDirection에 넘김.
     }
 
     public void GetInput(float h, float v)
