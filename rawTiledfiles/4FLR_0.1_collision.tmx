@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="71" height="55" tilewidth="16" tileheight="16" nextobjectid="1">
- <tileset firstgid="1" name="dungeon_tiles" tilewidth="16" tileheight="16" tilecount="0" columns="23">
-  <image source="../../../Desktop/dungeon_tiles.png" width="368" height="384"/>
- </tileset>
- <tileset firstgid="1" name="the_public_pokemon_tileset_by_thatssowitty-d4ni56y" tilewidth="16" tileheight="16" tilecount="0" columns="8">
-  <image source="../../../Desktop/the_public_pokemon_tileset_by_thatssowitty-d4ni56y.png" trans="003039" width="128" height="14000"/>
- </tileset>
  <tileset firstgid="1" name="rpg_maker_vx___tiny_little_town_by_gyrogun-d4jgh13" tilewidth="16" tileheight="16" tilecount="2304" columns="48">
   <image source="tilesource/rpg_maker_vx___tiny_little_town_by_gyrogun-d4jgh13.png" trans="a8a8a8" width="778" height="774"/>
   <tile id="578">
