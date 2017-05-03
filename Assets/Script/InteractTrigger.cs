@@ -37,6 +37,12 @@ public class InteractTrigger : MonoBehaviour {
             Debug.Log("Wall Dectected");
             IsObstacle = true;
         }
+        if (other.transform.parent.tag == "Warp")
+        {
+            Debug.Log("Warp Detected");
+            IsObstacle = false;
+            return;
+        }
         objectInfo = other.transform.parent.gameObject;
         IsObstacle = true;
 
