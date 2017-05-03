@@ -12,10 +12,10 @@ public class PlayerInteract : MonoBehaviour {
 	void Start () {
         p = GetComponent<PlayerController>();
         interactCollider = new GameObject("intactCol");
-        interactCollider.AddComponent<BoxCollider>();
+        interactCollider.AddComponent<BoxCollider2D>();
         interactCollider.transform.SetParent(gameObject.transform);
-        interactCollider.GetComponent<BoxCollider>().isTrigger = true;
-        interactCollider.GetComponent<BoxCollider>().size = new Vector3(0.9f, 0.9f, 0.9f);
+        interactCollider.GetComponent<BoxCollider2D>().isTrigger = true;
+        interactCollider.GetComponent<BoxCollider2D>().size = new Vector2(0.7f, 0.7f);
         interactCollider.AddComponent<InteractTrigger>();
 	}
 	

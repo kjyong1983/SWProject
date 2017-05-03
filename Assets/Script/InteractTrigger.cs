@@ -21,7 +21,7 @@ public class InteractTrigger : MonoBehaviour {
 		
 	}
 
-    public void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("TriggerEnter");
         if (other.gameObject.transform.parent.tag == "Item")
@@ -48,7 +48,7 @@ public class InteractTrigger : MonoBehaviour {
 
     }
 
-    public void OnTriggerExit(Collider other)
+    public void OnTriggerExit2D(Collider2D other)
     {
         objectInfo = null;
         IsObstacle = false;

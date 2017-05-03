@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour {
     public enum Direction { up, down, left, right};
     public Direction dir;
     public Direction prevDir;
-    bool sameDir = true;
+    //bool sameDir = true;
 
     [SerializeField]Vector2 input;
     //public Vector2 Input { get; set; }
@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour {
     void Start () {
         dir = Direction.down;
         anim = GetComponent<PlayerAnimator>();
-        anim.SetLastMove(new Vector2(0, -1));
+        anim.SetLastMove(DirToVector2(prevDir));
 	}
 	
 	// Update is called once per frame
@@ -54,12 +54,10 @@ public class PlayerController : MonoBehaviour {
             if (Mathf.Abs(input.x) > Mathf.Abs(input.y))
             {
                 input.y = 0;
-                //LastInput = new Vector2(input.x, 0);
             }
             else
             {
                 input.x = 0;
-                //LastInput = new Vector2(0, input.y);
             }
 
             lastInput = new Vector2(input.x, input.y);
@@ -67,12 +65,10 @@ public class PlayerController : MonoBehaviour {
             anim.SetLastMove(DirToVector2(prevDir));
             SetDirection(input);
 
-            //방향 전환했을 때 멈춰서 방향만 바꾸는거 만들어야함.
             if (input != Vector2.zero)
             {
                 if(!CheckDirection())
                 {
-                    //방향전환만 한다.
                     prevDir = dir;
                     Debug.Log("change direction");
                 }
@@ -88,7 +84,6 @@ public class PlayerController : MonoBehaviour {
                 }
 
             }
-            //anim.SetLastMove(lastInput);
 
         }
         anim.SetIsMoving(isMoving);
@@ -140,12 +135,12 @@ public class PlayerController : MonoBehaviour {
             return false;
         }
 
-        //return prevDir == dir;
     }
 
     void SetDirection(Vector2 input)
     {
-        sameDir = CheckDirection();
+        //sameDir = CheckDirection();
+        CheckDirection();
 
         if (input.x < 0 && input.y == 0)
         {
