@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractTrigger : MonoBehaviour {
+public class PlayerInteractTrigger : MonoBehaviour {
 
     [SerializeField] GameObject objectInfo;
     bool isObstacle;
@@ -24,27 +24,44 @@ public class InteractTrigger : MonoBehaviour {
     public void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("TriggerEnter");
-        if (other.gameObject.transform.parent.tag == "Item")
+        if (other.CompareTag("Item"))
         {
             Debug.Log("Item Dectected");
-            objectInfo = other.transform.parent.gameObject;
+            objectInfo = other.gameObject;
             Debug.Log(objectInfo.GetComponent<Item>().id);
             IsObstacle = true;
-        }
-        if (other.gameObject.CompareTag("Wall"))
-        {
-            objectInfo = other.transform.parent.gameObject;
-            Debug.Log("Wall Dectected");
-            IsObstacle = true;
-        }
-        if (other.transform.parent.tag == "Warp")
-        {
-            Debug.Log("Warp Detected");
-            IsObstacle = false;
             return;
         }
-        objectInfo = other.transform.parent.gameObject;
-        IsObstacle = true;
+        else if (other.CompareTag("Wall"))
+        {
+            objectInfo = other.gameObject;
+            Debug.Log("Wall Dectected");
+            IsObstacle = true;
+            return;
+        }
+        else if (other.CompareTag("Warp"))
+        {
+            Debug.Log("Warp Detected");
+            objectInfo = other.gameObject;
+            isObstacle = false;
+            return;
+        }
+        else if (other.CompareTag("Enemy"))
+        {
+            Debug.Log("Enemy Detected");
+            objectInfo = other.gameObject;
+            return;
+        }
+        else if (other.CompareTag("Ignored"))
+        {
+            isObstacle = false;
+            return;
+        }
+        else
+        {
+            objectInfo = other.gameObject;
+            IsObstacle = true;
+        }
 
     }
 

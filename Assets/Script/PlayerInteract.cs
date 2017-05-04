@@ -16,7 +16,7 @@ public class PlayerInteract : MonoBehaviour {
         interactCollider.transform.SetParent(gameObject.transform);
         interactCollider.GetComponent<BoxCollider2D>().isTrigger = true;
         interactCollider.GetComponent<BoxCollider2D>().size = new Vector2(0.7f, 0.7f);
-        interactCollider.AddComponent<InteractTrigger>();
+        interactCollider.AddComponent<PlayerInteractTrigger>();
 	}
 	
 	// Update is called once per frame
@@ -48,7 +48,7 @@ public class PlayerInteract : MonoBehaviour {
     
     public void GetInteract()
     {
-        var interactTrigger = FindObjectOfType<InteractTrigger>();
+        var interactTrigger = FindObjectOfType<PlayerInteractTrigger>();
         if (interactTrigger.IsObstacle)
         {
             Debug.Log("interact!");
