@@ -109,7 +109,7 @@ public class PlayerController : MonoBehaviour {
 
     private bool CheckObstacle()
     {
-        var interactObject = FindObjectOfType<InteractTrigger>();
+        var interactObject = FindObjectOfType<PlayerInteractTrigger>();
 
         return interactObject.IsObstacle;
     }
@@ -119,6 +119,15 @@ public class PlayerController : MonoBehaviour {
         isMoving = true;
         Debug.Log("wait");
         yield return new WaitForSeconds(0.1f);
+        //자리 보정.
+        if (transform.position.x % 1 > 0.01 || transform.position.y % 1 > 0.01)
+        {
+            transform.position
+                = new Vector2(
+                    Mathf.RoundToInt(transform.position.x), 
+                    Mathf.RoundToInt(transform.position.y)
+                    );
+        }
         isMoving = false;
         yield break;
     }
