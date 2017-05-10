@@ -4,12 +4,12 @@ using System.Collections.Generic;
 /// <summary>
 /// Utils for parsing comma-separated values (CSV) files
 /// </summary>
-public class CsvParser : MonoBehaviour
+public class CsvDialogueParser : MonoBehaviour
 {
-    public static CsvParser Instance;                                           // Singleton
+    public static CsvDialogueParser Instance;                                           // Singleton
 
     private char lineSeparator = '\n';                                          // Table line separate character
-    private char fieldSeparator = ';';                                          // Table field separate chracter
+    private char fieldSeparator = ',';                                          // Table field separate chracter
     private string pageSign = "__Page_";                                        // Dialog page separator
     private string lineSign = "__Line_";                                        // Dialog line separator
     private string variableSign = "_";                                          // Dialog variables separator

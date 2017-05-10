@@ -14,8 +14,15 @@ public class UIManager : MonoBehaviour {
 
     GameObject bgmManager;
 
-	// Use this for initialization
-	void Start () {
+    public static UIManager instance;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
+    // Use this for initialization
+    void Start () {
 
         if (SceneManager.GetActiveScene().buildIndex == 1)
         {
@@ -84,6 +91,18 @@ public class UIManager : MonoBehaviour {
     public void CloseSettingDialogue()
     {
         settingDialogue.SetActive(false);
+    }
+
+    public void ToggleConversationDialogue()
+    {
+        if (!conversationDialogue.activeSelf)
+        {
+            conversationDialogue.SetActive(true);
+        }
+        else
+        {
+            conversationDialogue.SetActive(false);
+        }
     }
 
     public void BGMMute(Button button)

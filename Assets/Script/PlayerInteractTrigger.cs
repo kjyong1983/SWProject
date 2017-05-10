@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerInteractTrigger : MonoBehaviour {
 
-    [SerializeField] GameObject objectInfo;
+    public GameObject objectInfo;
     bool isObstacle;
     public bool IsObstacle
     {

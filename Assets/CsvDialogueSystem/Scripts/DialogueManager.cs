@@ -85,7 +85,7 @@ public class DialogueManager : MonoBehaviour
         dialogueCsv = csvFile;
         DisplayCommonInfo();                                                        // Display info from descriptor common page
         string page;
-        page = CsvParser.Instance.GetPage("Welcome", dialogueCsv);                  // Find start page named "Welcome"
+        page = CsvDialogueParser.Instance.GetPage("Welcome", dialogueCsv);                  // Find start page named "Welcome"
         if (page != null)
         {
             DisplayNpcAnswer(GetNpcAnswer(page));                                   // Display NPC answer from start page
@@ -205,7 +205,7 @@ public class DialogueManager : MonoBehaviour
             Debug.Log("Wrong input data");
             return;
         }
-        string page = CsvParser.Instance.GetPage(answer.name, dialogueCsv);         // Find page with answer's name
+        string page = CsvDialogueParser.Instance.GetPage(answer.name, dialogueCsv);         // Find page with answer's name
         if (page != null)
         {
             if (clickedAnswers.Contains(answer.name) == false)
@@ -242,11 +242,11 @@ public class DialogueManager : MonoBehaviour
     private void DisplayCommonInfo()
     {
         string page;
-        page = CsvParser.Instance.GetPage("Desc", dialogueCsv);                     // Get page named "Desc"
+        page = CsvDialogueParser.Instance.GetPage("Desc", dialogueCsv);                     // Get page named "Desc"
         if (page != null)
         {
             string name;
-            List<string> lines = CsvParser.Instance.GetLines(page);                 // Get all lines from page
+            List<string> lines = CsvDialogueParser.Instance.GetLines(page);                 // Get all lines from page
             if (lines != null)
             {
                 foreach (string line in lines)
@@ -254,9 +254,9 @@ public class DialogueManager : MonoBehaviour
                     ///
                     /// Dislay NPC name
                     ///
-                    if (CsvParser.Instance.GetLineName(line) == "NpcName")          // Find line named "NpcName"
+                    if (CsvDialogueParser.Instance.GetLineName(line) == "NpcName")          // Find line named "NpcName"
                     {
-                        if (CsvParser.Instance.GetTextValue(out name, languageSign, line) == true)
+                        if (CsvDialogueParser.Instance.GetTextValue(out name, languageSign, line) == true)
                         {
                             if (name != null)                                       // Get text from line
                             {
@@ -324,14 +324,14 @@ public class DialogueManager : MonoBehaviour
             Debug.Log("Wrong input data");
             return res;
         }
-        List<string> lines = CsvParser.Instance.GetLines(page);                     // Get all lines from page
+        List<string> lines = CsvDialogueParser.Instance.GetLines(page);                     // Get all lines from page
         if (lines != null)
         {
             foreach (string line in lines)
             {
-                if (CsvParser.Instance.GetLineName(line) == "NpcAnswer")            // Find line named "NpcAnswer"
+                if (CsvDialogueParser.Instance.GetLineName(line) == "NpcAnswer")            // Find line named "NpcAnswer"
                 {
-                    if (CsvParser.Instance.GetTextValue(out res, languageSign, line) == true)
+                    if (CsvDialogueParser.Instance.GetTextValue(out res, languageSign, line) == true)
                     {
                         break;                                                      // Get text from line
                     }
@@ -467,12 +467,12 @@ public class DialogueManager : MonoBehaviour
     private List<string> GetAnswersLines(string page)
     {
         List<string> res = new List<string>();
-        List <string> lines = CsvParser.Instance.GetLines(page);                    // Get all lines from page
+        List <string> lines = CsvDialogueParser.Instance.GetLines(page);                    // Get all lines from page
         if (lines != null)
         {
             foreach (string line in lines)
             {
-                string lineName = CsvParser.Instance.GetLineName(line);             // Get name of line
+                string lineName = CsvDialogueParser.Instance.GetLineName(line);             // Get name of line
                 if (lineName != null)
                 {
                     bool stuff = false;
@@ -509,10 +509,10 @@ public class DialogueManager : MonoBehaviour
         {
             string text;
                                                                                     // Get answer text from line
-            if (CsvParser.Instance.GetTextValue(out text, languageSign, answer.Key) == true)
+            if (CsvDialogueParser.Instance.GetTextValue(out text, languageSign, answer.Key) == true)
             {
                                                                                     // Add answer to answer folder
-                AddAnswer(CsvParser.Instance.GetLineName(answer.Key), text, answer.Value);
+                AddAnswer(CsvDialogueParser.Instance.GetLineName(answer.Key), text, answer.Value);
                 while ((typingDelay > 0) && (playerIsTalking == true))              // Wait for previous answer stop display
                 {
                     yield return new WaitForSeconds(typingDelay);
@@ -542,9 +542,9 @@ public class DialogueManager : MonoBehaviour
             Dictionary<string, bool> answersLines = new Dictionary<string, bool>();
             foreach (string line in lines)
             {
-                string answerName = CsvParser.Instance.GetLineName(line);           // Get answer name
+                string answerName = CsvDialogueParser.Instance.GetLineName(line);           // Get answer name
                                                                                     // Get page named "answerName"
-                string answerPage = CsvParser.Instance.GetPage(answerName, dialogueCsv);
+                string answerPage = CsvDialogueParser.Instance.GetPage(answerName, dialogueCsv);
                                                                                     // Check for active answer requirements
                 bool isActive = CheckAnswerRequirements(answerPage) && !IsAnswerBlocked(answerName);
                 if ((answersMode == InactiveAnswersMode.Invisible) && isActive == false)
@@ -625,7 +625,7 @@ public class DialogueManager : MonoBehaviour
             return false;
         }
         bool res = true;
-        List<string> reqLines = CsvParser.Instance.GetLines("Requirements", page);  // Get all lines named "Requirements" from page
+        List<string> reqLines = CsvDialogueParser.Instance.GetLines("Requirements", page);  // Get all lines named "Requirements" from page
         if (reqLines != null)
         {
             if (reqLines.Count > 0)
@@ -639,7 +639,7 @@ public class DialogueManager : MonoBehaviour
             {
                 bool localRes = true;
                 // Split line by value named "Req"
-                List<string> reqs = CsvParser.Instance.SplitLineByValue("Req", line);
+                List<string> reqs = CsvDialogueParser.Instance.SplitLineByValue("Req", line);
                 if (reqs != null)
                 {
                     ///
@@ -649,30 +649,30 @@ public class DialogueManager : MonoBehaviour
                     {
                         string data;
                         // Get requirement data from CSV
-                        if (CsvParser.Instance.GetTextValue(out data, "Req", req) == true)
+                        if (CsvDialogueParser.Instance.GetTextValue(out data, "Req", req) == true)
                         {
                             ///
                             /// Example: gold requirement
                             ///
                             if (data == "Gold")
                             {
-                                int num;
-                                if (CsvParser.Instance.GetNumValue(out num, data, line) == true)
-                                {
-                                    if (InventoryControl.Instance.GetGold() < num)
-                                    {
-                                        localRes = false;
-                                        break;
-                                    }
-                                }
-                                continue;
+                                //int num;
+                                //if (CsvParser.Instance.GetNumValue(out num, data, line) == true)
+                                //{
+                                //    if (InventoryControl.Instance.GetGold() < num)
+                                //    {
+                                //        localRes = false;
+                                //        break;
+                                //    }
+                                //}
+                                //continue;
                             }
                             ///
                             /// Example: one timed answer
                             ///
                             else if (data == "OneOff")
                             {
-                                if (WasAnswerClickedBefore(CsvParser.Instance.GetPageName(page)) == true)
+                                if (WasAnswerClickedBefore(CsvDialogueParser.Instance.GetPageName(page)) == true)
                                 {
                                     localRes = false;
                                     break;
@@ -694,15 +694,15 @@ public class DialogueManager : MonoBehaviour
                             ///
                             /// Example: player has no money
                             ///
-                            else if (data == "NoGold")
-                            {
-                                if (InventoryControl.Instance.GetGold() > 0)
-                                {
-                                    localRes = false;
-                                    break;
-                                }
-                                continue;
-                            }
+                            //else if (data == "NoGold")
+                            //{
+                            //    if (InventoryControl.Instance.GetGold() > 0)
+                            //    {
+                            //        localRes = false;
+                            //        break;
+                            //    }
+                            //    continue;
+                            //}
                             ///
                             /// Template for new requirement
                             ///
@@ -743,17 +743,17 @@ public class DialogueManager : MonoBehaviour
             Debug.Log("Wrong input data");
             return false;
         }
-        List<string> lines = CsvParser.Instance.GetLines(page);                     // Get all lines from page
+        List<string> lines = CsvDialogueParser.Instance.GetLines(page);                     // Get all lines from page
         if (lines != null)
         {
             foreach (string line in lines)
             {
-                string lineName = CsvParser.Instance.GetLineName(line);             // Get line name
+                string lineName = CsvDialogueParser.Instance.GetLineName(line);             // Get line name
                 if (lineName == "Effect")                                           // Find lines named "Effect"
                 {
                     string data;
                     // Get effect data
-                    if (CsvParser.Instance.GetTextValue(out data, lineName, line) == true)
+                    if (CsvDialogueParser.Instance.GetTextValue(out data, lineName, line) == true)
                     {
                         ///
                         /// Example: end dialog
@@ -770,7 +770,7 @@ public class DialogueManager : MonoBehaviour
                         else if (data == "Gold")
                         {
                             int num;
-                            if (CsvParser.Instance.GetNumValue(out num, data, line) == true)
+                            if (CsvDialogueParser.Instance.GetNumValue(out num, data, line) == true)
                             {
                                 InventoryControl.Instance.AddGold(num);
                             }
@@ -782,7 +782,7 @@ public class DialogueManager : MonoBehaviour
                         else if (data == "Food")
                         {
                             int num;
-                            if (CsvParser.Instance.GetNumValue(out num, data, line) == true)
+                            if (CsvDialogueParser.Instance.GetNumValue(out num, data, line) == true)
                             {
                                 InventoryControl.Instance.AddFood(num);
                             }
@@ -793,11 +793,11 @@ public class DialogueManager : MonoBehaviour
                         ///
                         else if (data == "Item")
                         {
-                            if (CsvParser.Instance.GetTextValue(out data, data, line) == true)
+                            if (CsvDialogueParser.Instance.GetTextValue(out data, data, line) == true)
                             {
                                 if (data == "Add")
                                 {
-                                    if (CsvParser.Instance.GetTextValue(out data, data, line) == true)
+                                    if (CsvDialogueParser.Instance.GetTextValue(out data, data, line) == true)
                                     {
                                         InventoryControl.Instance.AddItem(data);
                                     }
@@ -810,7 +810,7 @@ public class DialogueManager : MonoBehaviour
                         ///
                         else if (data == "BlockIt")
                         {
-                            BlockAnswer(CsvParser.Instance.GetPageName(page), true);
+                            BlockAnswer(CsvDialogueParser.Instance.GetPageName(page), true);
                             continue;
                         }
                         ///
@@ -818,7 +818,7 @@ public class DialogueManager : MonoBehaviour
                         ///
                         else if (data == "Sound")
                         {
-                            if (CsvParser.Instance.GetTextValue(out data, data, line) == true)
+                            if (CsvDialogueParser.Instance.GetTextValue(out data, data, line) == true)
                             {
                                 SoundLoader.Instance.PlaySound(data);
                             }

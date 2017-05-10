@@ -9,6 +9,7 @@ TagManager:
   - Warp
   - Enemy
   - Ignored
+  - NPC
   layers:
   - Default
   - TransparentFX

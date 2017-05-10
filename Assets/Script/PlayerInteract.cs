@@ -52,7 +52,12 @@ public class PlayerInteract : MonoBehaviour {
         if (interactTrigger.IsObstacle)
         {
             Debug.Log("interact!");
-
+        }
+        if (p.GetComponentInChildren<PlayerInteractTrigger>().objectInfo.CompareTag("NPC"))
+        {
+            var npc = p.GetComponentInChildren<PlayerInteractTrigger>().objectInfo;
+            npc.GetComponent<NPC>().StartDialogue();
+            Debug.Log("Start Dialogue");
         }
     }
     
