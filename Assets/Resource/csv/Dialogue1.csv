@@ -1,0 +1,44 @@
+﻿__Page_Desc,,
+__Line_NpcName,_Eng,Johnㄹㄴㅁㅇㄹ
+,,
+__Page_Welcome,,
+__Line_NpcAnswer,_Eng,Do ㄴㅁㅇㄻㄹyou말하다 speak English?ㅁㄴㅇㄹㄴㅁㄹ
+__Line_Common,_Eng,Sureㄴㅁㅇㄻㅇㄹ
+,,
+__Page_Common,,
+__Line_NpcAnswer,_Eng,Can I help you?ㅁㄴㄹㅇㄴㅁㄹ
+__Line_BuyProvision,_Eng,Bring me some food. (1 gold coin)ㅁㄴㄹㅇ
+__Line_BuyBarrel,_Eng,I want to buy a barrel of beer. (2 gold coins)ㅁㄴㄹㅇ
+__Line_StayByNight,_Eng,I need a room for a night
+__Line_BorrowGold,_Eng,I need money. Can you lend me some?ㅁㄴㄹㅇ
+__Line_Leave,_Eng,I have to go
+,,
+__Page_BuyProvision,,
+__Line_NpcAnswer,_Eng,Try this tasty pumpkin pieㅁㄴㄹㅇ
+__Line_Requirements,_Req,_Gold
+__Line_Effect,_Gold,-1
+__Line_Effect,_Food,1
+,,
+__Page_BuyBarrel,,
+__Line_NpcAnswer,_Eng,Take it
+__Line_Requirements,_Req,_Gold
+__Line_Effect,_Gold,-2
+__Line_Effect,_Item,_Add
+,,
+__Page_StayByNight,,
+__Line_NpcAnswer,_Eng,Of course. Anything else?
+__Line_Effect,_BlockIt,
+,,
+__Page_BorrowGold,,
+__Line_Requirements,_Req,_OneOff
+__Line_Requirements,_Req,_NoGold
+__Line_NpcAnswer,_Eng,Take it
+__Line_Effect,_Gold,3
+__Line_Effect,_Sound,_Doubt1
+,,
+__Page_Leave,,
+__Line_NpcAnswer,_Eng,See you!
+__Line_Exit,_Eng,Leave
+,,
+__Page_Exit,,
+__Line_Effect,_Exit,
