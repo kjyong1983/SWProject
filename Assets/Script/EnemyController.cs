@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour, IMovable {
+public class EnemyController : MonoBehaviour/*, IMovable*/ {
 
     public GameObject p;
     Rigidbody rb;

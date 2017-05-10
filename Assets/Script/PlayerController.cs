@@ -8,12 +8,9 @@ public class PlayerController : MonoBehaviour {
     public enum Direction { up, down, left, right};
     public Direction dir;
     public Direction prevDir;
-    //bool sameDir = true;
 
     [SerializeField]Vector2 input;
-    //public Vector2 Input { get; set; }
     Vector2 lastInput;
-    //public Vector2 LastInput { get; set; }
     float v, h;
     public float moveSpeed; //3f
 
@@ -21,12 +18,9 @@ public class PlayerController : MonoBehaviour {
     public bool IsMoving { set; get; }
     Vector3 startPos;
     Vector3 endPos;
-    //float t;
 
     public bool fadeTrigger = false;
-
     PlayerAnimator anim;
-
 
     // Use this for initialization
     void Start () {
