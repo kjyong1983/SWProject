@@ -9,7 +9,7 @@ public class CsvDialogueParser : MonoBehaviour
     public static CsvDialogueParser Instance;                                           // Singleton
 
     private char lineSeparator = '\n';                                          // Table line separate character
-    private char fieldSeparator = ',';                                          // Table field separate chracter
+    private char fieldSeparator = '\t';                                          // Table field separate chracter
     private string pageSign = "__Page_";                                        // Dialog page separator
     private string lineSign = "__Line_";                                        // Dialog line separator
     private string variableSign = "_";                                          // Dialog variables separator

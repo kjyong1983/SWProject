@@ -404,7 +404,8 @@ public class DialogueManager : MonoBehaviour
                 {
                     StopCoroutine(playerTextRoutine);                               // Stop current coroutine if it is
                 }
-                text.text = answersCounter.ToString() + ". ";                       // Display answer counter
+                //text.text = answersCounter.ToString() + ". ";                       // Display answer counter
+                text.text = "";
                 playerTextRoutine = PlayerAnswerCoroutine(answer, text);
                 StartCoroutine(playerTextRoutine);                                  // Start coroutine
             }

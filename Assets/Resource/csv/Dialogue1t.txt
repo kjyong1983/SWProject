@@ -1,0 +1,53 @@
+﻿__Page_Desc		
+__Line_NpcName	_Eng	김철수
+		
+__Page_Welcome		
+__Line_NpcAnswer	_Eng	npc가 첫 대사를 하는 부분입니다.
+__Line_Welcome2	_Eng	_Line_으로 대사를, Page_로 다음으로 갈 부분을 지정한다."
+		
+__Page_Welcome2		
+__Line_NpcAnswer	_Eng	중요하니까 한번 더 봅니다.
+__Line_Welcome3	_Eng	Welcome3로 넘어간다.
+__Line_Welcome	_Eng	한번 더 설명해줘.
+		
+__Page_Welcome3		
+__Line_NpcAnswer	_Eng	Welcome3입니다.
+__Line_Common	_Eng	그래.
+		
+__Page_Common		
+__Line_NpcAnswer	_Eng	뭘 도와줄까?
+__Line_BuyProvision	_Eng	밥 좀 줘
+__Line_BuyBarrel	_Eng	술 한잔 걸칠 수 있을까?
+__Line_StayByNight	_Eng	근처에 묵을 곳이 있나?
+__Line_BorrowGold	_Eng	돈이 필요한데 좀 빌려주라.
+__Line_Leave	_Eng	"아니, 필요 없어."
+		
+__Page_BuyProvision		
+__Line_NpcAnswer	_Eng	스까듭밥 한숟갈 하실래예?
+__Line_Requirements	_Req	_Gold
+__Line_Effect	_Gold	-1
+__Line_Effect	_Food	1
+		
+__Page_BuyBarrel		
+__Line_NpcAnswer	_Eng	가져가.
+__Line_Requirements	_Req	_Gold
+__Line_Effect	_Gold	-2
+__Line_Effect	_Item	_Add
+		
+__Page_StayByNight		
+__Line_NpcAnswer	_Eng	그건 니가 찾아봐야지.
+__Line_Effect	_BlockIt	
+		
+__Page_BorrowGold		
+__Line_Requirements	_Req	_OneOff
+__Line_Requirements	_Req	_NoGold
+__Line_NpcAnswer	_Eng	Take it
+__Line_Effect	_Gold	3
+__Line_Effect	_Sound	_Doubt1
+		
+__Page_Leave		
+__Line_NpcAnswer	_Eng	잘가!
+__Line_Exit	_Eng	떠난다.
+		
+__Page_Exit		
+__Line_Effect	_Exit	
