@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour {
 
     bool isMoving = false;
     public bool IsMoving { set; get; }
+    public bool canMove = true;
     Vector3 startPos;
     Vector3 endPos;
 
@@ -35,8 +36,12 @@ public class PlayerController : MonoBehaviour {
 
         h = UnityEngine.Input.GetAxis("Horizontal");
         v = UnityEngine.Input.GetAxis("Vertical");
-        
-        GetInput(h, v);
+
+        if (canMove)
+        {
+            GetInput(h, v);
+        }
+
 
     }
 

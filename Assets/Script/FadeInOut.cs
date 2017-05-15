@@ -33,6 +33,7 @@ public class FadeInOut : MonoBehaviour {
         {
             Debug.Log("fade in");
             StartCoroutine(FadeIn());
+            StartCoroutine(Wait());
             //p.fadeTrigger = false;
         }
         else if(!isBlack && p.fadeTrigger)
@@ -56,9 +57,21 @@ public class FadeInOut : MonoBehaviour {
 
         if (alpha < 0.001)//매직넘버 고쳐야함
         {
-            isBlack = false;
+            //isBlack = false;
             p.fadeTrigger = false;
         }
+
+        yield break;
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(0.5f);
+        if (isBlack)
+        {
+            isBlack = false;
+        }
+        else isBlack = true;
 
         yield break;
     }
@@ -76,7 +89,7 @@ public class FadeInOut : MonoBehaviour {
 
         if (alpha > 0.999)//공포의 매직넘버
         {
-            isBlack = true;
+            //isBlack = true;
             p.fadeTrigger = false;
         }
 

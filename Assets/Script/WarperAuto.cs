@@ -5,7 +5,6 @@ using UnityEngine;
 public class WarperAuto : MonoBehaviour {
 
     public GameObject dest;
-    [SerializeField] private bool warpReady = false;
 
 
     // Use this for initialization
@@ -22,11 +21,14 @@ public class WarperAuto : MonoBehaviour {
     {
         if (other.CompareTag("Player"))
         {
-            other.gameObject.GetComponent<PlayerController>().fadeTrigger = true;
-            Debug.Log("fadeTrigger");
-            //Debug.Break();
-            other.transform.position = dest.transform.position;//rigidbody가 맨 위에 있어야 작동함.
-            Debug.Log("Warp");
+                other.gameObject.GetComponent<PlayerController>().canMove = false;
+                //other.gameObject.GetComponent<PlayerController>().fadeTrigger = true;
+                //Debug.Log("fadeTrigger");
+                //Debug.Break();
+                StartCoroutine(WarpObject(other.gameObject));
+                //other.transform.position = dest.transform.position;//rigidbody가 맨 위에 있어야 작동함.
+                Debug.Log("Warp");
+
         }
 
 
@@ -46,7 +48,17 @@ public class WarperAuto : MonoBehaviour {
     IEnumerator WaitWarpObject(/*GameObject gameObj*/)
     {
         yield return new WaitForSeconds(1f);
-        warpReady = true;
+        yield break;
+    }
+
+    IEnumerator WarpObject(GameObject player)
+    {
+        player.gameObject.GetComponent<PlayerController>().fadeTrigger = true;
+        Debug.Log("fadeTrigger on");
+        yield return new WaitForSeconds(0.3f);
+        player.transform.position = dest.transform.position;
+        Debug.Log("fadeTrigger");
+        player.GetComponent<PlayerController>().canMove = true;
         yield break;
     }
 
