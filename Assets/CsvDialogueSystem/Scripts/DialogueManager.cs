@@ -762,7 +762,8 @@ public class DialogueManager : MonoBehaviour
                         if (data == "Exit")
                         {
                             EndDialogue();
-                            InventoryControl.Instance.ResetInventory();
+                            UIManager.instance.ToggleConversationDialogue();
+                            //InventoryControl.Instance.ResetInventory();
                             return true;
                         }
                         ///
