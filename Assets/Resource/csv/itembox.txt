@@ -1,0 +1,13 @@
+﻿__Page_Desc		
+__Line_NpcName	_Eng	
+		
+__Page_Welcome		
+__Line_NpcAnswer	_Eng	뭐가 들어있을까?
+__Line_Welcome2	_Eng	...
+		
+__Page_Welcome2		
+__Line_NpcAnswer	_Eng	근데 열리지 않는다.
+__Line_Exit	_Eng	떠난다.
+
+__Page_Exit		
+__Line_Effect	_Exit	

@@ -1,0 +1,9 @@
+﻿__Page_Desc		
+__Line_NpcName	_Eng	
+		
+__Page_Welcome		
+__Line_NpcAnswer	_Eng	블록이다. 왠지 밀 수 있을 것 같다.
+__Line_Exit	_Eng	…
+		
+__Page_Exit		
+__Line_Effect	_Exit	
