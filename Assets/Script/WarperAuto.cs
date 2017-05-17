@@ -21,13 +21,16 @@ public class WarperAuto : MonoBehaviour {
     {
         if (other.CompareTag("Player"))
         {
-                other.gameObject.GetComponent<PlayerController>().canMove = false;
-                //other.gameObject.GetComponent<PlayerController>().fadeTrigger = true;
-                //Debug.Log("fadeTrigger");
-                //Debug.Break();
-                StartCoroutine(WarpObject(other.gameObject));
-                //other.transform.position = dest.transform.position;//rigidbody가 맨 위에 있어야 작동함.
-                Debug.Log("Warp");
+            other.gameObject.GetComponent<PlayerController>().canMove = false;
+            //other.gameObject.GetComponent<PlayerController>().fadeTrigger = true;
+            //Debug.Log("fadeTrigger");
+            //Debug.Break();
+
+
+            StartCoroutine(WarpObject(other.gameObject));
+
+            //other.transform.position = dest.transform.position;//rigidbody가 맨 위에 있어야 작동함.
+            Debug.Log("Warp");
 
         }
 
@@ -58,6 +61,7 @@ public class WarperAuto : MonoBehaviour {
         yield return new WaitForSeconds(0.3f);
         player.transform.position = dest.transform.position;
         Debug.Log("fadeTrigger");
+        yield return new WaitForSeconds(0.3f);
         player.GetComponent<PlayerController>().canMove = true;
         yield break;
     }
