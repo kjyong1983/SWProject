@@ -65,6 +65,49 @@ public class PlayerInteractTrigger : MonoBehaviour {
 
     }
 
+    public void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.CompareTag("Item"))
+        {
+            Debug.Log("Item Dectected");
+            objectInfo = other.gameObject;
+            Debug.Log(objectInfo.GetComponent<Item>().id);
+            IsObstacle = true;
+            return;
+        }
+        else if (other.CompareTag("Wall"))
+        {
+            objectInfo = other.gameObject;
+            Debug.Log("Wall Dectected");
+            IsObstacle = true;
+            return;
+        }
+        else if (other.CompareTag("Warp"))
+        {
+            Debug.Log("Warp Detected");
+            objectInfo = other.gameObject;
+            isObstacle = false;
+            return;
+        }
+        else if (other.CompareTag("Enemy"))
+        {
+            Debug.Log("Enemy Detected");
+            objectInfo = other.gameObject;
+            return;
+        }
+        else if (other.CompareTag("Ignored"))
+        {
+            isObstacle = false;
+            return;
+        }
+        else
+        {
+            objectInfo = other.gameObject;
+            IsObstacle = true;
+        }
+
+    }
+
     public void OnTriggerExit2D(Collider2D other)
     {
         objectInfo = null;

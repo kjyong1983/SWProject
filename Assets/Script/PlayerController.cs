@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 
         h = UnityEngine.Input.GetAxis("Horizontal");
         v = UnityEngine.Input.GetAxis("Vertical");
