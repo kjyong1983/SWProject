@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class Location : MonoBehaviour {
 
-    [SerializeField] int floorNum;
-    [SerializeField] int floorX;
-    [SerializeField] int floorY;
-    [SerializeField] int roomNum;
-    [SerializeField] int roomX;
-    [SerializeField] int roomY;
+    public int floorNum;
+    public int floorX;
+    public int floorY;
+    public int roomNum = 0;
+    public int roomX;
+    public int roomY;
+
+
 
     [SerializeField] Vector3 offset;
 
