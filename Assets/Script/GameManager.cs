@@ -22,9 +22,12 @@ public class GameManager : MonoBehaviour {
 
     public bool showGrid = true;
 
-
-	// Use this for initialization
-	void Start () {
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+    // Use this for initialization
+    void Start () {
 		
 	}
 	

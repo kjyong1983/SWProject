@@ -25,6 +25,7 @@ public class PlayerState : MonoBehaviour {
     void Awake()
     {
         Initialize();
+        DontDestroyOnLoad(gameObject);
     }
     private void Update()
     {

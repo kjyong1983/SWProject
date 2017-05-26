@@ -53,12 +53,6 @@ public class PlayerInteract : MonoBehaviour {
         {
             Debug.Log("interact!");
         }
-        //if (p.GetComponentInChildren<PlayerInteractTrigger>().objectInfo.CompareTag("NPC"))
-        //{
-        //    var npc = p.GetComponentInChildren<PlayerInteractTrigger>().objectInfo;
-        //    npc.GetComponent<NPC>().StartDialogue();
-        //    Debug.Log("Start Dialogue");
-        //}
 
         if (p.GetComponentInChildren<PlayerInteractTrigger>().objectInfo != null)//.objectInfo.CompareTag("NPC"))
         {

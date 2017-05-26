@@ -155,4 +155,9 @@ public class UIManager : MonoBehaviour {
         }
     }
 
+    public void Interact()
+    {
+        var player = GameObject.FindWithTag("Player");
+        player.GetComponent<PlayerInteract>().GetInteract();
+    }
 }

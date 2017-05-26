@@ -17,6 +17,12 @@ public class TouchPadController : MonoBehaviour {
         _touchPad = GetComponent<RectTransform>();
 
         _startPos = _touchPad.position;
+
+        if (_player == null)
+        {
+            Debug.Log("get Player clone");
+            _player = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
+        }
 	}
 	
 	// Update is called once per frame

@@ -34,7 +34,7 @@ public class Location : MonoBehaviour {
         if (this.gameObject.CompareTag("Player"))
         {
             origin = GameObject.Find("GameManager").GetComponent<GameManager>().
-                floor[GameObject.Find("Player").GetComponent<PlayerLocation>().floorNum].transform.position;
+                floor[GameObject.FindWithTag("Player").GetComponent<PlayerLocation>().floorNum].transform.position;
         }
         else
         {

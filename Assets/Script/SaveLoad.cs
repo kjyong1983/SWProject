@@ -15,7 +15,7 @@ public static class SaveLoad {
             Debug.Log("Null at PlayeState");
             return;
         }
-
+        PlayerPrefs.Save();
         PlayerPrefs.SetInt("floorNum", PlayerState.current.floorNum);
         PlayerPrefs.SetInt("floorX", PlayerState.current.floorX);
         PlayerPrefs.SetInt("floorY", PlayerState.current.floorY);
@@ -43,6 +43,11 @@ public static class SaveLoad {
         }
         //playerprefs and playerloc destroys when go to title screen. use dontdestroy or make plyaerspawner,
         //playerspawner has csvparser to player.
+        if (PlayerLocation.playerLoc == null)
+        {
+            Debug.Log("no data");
+            return;
+        }
         PlayerLocation.playerLoc.floorNum = PlayerPrefs.GetInt("floorNum");
         PlayerLocation.playerLoc.floorX = PlayerPrefs.GetInt("floorX");
         PlayerLocation.playerLoc.floorY = PlayerPrefs.GetInt("floorY");
