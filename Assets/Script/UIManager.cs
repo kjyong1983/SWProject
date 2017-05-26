@@ -138,4 +138,21 @@ public class UIManager : MonoBehaviour {
             minimap.SetActive(false);
     }
 
+    public void Save()
+    {
+        SaveLoad.Save();
+    }
+
+    public void Load()
+    {
+        if (PlayerPrefs.HasKey("SaveCount"))
+        {
+            SaveLoad.Load();
+        }
+        else
+        {
+            Debug.Log("no saved data");
+        }
+    }
+
 }

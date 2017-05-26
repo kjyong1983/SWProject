@@ -22,11 +22,27 @@ public class Location : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        origin = GameObject.Find("GameManager").transform.position;
-	}
+        //origin = GameObject.Find("GameManager").transform.position;
+        origin = GameObject.Find("GameManager").GetComponent<GameManager>().floor[0].transform.position;
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
+
+        //should be refactored to playerlocation, not if-else expression...
+        if (this.gameObject.CompareTag("Player"))
+        {
+            origin = GameObject.Find("GameManager").GetComponent<GameManager>().
+                floor[GameObject.Find("Player").GetComponent<PlayerLocation>().floorNum].transform.position;
+        }
+        else
+        {
+            origin = GameObject.Find("GameManager").GetComponent<GameManager>().
+                floor[floorNum].transform.position;
+        }
+
+
         floorX = Mathf.RoundToInt(transform.position.x - origin.x);
         floorY = Mathf.RoundToInt(transform.position.y - origin.y);
 

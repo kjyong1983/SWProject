@@ -5,7 +5,7 @@ using UnityEngine;
 public class WarperAuto : MonoBehaviour {
 
     public GameObject dest;
-
+    public int destNum;// 1,2,3 : floorNum , 419 : roomNum
 
     // Use this for initialization
     void Start() {
@@ -22,33 +22,30 @@ public class WarperAuto : MonoBehaviour {
         if (other.CompareTag("Player"))
         {
             other.gameObject.GetComponent<PlayerController>().canMove = false;
-            //other.gameObject.GetComponent<PlayerController>().fadeTrigger = true;
-            //Debug.Log("fadeTrigger");
-            //Debug.Break();
-
 
             StartCoroutine(WarpObject(other.gameObject));
+            //if dest is floor
+            if (destNum < 10)
+            {
+                other.GetComponent<PlayerLocation>().floorNum = destNum;
+            }
+            //if dest is room
+            else if (destNum > 100)
+            {
+                other.GetComponent<PlayerLocation>().roomNum = destNum;
+            }
+            else
+            {
+                Debug.Log("wrong dest num");
+            }       
 
-            //other.transform.position = dest.transform.position;//rigidbody가 맨 위에 있어야 작동함.
             Debug.Log("Warp");
 
         }
 
-
-        //if (other.CompareTag("Player") && !other.GetComponent<PlayerController>().IsMoving)
-        //{
-        //    StartCoroutine(WaitWarpObject());
-        //    if (warpReady)
-        //    {
-        //        other.transform.position = dest.transform.position;//rigidbody가 맨 위에 있어야 작동함.
-        //    }
-        //    warpReady = false;
-
-        //    Debug.Log("teleport");
-        //}
     }
 
-    IEnumerator WaitWarpObject(/*GameObject gameObj*/)
+    IEnumerator WaitWarpObject()
     {
         yield return new WaitForSeconds(1f);
         yield break;

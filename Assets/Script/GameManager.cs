@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
+    public List<GameObject> floor;
+    public int curFloor = 0;
+
     private static GameManager instance;
     public GameManager Instance
     {
