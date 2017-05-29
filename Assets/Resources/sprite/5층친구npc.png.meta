@@ -1,0 +1,260 @@
+fileFormatVersion: 2
+guid: 1fb74ef89b9e1ae46949a748613379c3
+timeCreated: 1496032712
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: "5\uCE35\uCE5C\uAD6Cnpc_0"
+    21300002: "5\uCE35\uCE5C\uAD6Cnpc_1"
+    21300004: "5\uCE35\uCE5C\uAD6Cnpc_2"
+    21300006: "5\uCE35\uCE5C\uAD6Cnpc_3"
+    21300008: "5\uCE35\uCE5C\uAD6Cnpc_4"
+    21300010: "5\uCE35\uCE5C\uAD6Cnpc_5"
+    21300012: "5\uCE35\uCE5C\uAD6Cnpc_6"
+    21300014: "5\uCE35\uCE5C\uAD6Cnpc_7"
+    21300016: "5\uCE35\uCE5C\uAD6Cnpc_8"
+    21300018: "5\uCE35\uCE5C\uAD6Cnpc_9"
+    21300020: "5\uCE35\uCE5C\uAD6Cnpc_10"
+    21300022: "5\uCE35\uCE5C\uAD6Cnpc_11"
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "5\uCE35\uCE5C\uAD6Cnpc_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 98.25
+        width: 26.666666
+        height: 32.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "5\uCE35\uCE5C\uAD6Cnpc_1"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 98.25
+        width: 26.666666
+        height: 32.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "5\uCE35\uCE5C\uAD6Cnpc_2"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 98.25
+        width: 26.666666
+        height: 32.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "5\uCE35\uCE5C\uAD6Cnpc_3"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 66.25
+        width: 26.666666
+        height: 32.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "5\uCE35\uCE5C\uAD6Cnpc_4"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 66.25
+        width: 26.666666
+        height: 32.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "5\uCE35\uCE5C\uAD6Cnpc_5"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 66.25
+        width: 26.666666
+        height: 32.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "5\uCE35\uCE5C\uAD6Cnpc_6"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 34.25
+        width: 26.666666
+        height: 32.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "5\uCE35\uCE5C\uAD6Cnpc_7"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 34.25
+        width: 26.666666
+        height: 32.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "5\uCE35\uCE5C\uAD6Cnpc_8"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 34.25
+        width: 26.666666
+        height: 32.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "5\uCE35\uCE5C\uAD6Cnpc_9"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2.25
+        width: 26.666666
+        height: 32.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "5\uCE35\uCE5C\uAD6Cnpc_10"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 2.25
+        width: 26.666666
+        height: 32.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "5\uCE35\uCE5C\uAD6Cnpc_11"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2.25
+        width: 26.666666
+        height: 32.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

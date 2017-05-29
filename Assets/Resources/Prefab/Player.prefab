@@ -42,7 +42,6 @@ GameObject:
   - component: {fileID: 114104846281049768}
   - component: {fileID: 114980961589168756}
   - component: {fileID: 114643238890894332}
-  - component: {fileID: 114203081780391068}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -139,25 +138,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c462f13f184703847a21879a2d82a96d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114203081780391068
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1374135622834444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58f509d173afee541bf9d917c1569c10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  location: {fileID: 0}
-  str: 
-  floorNum: 0
-  floorX: 0
-  floorY: 0
-  roomNum: 0
-  roomX: 0
-  roomY: 0
 --- !u!114 &114643238890894332
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -169,12 +149,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a4f04e2834a94f429c325fe17f12f5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  floorNum: 0
-  floorX: 0
-  floorY: 0
-  roomNum: 0
-  roomX: 0
-  roomY: 0
+  locationData:
+    floorNum: 0
+    floorX: 0
+    floorY: 0
+    roomNum: 0
+    roomX: 0
+    roomY: 0
   offset: {x: 0, y: 0, z: 0}
 --- !u!114 &114667418677791206
 MonoBehaviour:
