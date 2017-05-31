@@ -53,3 +53,6 @@ TagManager:
   - name: Player
     uniqueID: 185641309
     locked: 0
+  - name: WallTop
+    uniqueID: 180140727
+    locked: 0
