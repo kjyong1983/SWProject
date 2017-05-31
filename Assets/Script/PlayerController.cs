@@ -23,15 +23,21 @@ public class PlayerController : MonoBehaviour {
     public bool fadeTrigger = false;
     PlayerAnimator anim;
 
-    // Use this for initialization
-    void Start () {
+    private void Awake()
+    {
         dir = Direction.down;
         prevDir = Direction.down;
         anim = GetComponent<PlayerAnimator>();
         anim.SetLastMove(DirToVector2(prevDir));
+    }
+
+    void Start () {
+        //dir = Direction.down;
+        //prevDir = Direction.down;
+        //anim = GetComponent<PlayerAnimator>();
+        //anim.SetLastMove(DirToVector2(prevDir));
 	}
 	
-	// Update is called once per frame
 	void FixedUpdate () {
 
         h = UnityEngine.Input.GetAxis("Horizontal");

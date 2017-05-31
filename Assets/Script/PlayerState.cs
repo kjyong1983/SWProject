@@ -19,22 +19,13 @@ public class PlayerState : MonoBehaviour {
     }
 
     public PlayerLocation location;
-    public string str;
-    public int floorNum, floorX, floorY, roomNum, roomX, roomY;
 
     void Awake()
     {
         Initialize();
-        DontDestroyOnLoad(gameObject);
     }
     private void Update()
     {
-        floorNum = location.floorNum;
-        floorX = location.floorX;
-        floorY = location.floorY;
-        roomNum = location.roomNum;
-        roomX = location.roomX;
-        roomY = location.roomY;
 
     }
     void Initialize()

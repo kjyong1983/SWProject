@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class Location : MonoBehaviour {
 
-    public int floorNum;
-    public int floorX;
-    public int floorY;
-    public int roomNum = 0;
-    public int roomX;
-    public int roomY;
+    [System.Serializable]
+    public struct LocationData
+    {
+        public int floorNum;
+        public int floorX;
+        public int floorY;
+        public int roomNum;
+        public int roomX;
+        public int roomY;
 
+    }
 
-
+    public LocationData locationData;
     [SerializeField] Vector3 offset;
 
     Vector3 origin;
@@ -23,28 +27,45 @@ public class Location : MonoBehaviour {
     // Use this for initialization
     void Start () {
         //origin = GameObject.Find("GameManager").transform.position;
-        origin = GameObject.Find("GameManager").GetComponent<GameManager>().floor[0].transform.position;
+        //origin = GameObject.Find("GameManager").GetComponent<GameManager>().floor[0].transform.position;
 
     }
-	
-	// Update is called once per frame
-	void Update () {
+    public void Init()
+    {
+        gameManager = GameObject.FindObjectOfType<GameManager>();
+        origin = gameManager.floor[0].transform.position;
+    }
+    // Update is called once per frame
+    void Update () {
+
+        //Debug.Log(origin = GameObject.
+        //    FindObjectOfType<GameManager>().
+        //    GetComponent<GameManager>().
+        //        floor[
+        //    GameObject.FindObjectOfType<PlayerLocation>().
+        //    locationData.
+        //    floorNum].
+        //    transform.
+        //    position);
 
         //should be refactored to playerlocation, not if-else expression...
         if (this.gameObject.CompareTag("Player"))
         {
-            origin = GameObject.Find("GameManager").GetComponent<GameManager>().
-                floor[GameObject.FindWithTag("Player").GetComponent<PlayerLocation>().floorNum].transform.position;
+            var player = GameObject.FindWithTag("Player");
+
+            origin = gameManager.
+                //floor[GameObject.FindWithTag("Player").GetComponent<PlayerLocation>().locationData.floorNum].transform.position;
+                floor[player.GetComponent<PlayerLocation>().locationData.floorNum].transform.position;
         }
         else
         {
-            origin = GameObject.Find("GameManager").GetComponent<GameManager>().
-                floor[floorNum].transform.position;
+            origin = GameObject.FindObjectOfType<GameManager>().GetComponent<GameManager>().
+                floor[locationData.floorNum].transform.position;
         }
 
 
-        floorX = Mathf.RoundToInt(transform.position.x - origin.x);
-        floorY = Mathf.RoundToInt(transform.position.y - origin.y);
+        locationData.floorX = Mathf.RoundToInt(transform.position.x - origin.x);
+        locationData.floorY = Mathf.RoundToInt(transform.position.y - origin.y);
 
 
 	}

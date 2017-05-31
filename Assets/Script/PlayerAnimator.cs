@@ -9,10 +9,13 @@ public class PlayerAnimator : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         anim = GetComponentInChildren<Animator>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
+    public void Init()
+    {
+        anim = GetComponentInChildren<Animator>();
+    }
+    // Update is called once per frame
+    void Update () {
 
     }
 

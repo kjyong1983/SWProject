@@ -5,23 +5,58 @@ using UnityEngine;
 
 public class PlayerSpawner : MonoBehaviour {
 
+    static PlayerSpawner instance;
+    public PlayerSpawner Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = new PlayerSpawner();
+            }
+            return instance;
+        }
+    }
+
     public GameObject playerPrefab;
     GameManager gameManager;
-    public PlayerState playerState;
+    //public PlayerState playerState;
     [SerializeField] bool isTriggered = false;
 
 	// Use this for initialization
-	void Start () {
-
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-
-        PlayerSpawn();
-
+	void Awake () {
+        DontDestroyOnLoad(gameObject);
+        if (GameObject.Find("GameManager") != null)
+        {
+            gameManager = GameObject.FindObjectOfType<GameManager>();//.GetComponent<GameManager>();
+        }
+        playerPrefab = Resources.Load("Prefab/Player") as GameObject;
+        //PlayerSpawn();
 	}
 
-    private void PlayerSpawn()
+    private void Start()
     {
-        Instantiate(playerPrefab, new Vector3(-85.5f, -64.5f), Quaternion.identity);
+        //NewGame();
+    }
+
+    public void NewGame()
+    {
+        var player =  Instantiate(playerPrefab, new Vector3(-85f, -64f), Quaternion.identity);
+        player.GetComponent<PlayerLocation>().locationData.floorNum = 3;//defalut
+        DontDestroyOnLoad(player);
+    }
+
+    public void PlayerSpawn(string savedData, string globalLoc)
+    {
+
+
+
+
+
+        JsonUtility.FromJsonOverwrite(savedData, playerPrefab.gameObject.GetComponent<PlayerLocation>().locationData);
+        JsonUtility.FromJsonOverwrite(globalLoc, playerPrefab.gameObject.transform.position);
+        
+        Instantiate(playerPrefab, playerPrefab.gameObject.transform.position, Quaternion.identity);
 
         //Instantiate(playerPrefab, new Vector3(
         //    gameManager.floor[GameObject.Find("Player").GetComponent<PlayerLocation>().floorNum].

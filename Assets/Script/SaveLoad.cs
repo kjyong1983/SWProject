@@ -2,26 +2,29 @@
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using UnityEngine;
+using System;
 
 public static class SaveLoad {
-    public static List<PlayerState> savedGames = new List<PlayerState>();
+    public static List<DataManager> savedGames = new List<DataManager>();
+    public static List<string> savedString = new List<string>();
     public static int saveCount = 0;
 
     public static void Save()
     {
         PlayerPrefs.SetInt("SaveCount", saveCount++);
-        if (PlayerState.current == null)
+        if (DataManager.Instance == null)
         {
-            Debug.Log("Null at PlayeState");
-            return;
+            Debug.Log("Null at Datamanager");
+            var dataManager = DataManager.Instance;
         }
+
+        DataManager.Instance.Save();
+
+        var saveData = JsonUtility.ToJson(DataManager.Instance);
+        savedString.Add(saveData);
+
         PlayerPrefs.Save();
-        PlayerPrefs.SetInt("floorNum", PlayerState.current.floorNum);
-        PlayerPrefs.SetInt("floorX", PlayerState.current.floorX);
-        PlayerPrefs.SetInt("floorY", PlayerState.current.floorY);
-        PlayerPrefs.SetInt("roomNum", PlayerState.current.roomNum);
-        PlayerPrefs.SetInt("roomX", PlayerState.current.roomX);
-        PlayerPrefs.SetInt("roomY", PlayerState.current.roomY);
+        saveCount++;
         //PlayerPrefs.SetString();
     }
 
@@ -45,16 +48,25 @@ public static class SaveLoad {
         //playerspawner has csvparser to player.
         if (PlayerLocation.playerLoc == null)
         {
-            Debug.Log("no data");
+            Debug.Log("no playerLoc");
             return;
         }
-        PlayerLocation.playerLoc.floorNum = PlayerPrefs.GetInt("floorNum");
-        PlayerLocation.playerLoc.floorX = PlayerPrefs.GetInt("floorX");
-        PlayerLocation.playerLoc.floorY = PlayerPrefs.GetInt("floorY");
-        PlayerLocation.playerLoc.roomNum = PlayerPrefs.GetInt("roomNum");
-        PlayerLocation.playerLoc.roomX = PlayerPrefs.GetInt("roomX");
-        PlayerLocation.playerLoc.roomY = PlayerPrefs.GetInt("roomY");
 
+        DataManager.Instance.Load();
+
+        //PlayerLocation.playerLoc.floorNum = PlayerPrefs.GetInt("floorNum");
+        //PlayerLocation.playerLoc.floorX = PlayerPrefs.GetInt("floorX");
+        //PlayerLocation.playerLoc.floorY = PlayerPrefs.GetInt("floorY");
+        //PlayerLocation.playerLoc.roomNum = PlayerPrefs.GetInt("roomNum");
+        //PlayerLocation.playerLoc.roomX = PlayerPrefs.GetInt("roomX");
+        //PlayerLocation.playerLoc.roomY = PlayerPrefs.GetInt("roomY");
+
+    }
+
+    internal static void DeleteSave()
+    {
+        PlayerPrefs.DeleteAll();
+        saveCount = 0;
     }
 
     //public static void Load()

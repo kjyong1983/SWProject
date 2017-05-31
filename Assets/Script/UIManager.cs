@@ -52,6 +52,9 @@ public class UIManager : MonoBehaviour {
     public void StartGame()
     {
         SceneManager.LoadScene(1);
+        var playerSpawner = GameObject.FindObjectOfType<PlayerSpawner>();
+        playerSpawner.NewGame();//instantiate player but it destroys when scene is loaded
+        //Debug.Break();
         Debug.Log("Go to game Screen");
     }
 
@@ -68,6 +71,10 @@ public class UIManager : MonoBehaviour {
 
     public void GoToTitle()
     {
+        var player = GameObject.FindWithTag("Player");
+        Destroy(player);
+        var gameManager = GameObject.FindObjectOfType<GameManager>().gameObject;
+        Destroy(gameManager);
         SceneManager.LoadScene(0);
     }
 
@@ -148,6 +155,18 @@ public class UIManager : MonoBehaviour {
         if (PlayerPrefs.HasKey("SaveCount"))
         {
             SaveLoad.Load();
+        }
+        else
+        {
+            Debug.Log("no saved data");
+        }
+    }
+
+    public void DeleteSave()
+    {
+        if (PlayerPrefs.HasKey("SaveCount"))
+        {
+            SaveLoad.DeleteSave();
         }
         else
         {

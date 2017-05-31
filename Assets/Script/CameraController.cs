@@ -10,12 +10,16 @@ public class CameraController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         offset = new Vector3(0, 0, -10);
-        player = GameObject.FindGameObjectWithTag("Player");
 
 	}
 	
 	// Update is called once per frame
 	void LateUpdate () {
+        if (player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player");
+        }
+        else
         transform.position = player.transform.position + offset;
 	}
 }

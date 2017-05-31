@@ -6,8 +6,8 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour/*, IMovable*/ {
 
     public GameObject p;
-    Rigidbody rb;
-    public float speed;
+    Rigidbody2D rb;
+    public float speed;//1 for movetoward, 0.005 for playermove
 
     public bool CheckDirection()
     {
@@ -21,7 +21,7 @@ public class EnemyController : MonoBehaviour/*, IMovable*/ {
 
     // Use this for initialization
     void Start () {
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody2D>();
 	}
 	
 	// Update is called once per frame
@@ -31,6 +31,7 @@ public class EnemyController : MonoBehaviour/*, IMovable*/ {
             //임시조치
             float step = speed * Time.deltaTime;
             transform.position = Vector2.MoveTowards(transform.position, p.transform.position, step);
+            //Debug.Log("chasing");
         }
 	}
 }

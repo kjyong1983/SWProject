@@ -4,9 +4,21 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
+    //player settings
+    PlayerSpawner playerSpawner;
+    PlayerLocation playerLocation;
+    TouchPadController touchPadController;
+    PlayerAnimator playerAnimator;
+    PlayerController playerController;
+
+    public GameObject player;
+
+
+
+
     public List<GameObject> floor;
     public int curFloor = 0;
-
+    
     private static GameManager instance;
     public GameManager Instance
     {
@@ -24,11 +36,32 @@ public class GameManager : MonoBehaviour {
 
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        playerSpawner = FindObjectOfType<PlayerSpawner>();
+        if (playerSpawner == null)
+        {
+            playerSpawner = this.gameObject.AddComponent<PlayerSpawner>();
+        }
+        playerLocation = FindObjectOfType<PlayerLocation>();
+        if (playerLocation == null)
+        {
+            playerSpawner.NewGame();
+            playerLocation = FindObjectOfType<PlayerLocation>();
+        }
+        playerLocation.Init();
+        touchPadController = FindObjectOfType<TouchPadController>();
+        touchPadController.Init();
+        playerAnimator = FindObjectOfType<PlayerAnimator>();
+        //playerAnimator.Init();
+
+        player = GameObject.FindWithTag("Player");
+        floor[0] = gameObject;
     }
     // Use this for initialization
     void Start () {
-		
+        if (GameObject.FindWithTag("Player") == null)
+        {
+            playerSpawner.NewGame();
+        }
 	}
 	
 	// Update is called once per frame

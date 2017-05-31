@@ -23,7 +23,7 @@ public class PlayerInteractTrigger : MonoBehaviour {
 
     void CheckObject(Collider2D other)
     {
-        Debug.Log("TriggerEnter");
+        //Debug.Log("TriggerEnter");
         if (other.CompareTag("Item"))
         {
             Debug.Log("Item Dectected");

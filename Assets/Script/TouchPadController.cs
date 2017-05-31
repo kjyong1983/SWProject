@@ -18,15 +18,20 @@ public class TouchPadController : MonoBehaviour {
 
         _startPos = _touchPad.position;
 
+	}
+
+    public void Init()
+    {
         if (_player == null)
         {
             Debug.Log("get Player clone");
             _player = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
         }
-	}
-	
-	// Update is called once per frame
-	void FixedUpdate () {
+
+    }
+
+    // Update is called once per frame
+    void FixedUpdate () {
 
         HandleTouchInput();
 #if UNITY_EDITOR || UNITY_STANDALONE_WIN

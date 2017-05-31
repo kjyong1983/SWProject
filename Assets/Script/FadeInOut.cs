@@ -19,30 +19,36 @@ public class FadeInOut : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         //fadeTexture = new Texture2D()
-        p = GameObject.FindObjectOfType<PlayerController>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
+
+    private void LateUpdate()
+    {
+        if (p == null)
+        {
+            p = GameObject.FindObjectOfType<PlayerController>();
+        }
+    }
+    // Update is called once per frame
+    void Update () {
         
     }
 
-    private void OnGUI()
-    {
-        if (isBlack && p.fadeTrigger)
-        {
-            Debug.Log("fade in");
-            StartCoroutine(FadeIn());
-            StartCoroutine(Wait());
-            //p.fadeTrigger = false;
-        }
-        else if(!isBlack && p.fadeTrigger)
-        {
-            Debug.Log("fade out");
-            StartCoroutine(FadeOut());
-            //p.fadeTrigger = false;
-        }
-    }
+    //private void OnGUI()
+    //{
+    //    if (isBlack && p.fadeTrigger)
+    //    {
+    //        Debug.Log("fade in");
+    //        StartCoroutine(FadeIn());
+    //        StartCoroutine(Wait());
+    //        //p.fadeTrigger = false;
+    //    }
+    //    else if(!isBlack && p.fadeTrigger)
+    //    {
+    //        Debug.Log("fade out");
+    //        StartCoroutine(FadeOut());
+    //        //p.fadeTrigger = false;
+    //    }
+    //}
 
     IEnumerator FadeIn()
     {

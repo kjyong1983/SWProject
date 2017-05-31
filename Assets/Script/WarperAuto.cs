@@ -27,12 +27,12 @@ public class WarperAuto : MonoBehaviour {
             //if dest is floor
             if (destNum < 10)
             {
-                other.GetComponent<PlayerLocation>().floorNum = destNum;
+                other.GetComponent<PlayerLocation>().locationData.floorNum = destNum;
             }
             //if dest is room
             else if (destNum > 100)
             {
-                other.GetComponent<PlayerLocation>().roomNum = destNum;
+                other.GetComponent<PlayerLocation>().locationData.roomNum = destNum;
             }
             else
             {
