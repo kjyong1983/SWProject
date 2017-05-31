@@ -7,6 +7,8 @@ public class DataManager : MonoBehaviour {
 
     public List<string> saveList;// = new List<string>();
     string saveData;
+    public string loadData;
+    public string globalLoc;
     static DataManager instance;
     public static DataManager Instance
     {
@@ -73,12 +75,17 @@ public class DataManager : MonoBehaviour {
         //playerLocation = GameObject.FindWithTag("Player").GetComponent<PlayerLocation>();
 
         Debug.Log("load");
-        var loadData = PlayerPrefs.GetString("save");
-        var globalLoc = PlayerPrefs.GetString("globalLoc");
+        loadData = PlayerPrefs.GetString("save");
+        globalLoc = PlayerPrefs.GetString("globalLoc");
         Debug.Log(loadData);
         Debug.Log(globalLoc);
 
-        playerSpawner.PlayerSpawn(loadData, globalLoc);//spawns player in title scene.
+        if (playerSpawner == null)
+        {
+            playerSpawner = GameObject.FindObjectOfType<PlayerSpawner>();
+        }
+        playerSpawner.Load();
+        //playerSpawner.PlayerSpawn(loadData, globalLoc);//spawns player in title scene.
 
         //JsonUtility.FromJsonOverwrite(loadData, playerLocation.locationData);
         //playerLocation.locationData = JsonUtility.FromJson<PlayerLocation.LocationData>(loadData);

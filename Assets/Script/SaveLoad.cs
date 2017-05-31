@@ -49,7 +49,7 @@ public static class SaveLoad {
         if (PlayerLocation.playerLoc == null)
         {
             Debug.Log("no playerLoc");
-            return;
+           
         }
 
         DataManager.Instance.Load();

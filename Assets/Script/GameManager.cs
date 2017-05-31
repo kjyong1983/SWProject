@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour {
     PlayerController playerController;
 
     public GameObject player;
-
+    public bool isSpawnReady = false;
 
 
 
@@ -55,6 +55,8 @@ public class GameManager : MonoBehaviour {
 
         player = GameObject.FindWithTag("Player");
         floor[0] = gameObject;
+
+        isSpawnReady = true;
     }
     // Use this for initialization
     void Start () {
