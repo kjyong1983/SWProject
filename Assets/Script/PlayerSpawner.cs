@@ -65,6 +65,23 @@ public class PlayerSpawner : MonoBehaviour {
         //        transform.position.y + playerPrefab.GetComponent<PlayerLocation>().floorY), Quaternion.identity);
     }
 
+    internal void Load()
+    {
+        //if (SceneMa)
+        //{
+
+        //}
+
+        if (gameManager == null)
+        {
+            gameManager = GameObject.FindObjectOfType<GameManager>();
+        }
+        if (gameManager.isSpawnReady == true)
+        {
+            PlayerSpawn(DataManager.Instance.loadData, DataManager.Instance.globalLoc);
+        } 
+    }
+
     // Update is called once per frame
     void Update () {
 		
