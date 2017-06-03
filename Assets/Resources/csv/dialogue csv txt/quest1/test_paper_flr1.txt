@@ -1,0 +1,9 @@
+﻿__Page_Desc		
+__Line_NpcName	_Eng	족보
+		
+__Page_Welcome		
+__Line_NpcAnswer	_Eng	족보를 획득했다!!
+__Line_Exit	_Eng	...
+		
+__Page_Exit		
+__Line_Effect	_Exit	

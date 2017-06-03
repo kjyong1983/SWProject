@@ -1,0 +1,48 @@
+﻿__Page_Desc 		엔딩 컷신과 나오는 대사
+__Line_NpcName	_Eng	3층 옥외공원 출입구
+		
+__Page_Welcome		
+__Line_NpcAnswer	_Eng	석양이 진다…
+__Line_Welcome2	_Eng	…
+		
+__Page_Welcome2		
+__Line_NpcAnswer	_Eng	주인공: 00야! 여깄었구나! 무사해서 정말 다행이다..
+__Line_Welcome3	_Eng	…
+		
+__Page_Welcome3		
+__Line_NpcAnswer	_Eng	친구: 00아.. 네가 우리룰 구했어! 정말 고맙다!
+__Line_Welcome4	_Eng	…
+		
+__Page_Welcome4		
+__Line_NpcAnswer	_Eng	"주인공: 아냐, 네가 남긴 단서가 큰 도움이 됐어."
+__Line_Welcome5	_Eng	…
+		
+__Page_Welcome5		
+__Line_NpcAnswer	_Eng	그나저나 던전같은 비마관에서 이런 일이 일어날 줄이야…
+__Line_Welcome6	_Eng	…
+		
+__Page_Welcome6		
+__Line_NpcAnswer	_Eng	친구: 길 찾기 쉽지않았을텐데.. 넌 정말 대단해!
+__Line_Welcome7	_Eng	…
+		
+__Page_Welcome7		
+__Line_NpcAnswer	_Eng	주인공: 뭘..헤헤. 그럼.. 우리.. 이제…
+__Line_Welcome8	_Eng	…
+		
+__Page_Welcome8		
+__Line_NpcAnswer	_Eng	조별과제를 하러 가볼까.. 친구?
+__Line_Welcome9	_Eng	…
+		
+__Page_Welcome9		
+__Line_NpcAnswer	_Eng	친구: ………ㅅ^^ㅂ..
+__Line_Welcome10	_Eng	…
+		
+__Page_Welcome10		
+__Line_NpcAnswer	_Eng	주인공: 무임승차 ㄴㄴ요
+__Line_Exit	_Eng	…
+		
+__Page_Exit		
+__Line_Effect	_Exit	
+		
+		
+		

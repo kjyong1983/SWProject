@@ -1,0 +1,9 @@
+﻿__Page_Desc		
+__Line_NpcName	_Eng	친구의 메세지
+		
+__Page_Welcome		
+__Line_NpcAnswer	_Eng	**아 긴히 해줄말이 있어; 비마관 211호로 와줘;
+__Line_Exit	_Eng	...
+		
+__Page_Exit		
+__Line_Effect	_Exit	

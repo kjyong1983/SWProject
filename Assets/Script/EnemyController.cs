@@ -16,6 +16,8 @@ public class EnemyController : MonoBehaviour {
     Animator anim;
     bool isMoving = false;
 
+    float aggro = 0;
+
     public void CalculateMove()
     {
         if (Mathf.Approximately(transform.position.x, p.transform.position.x))

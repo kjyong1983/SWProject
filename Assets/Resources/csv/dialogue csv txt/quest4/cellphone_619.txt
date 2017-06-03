@@ -1,0 +1,25 @@
+﻿__Page_Desc 		
+__Line_NpcName	_Eng	619호 휴대폰
+		
+__Page_Welcome		
+__Line_NpcAnswer	_Eng	전화기다!
+__Line_Welcome2	_Eng	…
+		
+__Page_Welcome2		
+__Line_NpcAnswer	_Eng	뚜루루루..뚜루루루루….
+__Line_Welcome3	_Eng	…
+		
+__Page_Welcome3		
+__Line_NpcAnswer	_Eng	여보세요? 지금 학교에 불법 인체실험을 하고있는거 같은데 제 친구도 연류되어 있습니다!
+__Line_Welcome4	_Eng	…
+		
+__Page_Welcome4		
+__Line_NpcAnswer	_Eng	피실험자들이 조종당하고 있어요! 아주 위험합니다! 광운대학교 비마관 8층으로 빨리 와주세요! 
+__Line_Welcome5	_Eng	…
+		
+__Page_Welcome5		
+__Line_NpcAnswer	_Eng	좋아! 빨리 8층 연구실을 찾자..!
+__Line_Exit	_Eng	…
+		
+__Page_Exit		
+__Line_Effect	_Exit	

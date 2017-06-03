@@ -1,0 +1,9 @@
+﻿__Page_Desc		
+__Line_NpcName	_Eng	이영희영희
+		
+__Page_Welcome		
+__Line_NpcAnswer	_Eng	이곳 2층에는 강의실이 없어; 예전엔 강의실이었지만…
+__Line_Exit	_Eng	...
+		
+__Page_Exit		
+__Line_Effect	_Exit	

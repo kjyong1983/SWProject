@@ -1,0 +1,39 @@
+﻿__Page_Desc 		
+__Line_NpcName	_Eng	517호 교수컴퓨터 오브젝트
+		
+__Page_Welcome		
+__Line_NpcAnswer	_Eng	..부팅중..
+__Line_Welcome2	_Eng	…
+		
+__Page_Welcome2		
+__Line_NpcAnswer	_Eng	RFID전파 연구자료?
+__Line_Welcome3	_Eng	…
+		
+__Page_Welcome3		
+__Line_NpcAnswer	_Eng	RFID칩을 주사기를 이용하여 피부 바로 밑 근막이라 부르는 피하층에 삽입한다.
+__Line_Welcome4	_Eng	…
+		
+__Page_Welcome4		
+__Line_NpcAnswer	_Eng	전파를 통해 인체를 조종할 수 있다..?
+__Line_Welcome5	_Eng	…
+		
+__Page_Welcome5		
+__Line_NpcAnswer	_Eng	친구가 참가한 실험이.. 설마...!
+__Line_More	_Eng	더 조사할까?
+__Line_No		빨리 친구를 찾으러가자!
+		
+__Page_More		
+__Line_NpcAnswer	_Eng	RFID칩을 주사기를 이용하여 피부 바로 밑 근막이라 부르는 피하층에 삽입한다.
+__Line_More2		…
+		
+		
+__Page_More2		
+__Line_NpcAnswer	_Eng	전파를 통해 인체를 조종할 수 있다.
+__Line_Exit	_Eng	…
+		
+__Page_No		
+__Line_NpcAnswer	_Eng	컴퓨터 종료……
+__Line_Exit	_Eng	…
+		
+__Page_Exit		
+__Line_Effect	_Exit	

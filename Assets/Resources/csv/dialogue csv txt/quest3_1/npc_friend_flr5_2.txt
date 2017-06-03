@@ -1,0 +1,48 @@
+﻿__Page_Desc 		두번째 상호작용시
+__Line_NpcName	_Eng	5층 친구
+		
+__Page_Welcome		
+__Line_NpcAnswer	_Eng	……..
+__Line_Exit	_Eng	…
+		
+__Page_Exit		
+__Line_Effect	_Exit	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		

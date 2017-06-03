@@ -1,0 +1,17 @@
+﻿__Page_Desc		
+__Line_NpcName	_Eng	찢어진 다이어리 조각
+		
+__Page_Welcome		
+__Line_NpcAnswer	_Eng	친구는 보이지 않는다. 찢어진 다이어리뿐…
+__Line_Welcome2	_Eng	....
+		
+__Page_Welcome2		
+__Line_NpcAnswer	_Eng	이 새끼….
+__Line_Welcome3	_Eng	....
+		
+__Page_Welcome3		
+__Line_NpcAnswer	_Eng	517호 강의실교수님 면담..?
+__Line_Exit	_Eng	...
+		
+__Page_Exit		
+__Line_Effect	_Exit	

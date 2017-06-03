@@ -1,0 +1,13 @@
+﻿__Page_Desc	517호 문 오브젝트 상호작용전 	
+__Line_NpcName	_Eng	517호
+		
+__Page_Welcome		
+__Line_NpcAnswer	_Eng	여기 뭔가가 있는 데
+__Line_Welcome2	_Eng	....
+		
+__Page_Welcome2		
+__Line_NpcAnswer	_Eng	(나갈수없다.)
+__Line_Exit	_Eng	...
+		
+__Page_Exit		
+__Line_Effect	_Exit	

@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class PlayerSpawner : MonoBehaviour {
 
+    float x = -280f;//-275f
+    float y = 35f;//-18.5f
+
     static PlayerSpawner instance;
     public PlayerSpawner Instance
     {
@@ -41,7 +44,7 @@ public class PlayerSpawner : MonoBehaviour {
 
     public void NewGame()
     {
-        var player =  Instantiate(playerPrefab, new Vector3(-275f, -18.5f), Quaternion.identity);
+        var player =  Instantiate(playerPrefab, new Vector3(x, y), Quaternion.identity);
         player.GetComponent<PlayerLocation>().locationData.floorNum = 3;//defalut
         DontDestroyOnLoad(player);
     }

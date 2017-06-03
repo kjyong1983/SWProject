@@ -1,0 +1,48 @@
+﻿__Page_Desc 		
+__Line_NpcName	_Eng	9층 연구박사
+		
+__Page_Welcome		
+__Line_NpcAnswer	_Eng	연구박사: 후후.. 기다리고 있었다.
+__Line_Welcome2	_Eng	…
+		
+__Page_Welcome2		
+__Line_NpcAnswer	_Eng	네 까짓게 내 연구를 망치려 들다니..
+__Line_Welcome3	_Eng	…
+		
+__Page_Welcome3		
+__Line_NpcAnswer	_Eng	"안그래도 마지막 실험을 완성시킬 실험체가 필요했는데, 마침 잘왔구나."
+__Line_Welcome4	_Eng	…
+		
+__Page_Welcome4		
+__Line_NpcAnswer	_Eng	너도 곧 네친구처럼 될것이야.
+__Line_Welcome5	_Eng	…
+		
+__Page_Welcome5		
+__Line_NpcAnswer	_Eng	주인공: 순진한 학생들을 상대로 이런 짓을 벌이다니!
+__Line_Welcome6	_Eng	…
+		
+__Page_Welcome6		
+__Line_NpcAnswer	_Eng	너는 끝이야!
+__Line_Welcome7	_Eng	…
+		
+__Page_Welcome7		
+__Line_NpcAnswer	_Eng	경찰: 꼼짝마! 경찰이다!
+__Line_Welcome8	_Eng	…
+		
+__Page_Welcome8		
+__Line_NpcAnswer	_Eng	연구박사: !!! 안돼!!!!!!
+__Line_Welcome9	_Eng	…
+		
+__Page_Welcome9		
+__Line_NpcAnswer	_Eng	주인공: 모든게 끝났다.
+__Line_Welcome10	_Eng	…
+		
+__Page_Welcome10		
+__Line_NpcAnswer	_Eng	친구는 어디에 있지?
+__Line_Exit	_Eng	…
+		
+__Page_Exit		
+__Line_Effect	_Exit	
+		
+		
+		

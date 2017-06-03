@@ -1,0 +1,13 @@
+﻿__Page_Desc	211호 문 가방발견전 상호작용시	
+__Line_NpcName	_Eng	211호
+		
+__Page_Welcome		
+__Line_NpcAnswer	_Eng	여기 뭔가가 있는 데
+__Line_Welcome2	_Eng	...
+		
+__Page_Welcome2		
+__Line_NpcAnswer	_Eng	(나갈수없다.)
+__Line_Exit	_Eng	...
+		
+__Page_Exit		
+__Line_Effect	_Exit	

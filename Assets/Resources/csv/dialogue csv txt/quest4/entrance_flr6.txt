@@ -1,0 +1,48 @@
+﻿__Page_Desc 	6층핸드폰상호작용전	
+__Line_NpcName	_Eng	6층 옥외공원 출입문
+		
+__Page_Welcome		
+__Line_NpcAnswer	_Eng	여기 뭔가가 있는데..
+__Line_Exit	_Eng	…
+		
+__Page_Exit		
+__Line_Effect	_Exit	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		

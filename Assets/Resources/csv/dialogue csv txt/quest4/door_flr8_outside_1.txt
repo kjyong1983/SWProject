@@ -1,0 +1,48 @@
+﻿__Page_Desc 	703호노트북 상호작용전					
+__Line_NpcName	_Eng	8층비번걸린문				
+						
+__Page_Welcome						
+__Line_NpcAnswer	_Eng	여기가 유일한 8층 입구인데ㅠㅠ문을 열수가 없어				
+__Line_Welcome2	_Eng	…				
+						
+__Page_Welcome2						
+__Line_NpcAnswer	_Eng	프로그램을 해킹하면 열수있을거같다.				
+__Line_Exit	_Eng	…				
+						
+__Page_Exit						
+__Line_Effect	_Exit					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
