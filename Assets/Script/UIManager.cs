@@ -12,6 +12,7 @@ public class UIManager : MonoBehaviour {
     GameObject settingDialogue;
     GameObject minimap;
     GameObject conversationDialogue;
+    GameObject popup;
     GameObject cutscene;
 
     GameObject bgmManager;
@@ -34,6 +35,7 @@ public class UIManager : MonoBehaviour {
             minimap = GameObject.Find("Minimap");
             conversationDialogue = GameObject.Find("ConversationDialogue");
             cutscene = GameObject.Find("Cutscene");
+            popup = GameObject.Find("Popup");
 
             bgmManager = GameObject.Find("BGMManager");
 
@@ -43,6 +45,7 @@ public class UIManager : MonoBehaviour {
             minimap.SetActive(false);
             conversationDialogue.SetActive(false);
             cutscene.SetActive(false);
+            popup.SetActive(false);
         }
 
     }
@@ -204,4 +207,21 @@ public class UIManager : MonoBehaviour {
     {
         cutscene.SetActive(false);
     }
+
+    internal void ShowPopup(string data)
+    {
+        popup.SetActive(true);
+        popup.GetComponentInChildren<Text>().text = data;
+        StartCoroutine(HideAfterSec());
+        
+    }
+    IEnumerator HideAfterSec()
+    {
+        yield return new WaitForSeconds(2);
+
+        popup.SetActive(false);
+        yield break;
+    }
+
+
 }
