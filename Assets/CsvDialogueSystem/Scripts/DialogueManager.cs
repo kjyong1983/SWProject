@@ -707,6 +707,22 @@ public class DialogueManager : MonoBehaviour
                             ///
                             /// Template for new requirement
                             ///
+                            else if (data == "Cut")
+                            {
+                                ///
+                                /// Conditions
+                                /// 
+                                /// if conditions fails
+                                /// localRes must be setted false
+                                /// and break added
+                                ///
+
+                                UIManager.instance.ShowCutScene("");
+                                Debug.Log("herr");
+                                Debug.Break();
+
+                                continue;
+                            }
                             else if (data == "MyOwnRequirement")
                             {
                                 ///
@@ -829,12 +845,36 @@ public class DialogueManager : MonoBehaviour
                         ///
                         /// Template for new effect
                         ///
-                        else if (data == "MyOwnEffect")
+                        else if (data == "Cut")
                         {
-                            ///
-                            /// Effect handler
-                            ///
+                            if (CsvDialogueParser.Instance.GetTextValue(out data, data, line) == true)
+                            {
+                                if (data != null)
+                                {
+                                    
+                                    UIManager.instance.ShowCutScene(data);
+                                    Debug.Log(data);
+                                   //Debug.Break();
+                                    
+                                }
+
+                                UIManager.instance.ShowCutScene("data");
+                                //Debug.Break();
+                            }
                             continue;
+                        }
+                        else if (data == "CutExit")
+                        {
+                            if (CsvDialogueParser.Instance.GetTextValue(out data, data, line) == true)
+                            {
+                                UIManager.instance.HideCutScene();
+                                //Debug.Break();
+                            }
+                            continue;
+                        }
+                        else if (data == "CutScene")
+                        {
+
                         }
                         else
                         {

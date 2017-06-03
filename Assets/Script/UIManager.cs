@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,6 +12,7 @@ public class UIManager : MonoBehaviour {
     GameObject settingDialogue;
     GameObject minimap;
     GameObject conversationDialogue;
+    GameObject cutscene;
 
     GameObject bgmManager;
 
@@ -31,7 +33,7 @@ public class UIManager : MonoBehaviour {
             settingDialogue = GameObject.Find("settingDialogue");
             minimap = GameObject.Find("Minimap");
             conversationDialogue = GameObject.Find("ConversationDialogue");
-
+            cutscene = GameObject.Find("Cutscene");
 
             bgmManager = GameObject.Find("BGMManager");
 
@@ -40,6 +42,7 @@ public class UIManager : MonoBehaviour {
             settingDialogue.SetActive(false);
             minimap.SetActive(false);
             conversationDialogue.SetActive(false);
+            cutscene.SetActive(false);
         }
 
     }
@@ -178,5 +181,27 @@ public class UIManager : MonoBehaviour {
     {
         var player = GameObject.FindWithTag("Player");
         player.GetComponent<PlayerInteract>().GetInteract();
+    }
+
+    public void ShowCutScene(string data)
+    {
+        if (data == "cut1")
+        {
+            var image = cutscene.GetComponent<Image>();
+            Sprite temp = Resources.Load<Sprite>("cutscene/dummycutscene2");
+            Debug.Log(temp);
+            //image.type = Image.Type.Simple;
+            //image.preserveAspect = true;
+            //image.enabled = true;
+            image.sprite = temp;//not working
+
+        }
+        cutscene.SetActive(true);
+        Debug.Log(data);        
+    }
+
+    internal void HideCutScene()
+    {
+        cutscene.SetActive(false);
     }
 }
