@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: "reverse_resize_\uAC00\uAD6C\uB4E42 p"
+  m_Name: "small_\uCE60\uD310 \uC624\uBE0C\uC81D\uD2B8"
   m_Shader: {fileID: 4800000, guid: cf5fd84d5967d15429b0d90fb61432f4, type: 3}
   m_ShaderKeywords: PIXELSNAP_ON
   m_LightmapFlags: 5
@@ -18,7 +18,7 @@ Material:
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 2800000, guid: 8033337f3aa0b2f4f823974d5af18325, type: 3}
+        m_Texture: {fileID: 2800000, guid: becef4b38f17a224d90390be7804c814, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
