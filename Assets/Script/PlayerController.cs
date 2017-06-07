@@ -9,11 +9,13 @@ public class PlayerController : MonoBehaviour {
     public Direction dir;
     public Direction prevDir;
 
+    [SerializeField] bool isNewGame = true;
     [SerializeField]Vector2 input;
     Vector2 lastInput;
     float v, h;
     public float moveSpeed; //3f
 
+    public int hp = 1;
     bool isMoving = false;
     public bool IsMoving { set; get; }
     public bool canMove = true;
@@ -36,9 +38,17 @@ public class PlayerController : MonoBehaviour {
         //prevDir = Direction.down;
         //anim = GetComponent<PlayerAnimator>();
         //anim.SetLastMove(DirToVector2(prevDir));
-	}
+
+        if (isNewGame)
+        {
+            var startScene = GameObject.Find("StartScene");
+            startScene.GetComponent<NPC>().StartDialogue();
+            Debug.Log("startScene");
+        }
+
+    }
 	
-	void FixedUpdate () {
+	void Update () {
 
         h = UnityEngine.Input.GetAxis("Horizontal");
         v = UnityEngine.Input.GetAxis("Vertical");
@@ -48,6 +58,11 @@ public class PlayerController : MonoBehaviour {
             GetInput(h, v);
         }
 
+        if (hp <= 0)
+        {
+            Debug.Log("Game Over");
+            Debug.Break();
+        }
 
     }
 

@@ -21,5 +21,6 @@ public class NPC : MonoBehaviour {
         DialogueManager.Instance.StartDialogue(csvFile);
         UIManager.instance.ToggleConversationDialogue();
         Debug.Log(UIManager.instance);
+        Debug.Log("start dialogue");
     }
 }

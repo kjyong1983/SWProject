@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Popup : MonoBehaviour {
 
-    bool isTrigger = false;
+    public bool isTrigger = false;
     public string data;
     private void OnTriggerEnter2D(Collider2D collision)
     {

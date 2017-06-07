@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour {
 
-    float attackTimer = 1f;
+    float attackTimer = 0.1f;
     [SerializeField] bool readyToAttack = true;
     [SerializeField]bool attackTrigger = false;
     [SerializeField]bool isPlayer = false;
@@ -27,6 +27,8 @@ public class EnemyAttack : MonoBehaviour {
             Debug.Log("Attacked");
             //instantiate attack prefab?
             //Debug.Break();
+            var player = GameObject.FindObjectOfType<PlayerController>();
+            player.hp = 0;
             attackTrigger = false;
             readyToAttack = true;
         }

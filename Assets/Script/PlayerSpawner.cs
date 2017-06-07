@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class PlayerSpawner : MonoBehaviour {
 
-    float x = -280f;//-275f
-    float y = 35f;//-18.5f
+    float x = -275f;//-275f, -280
+    float y = -18.5f;//-18.5f, 35
 
     static PlayerSpawner instance;
     public PlayerSpawner Instance
@@ -47,14 +47,15 @@ public class PlayerSpawner : MonoBehaviour {
         var player =  Instantiate(playerPrefab, new Vector3(x, y), Quaternion.identity);
         player.GetComponent<PlayerLocation>().locationData.floorNum = 3;//defalut
         DontDestroyOnLoad(player);
+
+        //why playercontroller go off?
+        player.GetComponent<PlayerController>().enabled = true;
+
     }
 
     public void PlayerSpawn(string savedData, string globalLoc)
     {
-
-
-
-
+       
 
         JsonUtility.FromJsonOverwrite(savedData, playerPrefab.gameObject.GetComponent<PlayerLocation>().locationData);
         JsonUtility.FromJsonOverwrite(globalLoc, playerPrefab.gameObject.transform.position);

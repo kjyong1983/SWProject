@@ -109,7 +109,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.9}
+  m_Size: {x: 0.7, y: 0.9}
 --- !u!95 &95347591899039504
 Animator:
   serializedVersion: 3
@@ -119,7 +119,7 @@ Animator:
   m_GameObject: {fileID: 1261011410869162}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 544fa2cdbdf0b454c9fd476dfb5ffc8d, type: 2}
+  m_Controller: {fileID: 22100000, guid: a26461b3281d55b428362bbf4a924d18, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -170,8 +170,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dir: 0
   prevDir: 0
+  isNewGame: 1
   input: {x: 0, y: 0}
   moveSpeed: 0.2
+  hp: 1
   canMove: 1
   fadeTrigger: 0
 --- !u!114 &114980961589168756
