@@ -7,7 +7,7 @@ public class EnemyInteract : MonoBehaviour {
     GameObject interactCollider;
     EnemyController e;
     CircleCollider2D detector;
-    public float radius = 3f;
+    public float radius = 5f;
 
 	// Use this for initialization
 	void Start () {

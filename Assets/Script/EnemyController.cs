@@ -6,10 +6,12 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour {
 
     public GameObject p;
+    [SerializeField]GameObject shadow;
     Rigidbody2D rb;
-    public float speed;//1 for movetoward, 0.005 for playermove
+    public float speed;//2.5 for movetoward, 0.005 for playermove
     public float speedMod;
-    float alertTimer = 5f;
+    [SerializeField]float alertTimer = 0f;
+    const float alertMax = 5f;
     int dirX, dirY;
     Vector3 startPos, endPos;
     public List<GameObject> checkBoxes;
@@ -20,24 +22,33 @@ public class EnemyController : MonoBehaviour {
 
     public void CalculateMove()
     {
-        if (Mathf.Approximately(transform.position.x, p.transform.position.x))
+        float x = p.transform.position.x - transform.position.x;
+        float y = p.transform.position.y - transform.position.y;
+
+
+        //if (Mathf.Approximately(transform.position.y, p.transform.position.y))
+        //    dirY = 0;
+        //else if (transform.position.y < p.transform.position.y)
+        //    dirY = 1;
+        //else dirY = -1;
+
+        //if (Mathf.Approximately(transform.position.x, p.transform.position.x))
+        //    dirX = 0;      
+        //else if (transform.position.x < p.transform.position.x)
+        //    dirX = 1;
+        //else dirX = -1;
+
+        if (Mathf.Abs(x) > Mathf.Abs(y))
+        {
+            dirX = Math.Sign(x);
+            dirY = 0;
+        }
+        else
         {
             dirX = 0;
+            dirY = Math.Sign(y);
         }
-        else if (transform.position.x < p.transform.position.x)
-        {
-            dirX = 1;
-        }
-        else dirX = -1;
-
-        if (Mathf.Approximately(transform.position.y, p.transform.position.y))
-            dirY = 0;
-        else if (transform.position.y < p.transform.position.y)
-        {
-            dirY = 1;
-        }
-        else dirY = -1;
-
+    
     }
 
 
@@ -130,20 +141,46 @@ public class EnemyController : MonoBehaviour {
         if (p != null && Vector2.Distance(transform.position, p.transform.position) >= 1)
         {
             //임시조치
-            //float step = speed * Time.deltaTime;
-            //transform.position = Vector2.MoveTowards(transform.position, p.transform.position, step);
+            float step = speed * Time.deltaTime;
+            transform.position = Vector2.MoveTowards(transform.position, p.transform.position, step);
             //Debug.Log("chasing");
 
             CalculateMove();
             AttemptMove();
-            Move(dirX, dirY);
+            //Move(dirX, dirY);
             anim.SetFloat("X", dirX);
             anim.SetFloat("Y", dirY);
-
+            anim.SetBool("isMoving", true);
             Debug.Log(dirX + " " + dirY);
 
+            shadow = p;
+            alertTimer = alertMax;
+
         }
-	}
+        else if (alertTimer > 0 && shadow != null)
+            {
+                float step = speed * Time.deltaTime;
+                transform.position = Vector2.MoveTowards(transform.position, shadow.transform.position, step);
+                anim.SetFloat("X", dirX);
+                anim.SetFloat("Y", dirY);
+                anim.SetBool("isMoving", true);
+
+            }
+        else
+            anim.SetBool("isMoving", false);
+
+        if (alertTimer > 0)
+        {
+            alertTimer -= Time.deltaTime;
+        }
+
+        if (alertTimer <= 0)
+        {
+            shadow = null;
+        }
+
+
+    }
 
     private void AttemptMove()
     {
