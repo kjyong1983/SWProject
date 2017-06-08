@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -53,6 +54,23 @@ public class FadeUI : MonoBehaviour {
     public void FadeOut()
     {
         StartCoroutine(DoFadeOut());
+    }
+
+    public void FadeOutFast()
+    {
+        StartCoroutine(DoFadeOutFast());
+    }
+
+    private IEnumerator DoFadeOutFast()
+    {
+        CanvasGroup canvasGroup = GetComponent<CanvasGroup>();
+        while (canvasGroup.alpha < 1)
+        {
+            canvasGroup.alpha += Time.deltaTime * fadeSpeed * fadeSpeed;
+            yield return null;
+        }
+        isFadeIn = false;
+        yield return null;
     }
 
     public void FadeIn()

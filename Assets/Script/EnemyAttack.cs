@@ -31,6 +31,9 @@ public class EnemyAttack : MonoBehaviour {
             player.hp = 0;
             attackTrigger = false;
             readyToAttack = true;
+
+            GameObject.FindObjectOfType<FadeUI>().FadeOutFast();
+
         }
     }
 
