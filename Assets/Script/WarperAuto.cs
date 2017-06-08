@@ -24,6 +24,9 @@ public class WarperAuto : MonoBehaviour {
         {
             other.gameObject.GetComponent<PlayerController>().canMove = false;
 
+            //fade out and in
+            GameObject.FindObjectOfType<FadeUI>().fadeTrigger = true;
+
             StartCoroutine(WarpObject(other.gameObject));
             //if dest is floor
             if (destNum < 10)

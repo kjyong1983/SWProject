@@ -34,11 +34,6 @@ public class PlayerController : MonoBehaviour {
     }
 
     void Start () {
-        //dir = Direction.down;
-        //prevDir = Direction.down;
-        //anim = GetComponent<PlayerAnimator>();
-        //anim.SetLastMove(DirToVector2(prevDir));
-
         if (isNewGame)
         {
             var startScene = GameObject.Find("StartScene");
