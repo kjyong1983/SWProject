@@ -6,6 +6,7 @@ public class WarperAuto : MonoBehaviour {
 
     public GameObject dest;
     public int destNum;// 1,2,3 : floorNum , 419 : roomNum
+    public PlayerController.Direction dir;
 
     // Use this for initialization
     void Start() {
@@ -28,6 +29,8 @@ public class WarperAuto : MonoBehaviour {
             if (destNum < 10)
             {
                 other.GetComponent<PlayerLocation>().locationData.floorNum = destNum;
+                //other.GetComponent<PlayerController>().prevDir = dir;
+                //other.GetComponent<PlayerAnimator>().SetLastMove(other.GetComponent<PlayerController>().DirToVector2(dir));
             }
             //if dest is room
             else if (destNum > 100)

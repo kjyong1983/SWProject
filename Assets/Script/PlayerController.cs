@@ -110,7 +110,7 @@ public class PlayerController : MonoBehaviour {
         anim.SetIsMoving(isMoving);
     }
 
-    Vector2 DirToVector2(Direction dir)
+    public Vector2 DirToVector2(Direction dir)
     {
         switch (dir)
         {

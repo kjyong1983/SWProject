@@ -56,3 +56,6 @@ TagManager:
   - name: WallTop
     uniqueID: 180140727
     locked: 0
+  - name: Item
+    uniqueID: 4018365841
+    locked: 0
