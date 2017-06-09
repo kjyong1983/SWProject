@@ -6,11 +6,12 @@ __Line_NpcAnswer	_Eng	찢어진 다이어리 조각이다.
 __Line_Welcome2	_Eng	…
 		
 __Page_Welcome2		
-__Line_NpcAnswer	_Eng	RFID전파 연구실 위치 8층…?
+__Line_NpcAnswer	_Eng	RFID전파 연구실 위치 8층
 __Line_Welcome3	_Eng	…
 		
 __Page_Welcome3		
-__Line_NpcAnswer	_Eng	전파는 건물 밖에선 닿지않는다…?
+__Line_NpcAnswer	_Eng	점점 의식이 흐려진ㄷ…
+__Line_Effect	_Cut	_cut5
 __Line_Welcome4	_Eng	…
 		
 __Page_Welcome4		
@@ -18,4 +19,5 @@ __Line_NpcAnswer	_Eng	저 놈 뭔가 수상해.. 피실험체들을 내보내서
 __Line_Exit	_Eng	…
 		
 __Page_Exit		
+__Line_Effect	_CutExit	
 __Line_Effect	_Exit	

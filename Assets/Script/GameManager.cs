@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,6 +21,19 @@ public class GameManager : MonoBehaviour {
     public int curFloor = 0;
     
     private static GameManager instance;
+
+    internal float getHeight(int floor)
+    {
+        if (floor == 1)
+        {
+            return 30;
+        }
+        else
+        {
+            return 58;
+        }
+    }
+
     public GameManager Instance
     {
         get

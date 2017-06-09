@@ -20,15 +20,10 @@ __Line_Welcome5	_Eng	…
 __Page_Welcome5		
 __Line_NpcAnswer	_Eng	친구가 참가한 실험이.. 설마...!
 __Line_More	_Eng	더 조사할까?
-__Line_No		빨리 친구를 찾으러가자!
+__Line_No	_Eng	빨리 친구를 찾으러가자!
 		
 __Page_More		
-__Line_NpcAnswer	_Eng	RFID칩을 주사기를 이용하여 피부 바로 밑 근막이라 부르는 피하층에 삽입한다.
-__Line_More2		…
-		
-		
-__Page_More2		
-__Line_NpcAnswer	_Eng	전파를 통해 인체를 조종할 수 있다.
+__Line_NpcAnswer	_Eng	외부로 나갈경우 전파수신 어려움
 __Line_Exit	_Eng	…
 		
 __Page_No		

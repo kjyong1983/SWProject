@@ -1,7 +1,8 @@
-﻿__Page_Desc 		엔딩 컷신과 나오는 대사
+﻿?__Page_Desc 		
 __Line_NpcName	_Eng	3층 옥외공원 출입구
 		
 __Page_Welcome		
+__Line_Effect	_Cut	_cut7
 __Line_NpcAnswer	_Eng	석양이 진다…
 __Line_Welcome2	_Eng	…
 		
@@ -39,10 +40,14 @@ __Line_Welcome10	_Eng	…
 		
 __Page_Welcome10		
 __Line_NpcAnswer	_Eng	주인공: 무임승차 ㄴㄴ요
+__Line_Effect	_CutExit	…
+__Line_Welcome11	_Eng	
+		
+__Page_Welcome11		
+__Line_Effect	_Cut	_cut8
+__Line_NpcAnswer	_Eng	…The End…
 __Line_Exit	_Eng	…
 		
 __Page_Exit		
+__Line_Effect	_CutExit	
 __Line_Effect	_Exit	
-		
-		
-		

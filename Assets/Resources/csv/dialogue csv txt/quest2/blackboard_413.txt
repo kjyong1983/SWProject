@@ -1,9 +1,11 @@
 ﻿__Page_Desc		
 __Line_NpcName	_Eng	RFID인체실험 자료
 		
-__Page_Welcome		(이때 칠판 그림 떠야해요.)
+__Page_Welcome		
+__Line_Effect	_Cut	_cut4
 __Line_NpcAnswer	_Eng	이게 대체...친구야...
 __Line_Exit	_Eng	...
 		
 __Page_Exit		
+__Line_Effect	_CutExit	
 __Line_Effect	_Exit	

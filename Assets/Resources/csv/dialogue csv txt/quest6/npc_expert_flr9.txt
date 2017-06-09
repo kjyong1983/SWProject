@@ -26,12 +26,14 @@ __Line_NpcAnswer	_Eng	너는 끝이야!
 __Line_Welcome7	_Eng	…
 		
 __Page_Welcome7		
+__Line_Effect	_Cut	_cut6
 __Line_NpcAnswer	_Eng	경찰: 꼼짝마! 경찰이다!
 __Line_Welcome8	_Eng	…
 		
 __Page_Welcome8		
 __Line_NpcAnswer	_Eng	연구박사: !!! 안돼!!!!!!
 __Line_Welcome9	_Eng	…
+__Line_Effect	_CutExit	
 		
 __Page_Welcome9		
 __Line_NpcAnswer	_Eng	주인공: 모든게 끝났다.
@@ -43,6 +45,4 @@ __Line_Exit	_Eng	…
 		
 __Page_Exit		
 __Line_Effect	_Exit	
-		
-		
 		
