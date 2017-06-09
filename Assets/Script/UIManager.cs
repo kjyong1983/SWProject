@@ -17,6 +17,7 @@ public class UIManager : MonoBehaviour {
 
     GameObject bgmManager;
 
+    public static bool chk;
     public static UIManager instance;
 
     private void Awake()
@@ -59,9 +60,15 @@ public class UIManager : MonoBehaviour {
     {
         SceneManager.LoadScene(1);
         var playerSpawner = GameObject.FindObjectOfType<PlayerSpawner>();
-        playerSpawner.NewGame();//instantiate player but it destroys when scene is loaded
+        //playerSpawner.NewGame();//instantiate player but it destroys when scene is loaded
         //Debug.Break();
         Debug.Log("Go to game Screen");
+    }
+
+    public void ContinueGame()
+    {
+        chk = true;
+        SceneManager.LoadScene(1);
     }
 
     public void OpenGameMenu()
@@ -191,14 +198,52 @@ public class UIManager : MonoBehaviour {
         if (data == "cut1")
         {
             var image = cutscene.GetComponent<Image>();
-            Sprite temp = Resources.Load<Sprite>("cutscene/dummycutscene2");
-            Debug.Log(temp);
-            //image.type = Image.Type.Simple;
-            //image.preserveAspect = true;
-            //image.enabled = true;
-            image.sprite = temp;//not working
+            Sprite temp = Resources.Load<Sprite>("cutscene/cut1");
 
         }
+        else if (data == "cut2")
+        {
+            var image = cutscene.GetComponent<Image>();
+            Sprite temp = Resources.Load<Sprite>("cutscene/cut2");
+
+        }
+        else if (data == "cut3")
+        {
+            var image = cutscene.GetComponent<Image>();
+            Sprite temp = Resources.Load<Sprite>("cutscene/cut3");
+
+        }
+        else if (data == "cut4")
+        {
+            var image = cutscene.GetComponent<Image>();
+            Sprite temp = Resources.Load<Sprite>("cutscene/cut4");
+
+        }
+        else if (data == "cut5")
+        {
+            var image = cutscene.GetComponent<Image>();
+            Sprite temp = Resources.Load<Sprite>("cutscene/cut5");
+
+        }
+        else if (data == "cut6")
+        {
+            var image = cutscene.GetComponent<Image>();
+            Sprite temp = Resources.Load<Sprite>("cutscene/cut6");
+
+        }
+        else if (data == "cut7")
+        {
+            var image = cutscene.GetComponent<Image>();
+            Sprite temp = Resources.Load<Sprite>("cutscene/cut7");
+
+        }
+        else if (data == "cut8")
+        {
+            var image = cutscene.GetComponent<Image>();
+            Sprite temp = Resources.Load<Sprite>("cutscene/cut8");
+
+        }
+
         cutscene.SetActive(true);
         Debug.Log(data);        
     }

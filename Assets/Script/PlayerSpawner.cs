@@ -55,12 +55,15 @@ public class PlayerSpawner : MonoBehaviour {
 
     public void PlayerSpawn(string savedData, string globalLoc)
     {
-       
+        int newFloorNum = JsonUtility.FromJson<PlayerLocation.LocationData>(savedData).floorNum;
 
-        JsonUtility.FromJsonOverwrite(savedData, playerPrefab.gameObject.GetComponent<PlayerLocation>().locationData);
-        JsonUtility.FromJsonOverwrite(globalLoc, playerPrefab.gameObject.transform.position);
-        
-        Instantiate(playerPrefab, playerPrefab.gameObject.transform.position, Quaternion.identity);
+        //JsonUtility.FromJsonOverwrite(savedData, playerPrefab.gameObject.GetComponent<PlayerLocation>().locationData);
+        //JsonUtility.FromJsonOverwrite(globalLoc, playerPrefab.gameObject.transform.position);
+        var newPos = JsonUtility.FromJson<Vector3>(globalLoc);
+        //Instantiate(playerPrefab, playerPrefab.gameObject.transform.position, Quaternion.identity);
+        var newPlayer = Instantiate(playerPrefab, newPos, Quaternion.identity)as GameObject ;
+        newPlayer.GetComponent<PlayerLocation>().locationData.floorNum = newFloorNum;
+
 
         //Instantiate(playerPrefab, new Vector3(
         //    gameManager.floor[GameObject.Find("Player").GetComponent<PlayerLocation>().floorNum].

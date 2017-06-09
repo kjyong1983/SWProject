@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 26052696}
   m_Layer: 0
   m_Name: q2_diary_piece_413
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -301,7 +301,7 @@ GameObject:
   - component: {fileID: 38780746}
   m_Layer: 0
   m_Name: q3_diary_piece_517
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2179,7 +2179,7 @@ GameObject:
   - component: {fileID: 342538025}
   m_Layer: 0
   m_Name: q1_bag_211
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3194,7 +3194,7 @@ GameObject:
   - component: {fileID: 506079361}
   m_Layer: 0
   m_Name: q1_npc_student_201
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3312,7 +3312,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -276601455
-  m_SortingOrder: 0
+  m_SortingOrder: 8
   m_Sprite: {fileID: 21300000, guid: d33e2dcb6f5497e489cc3d74b78dd66d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3727,7 +3727,7 @@ GameObject:
   - component: {fileID: 546010969}
   m_Layer: 0
   m_Name: q6_npc_expert_flr9
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4767,7 +4767,7 @@ GameObject:
   - component: {fileID: 653453421}
   m_Layer: 0
   m_Name: q2_door_413
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6166,7 +6166,7 @@ GameObject:
   - component: {fileID: 759058437}
   m_Layer: 0
   m_Name: q6_entrance_flr3_outside
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6238,7 +6238,7 @@ GameObject:
   - component: {fileID: 764943515}
   m_Layer: 0
   m_Name: q5_door_703
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6517,7 +6517,7 @@ GameObject:
   - component: {fileID: 789284746}
   m_Layer: 0
   m_Name: q1_door_211
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6589,7 +6589,7 @@ GameObject:
   - component: {fileID: 795221898}
   m_Layer: 0
   m_Name: q2_blackboard_413
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7603,7 +7603,7 @@ GameObject:
   - component: {fileID: 922586747}
   m_Layer: 0
   m_Name: q4_cellphone_619
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9222,7 +9222,7 @@ GameObject:
   - component: {fileID: 1121586597}
   m_Layer: 0
   m_Name: q4_entrance_flr6
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9677,7 +9677,7 @@ GameObject:
   - component: {fileID: 1149286193}
   m_Layer: 0
   m_Name: q1_test_paper_flr1
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10685,7 +10685,7 @@ GameObject:
   - component: {fileID: 1309806414}
   m_Layer: 0
   m_Name: q6_door_flr8_inside
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10979,6 +10979,20 @@ Prefab:
       value: 
       objectReference: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000,
         type: 0}
+    - target: {fileID: 4208560048498898, guid: 698cd219fa7866546925a36864fdb9aa, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 23338945745204636, guid: 698cd219fa7866546925a36864fdb9aa,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 180140727
+      objectReference: {fileID: 0}
+    - target: {fileID: 23338945745204636, guid: 698cd219fa7866546925a36864fdb9aa,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 698cd219fa7866546925a36864fdb9aa, type: 2}
   m_IsPrefabParent: 0
@@ -11056,7 +11070,7 @@ GameObject:
   - component: {fileID: 1370675490}
   m_Layer: 0
   m_Name: q5_laptop_703
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11574,7 +11588,7 @@ GameObject:
   - component: {fileID: 1439448181}
   m_Layer: 0
   m_Name: q3_1_npc_friend_flr5_2
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12620,7 +12634,7 @@ GameObject:
   - component: {fileID: 1607691633}
   m_Layer: 0
   m_Name: IntactObj
-  m_TagString: Item
+  m_TagString: NPC
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13605,7 +13619,7 @@ GameObject:
   - component: {fileID: 1789592897}
   m_Layer: 0
   m_Name: q3_computer_517
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13677,7 +13691,7 @@ GameObject:
   - component: {fileID: 1793587779}
   m_Layer: 0
   m_Name: q3_1_npc_friend_flr5_1
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14100,7 +14114,7 @@ GameObject:
   - component: {fileID: 1866009870}
   m_Layer: 0
   m_Name: q4_door_flr8_outside_1
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17643,7 +17657,7 @@ GameObject:
   - component: {fileID: 2098572449}
   m_Layer: 0
   m_Name: q5_door_flr8_outside_2
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17715,7 +17729,7 @@ GameObject:
   - component: {fileID: 2098629188}
   m_Layer: 0
   m_Name: q3_door_517
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

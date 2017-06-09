@@ -50,17 +50,29 @@ public class GameManager : MonoBehaviour {
 
     private void Awake()
     {
+
         playerSpawner = FindObjectOfType<PlayerSpawner>();
         if (playerSpawner == null)
         {
             playerSpawner = this.gameObject.AddComponent<PlayerSpawner>();
         }
-        playerLocation = FindObjectOfType<PlayerLocation>();
-        if (playerLocation == null)
+
+        Debug.Log("ccccc : " + UIManager.chk);
+        if (UIManager.chk)
+        {
+            var loadData = PlayerPrefs.GetString("save");
+            var globalLoc = PlayerPrefs.GetString("globalLoc");
+
+            playerSpawner.PlayerSpawn(loadData, globalLoc);
+        }
+        //if (playerLocation == null)
+        else
         {
             playerSpawner.NewGame();
-            playerLocation = FindObjectOfType<PlayerLocation>();
+            //playerLocation = FindObjectOfType<PlayerLocation>();
         }
+        playerLocation = FindObjectOfType<PlayerLocation>();
+
         playerLocation.Init();
         touchPadController = FindObjectOfType<TouchPadController>();
         touchPadController.Init();
@@ -71,6 +83,8 @@ public class GameManager : MonoBehaviour {
         floor[0] = gameObject;
 
         isSpawnReady = true;
+
+
     }
     // Use this for initialization
     void Start () {

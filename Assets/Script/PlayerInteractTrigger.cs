@@ -28,7 +28,7 @@ public class PlayerInteractTrigger : MonoBehaviour {
         {
             Debug.Log("Item Dectected");
             objectInfo = other.gameObject;
-            Debug.Log(objectInfo.GetComponent<Item>().id);
+            //Debug.Log(objectInfo.GetComponent<Item>().id);
             IsObstacle = true;
             return;
         }

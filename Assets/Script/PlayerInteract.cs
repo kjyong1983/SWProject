@@ -49,14 +49,14 @@ public class PlayerInteract : MonoBehaviour {
     public void GetInteract()
     {
         var interactTrigger = FindObjectOfType<PlayerInteractTrigger>();
-        if (interactTrigger.IsObstacle)
-        {
-            Debug.Log("interact!");
-        }
+        //if (interactTrigger.IsObstacle)
+        //{
+        //    Debug.Log("interact!");
+        //}
 
-        if (p.GetComponentInChildren<PlayerInteractTrigger>().objectInfo != null)//.objectInfo.CompareTag("NPC"))
+        if (p.GetComponentInChildren<PlayerInteractTrigger>().objectInfo != null)
         {
-            if (p.GetComponentInChildren<PlayerInteractTrigger>().objectInfo.GetComponent<NPC>() != null)//.objectInfo.CompareTag("NPC"))
+            if (p.GetComponentInChildren<PlayerInteractTrigger>().objectInfo.GetComponent<NPC>() != null)
             {
                 var npc = p.GetComponentInChildren<PlayerInteractTrigger>().objectInfo;
                 npc.GetComponent<NPC>().StartDialogue();
