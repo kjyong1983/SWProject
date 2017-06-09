@@ -73,6 +73,18 @@ public class FadeUI : MonoBehaviour {
         yield return null;
     }
 
+    private IEnumerator DoFadeInFast()
+    {
+        CanvasGroup canvasGroup = GetComponent<CanvasGroup>();
+        while (canvasGroup.alpha > 0)
+        {
+            canvasGroup.alpha -= Time.deltaTime * fadeSpeed * fadeSpeed;
+            yield return null;
+        }
+        isFadeIn = true;
+        yield return null;
+    }
+
     public void FadeIn()
     {
         StartCoroutine(DoFadeIn());
