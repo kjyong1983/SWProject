@@ -1,0 +1,9 @@
+﻿__Page_Desc		
+__Line_NpcName	_Eng	3층 표지판
+		
+__Page_Welcome		
+__Line_NpcAnswer	_Eng	오른쪽 - 314~323호, 왼쪽 - 301~311, 320~340호, 외부 - 320~321호
+__Line_Exit	_Eng	…
+		
+__Page_Exit		
+__Line_Effect	_Exit	

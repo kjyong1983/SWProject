@@ -847,18 +847,19 @@ public class DialogueManager : MonoBehaviour
                         ///
                         else if (data == "Cut")
                         {
+                            Debug.Log("DialogueManager : " + data);
                             if (CsvDialogueParser.Instance.GetTextValue(out data, data, line) == true)
                             {
+                                Debug.Log("DialogueManager : " + data);
                                 if (data != null)
                                 {
-                                    
                                     UIManager.instance.ShowCutScene(data);
-                                    Debug.Log(data);
+                                    Debug.Log("DialogueManager : " + data);
                                    //Debug.Break();
                                     
                                 }
 
-                                UIManager.instance.ShowCutScene("data");
+                                //UIManager.instance.ShowCutScene("data");
                                 //Debug.Break();
                             }
                             continue;
@@ -872,9 +873,37 @@ public class DialogueManager : MonoBehaviour
                             }
                             continue;
                         }
-                        else if (data == "CutScene")
+                        else if (data == "FadeIn")
                         {
-
+                            if (CsvDialogueParser.Instance.GetTextValue(out data, data, line) == true)
+                            {
+                                FadeUI.instance.FadeIn();
+                            }
+                            continue;
+                        }
+                        else if (data == "FadeOut")
+                        {
+                            if (CsvDialogueParser.Instance.GetTextValue(out data, data, line) == true)
+                            {
+                                FadeUI.instance.FadeOut();
+                            }
+                            continue;
+                        }
+                        else if (data == "FadeInFast")
+                        {
+                            if (CsvDialogueParser.Instance.GetTextValue(out data, data, line) == true)
+                            {
+                                FadeUI.instance.FadeInFast();
+                            }
+                            continue;
+                        }
+                        else if (data == "FadeOutFast")
+                        {
+                            if (CsvDialogueParser.Instance.GetTextValue(out data, data, line) == true)
+                            {
+                                FadeUI.instance.FadeOutFast();
+                            }
+                            continue;
                         }
                         else
                         {

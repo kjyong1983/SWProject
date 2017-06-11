@@ -1,0 +1,9 @@
+﻿__Page_Desc		
+__Line_NpcName	_Eng	5층 표지판
+		
+__Page_Welcome		
+__Line_NpcAnswer	_Eng	오른쪽 - 501~502, 519~529호, 왼쪽 - 504~517호
+__Line_Exit	_Eng	…
+		
+__Page_Exit		
+__Line_Effect	_Exit	

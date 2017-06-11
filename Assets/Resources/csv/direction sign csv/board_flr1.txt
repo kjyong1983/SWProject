@@ -1,0 +1,19 @@
+﻿__Page_Desc		
+__Line_NpcName	_Eng	1층 표지판
+		
+__Page_Welcome		
+__Line_NpcAnswer	_Eng	101호-교수학습센터운영과매체제작실
+__Line_Welcome2	_Eng	…
+		
+		
+__Page_Welcome2		
+__Line_NpcAnswer	_Eng	110호-복사실
+__Line_Welcome3	_Eng	더 볼까?
+__Line_Exit	_Eng	그만보기
+		
+__Page_Welcome3		
+__Line_NpcAnswer	_Eng	102호 - 차세대 3D디스플레이 연구센터
+__Line_Exit	_Eng	그만보자
+		
+__Page_Exit		
+__Line_Effect	_Exit	

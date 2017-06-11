@@ -33,23 +33,6 @@ public class FadeInOut : MonoBehaviour {
         
     }
 
-    //private void OnGUI()
-    //{
-    //    if (isBlack && p.fadeTrigger)
-    //    {
-    //        Debug.Log("fade in");
-    //        StartCoroutine(FadeIn());
-    //        StartCoroutine(Wait());
-    //        //p.fadeTrigger = false;
-    //    }
-    //    else if(!isBlack && p.fadeTrigger)
-    //    {
-    //        Debug.Log("fade out");
-    //        StartCoroutine(FadeOut());
-    //        //p.fadeTrigger = false;
-    //    }
-    //}
-
     IEnumerator FadeIn()
     {
         alpha += fadeInDir * fadeSpeed * Time.deltaTime;

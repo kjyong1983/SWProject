@@ -1,0 +1,9 @@
+﻿__Page_Desc		
+__Line_NpcName	_Eng	2층 표지판(211호)
+		
+__Page_Welcome		
+__Line_NpcAnswer	_Eng	강의실 - 211호 실험실 - 212~220호
+__Line_Exit	_Eng	…
+		
+__Page_Exit		
+__Line_Effect	_Exit	

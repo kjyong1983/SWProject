@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 95c563a59ed080146a175295a779d505
-timeCreated: 1496508340
+timeCreated: 1497159122
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -17,6 +17,11 @@ TextureImporter:
     21300020: door_211_10
     21300022: door_211_11
     21300024: door_211_12
+    21300026: door_211_13
+    21300028: door_211_14
+    21300030: door_211_15
+    21300032: door_211_16
+    21300034: door_211_17
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -102,10 +107,10 @@ TextureImporter:
       name: door_211_0
       rect:
         serializedVersion: 2
-        x: 97
-        y: 194
-        width: 94
-        height: 74
+        x: 0
+        y: 195
+        width: 48
+        height: 72
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,12 +120,12 @@ TextureImporter:
       name: door_211_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 97
-        width: 39
-        height: 76
+        x: 48
+        y: 195
+        width: 48
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -128,10 +133,10 @@ TextureImporter:
       name: door_211_2
       rect:
         serializedVersion: 2
-        x: 46
-        y: 97
-        width: 41
-        height: 76
+        x: 96
+        y: 195
+        width: 48
+        height: 72
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,10 +146,10 @@ TextureImporter:
       name: door_211_3
       rect:
         serializedVersion: 2
-        x: 94
-        y: 97
-        width: 41
-        height: 76
+        x: 144
+        y: 195
+        width: 48
+        height: 72
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,12 +159,12 @@ TextureImporter:
       name: door_211_4
       rect:
         serializedVersion: 2
-        x: 153
-        y: 97
-        width: 41
-        height: 76
+        x: 192
+        y: 195
+        width: 48
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -167,12 +172,12 @@ TextureImporter:
       name: door_211_5
       rect:
         serializedVersion: 2
-        x: 201
-        y: 97
-        width: 41
-        height: 76
+        x: 240
+        y: 195
+        width: 48
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -180,10 +185,10 @@ TextureImporter:
       name: door_211_6
       rect:
         serializedVersion: 2
-        x: 249
-        y: 97
-        width: 42
-        height: 76
+        x: 0
+        y: 92.333336
+        width: 48.5
+        height: 91.666664
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,10 +198,10 @@ TextureImporter:
       name: door_211_7
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2
-        width: 24
-        height: 75
+        x: 48
+        y: 92.333336
+        width: 48.5
+        height: 91.666664
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,10 +211,10 @@ TextureImporter:
       name: door_211_8
       rect:
         serializedVersion: 2
-        x: 46
-        y: 2
-        width: 26
-        height: 75
+        x: 96
+        y: 92.333336
+        width: 48.5
+        height: 91.666664
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,10 +224,10 @@ TextureImporter:
       name: door_211_9
       rect:
         serializedVersion: 2
-        x: 94
-        y: 2
-        width: 26
-        height: 75
+        x: 144
+        y: 92.333336
+        width: 48.5
+        height: 91.666664
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,12 +237,12 @@ TextureImporter:
       name: door_211_10
       rect:
         serializedVersion: 2
-        x: 168
-        y: 2
-        width: 26
-        height: 75
+        x: 192
+        y: 92.333336
+        width: 48.5
+        height: 91.666664
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.50000006}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -245,10 +250,10 @@ TextureImporter:
       name: door_211_11
       rect:
         serializedVersion: 2
-        x: 216
-        y: 1
-        width: 26
-        height: 76
+        x: 240
+        y: 92.333336
+        width: 48.5
+        height: 91.666664
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,10 +263,75 @@ TextureImporter:
       name: door_211_12
       rect:
         serializedVersion: 2
-        x: 264
-        y: 2
-        width: 27
-        height: 75
+        x: 0
+        y: 1.3333359
+        width: 48.5
+        height: 91.666664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: door_211_13
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1.3333359
+        width: 48.5
+        height: 91.666664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: door_211_14
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1.3333359
+        width: 48.5
+        height: 91.666664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: door_211_15
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1.3333359
+        width: 48.5
+        height: 91.666664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: door_211_16
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1.3333359
+        width: 48.5
+        height: 91.666664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: door_211_17
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1.3333359
+        width: 48.5
+        height: 91.666664
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

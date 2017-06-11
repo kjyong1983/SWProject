@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerInteractTrigger : MonoBehaviour {
 
     public GameObject objectInfo;
+    public GameObject collisionInfo;
     bool isObstacle;
     public bool IsObstacle
     {
@@ -34,7 +35,7 @@ public class PlayerInteractTrigger : MonoBehaviour {
         }
         else if (other.CompareTag("Wall"))
         {
-            objectInfo = other.gameObject;
+            collisionInfo = other.gameObject;
             Debug.Log("Wall Dectected");
             IsObstacle = true;
             return;
