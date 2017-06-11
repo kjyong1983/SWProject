@@ -6,9 +6,16 @@ using UnityEngine.UI;
 
 public class FadeUI : MonoBehaviour {
 
+    public static FadeUI instance;
+
     public bool isFadeIn = false;
     public bool fadeTrigger = false;
     float fadeSpeed = 4;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     private void Start()
     {
@@ -21,16 +28,6 @@ public class FadeUI : MonoBehaviour {
         if (fadeTrigger)
         {
             Debug.Log("fade in and out");
-            //if (isFadeIn)
-            //{
-            //    FadeOut();
-            //    //isFadeIn = false;
-            //}
-            //if (!isFadeIn)
-            //{
-            //    FadeOut();
-            //    //isFadeIn = false;
-            //}
             StartCoroutine(DoFadeOutandIn());
             fadeTrigger = false;
         }
@@ -61,12 +58,18 @@ public class FadeUI : MonoBehaviour {
         StartCoroutine(DoFadeOutFast());
     }
 
+    public void FadeInFast()
+    {
+        StartCoroutine(DoFadeInFast());
+    }
+
     private IEnumerator DoFadeOutFast()
     {
         CanvasGroup canvasGroup = GetComponent<CanvasGroup>();
         while (canvasGroup.alpha < 1)
         {
-            canvasGroup.alpha += Time.deltaTime * fadeSpeed * fadeSpeed;
+            //canvasGroup.alpha += Time.deltaTime * fadeSpeed * fadeSpeed;
+            canvasGroup.alpha = 1;
             yield return null;
         }
         isFadeIn = false;
@@ -78,7 +81,8 @@ public class FadeUI : MonoBehaviour {
         CanvasGroup canvasGroup = GetComponent<CanvasGroup>();
         while (canvasGroup.alpha > 0)
         {
-            canvasGroup.alpha -= Time.deltaTime * fadeSpeed * fadeSpeed;
+            //canvasGroup.alpha -= Time.deltaTime * fadeSpeed * fadeSpeed;
+            canvasGroup.alpha = 0;
             yield return null;
         }
         isFadeIn = true;

@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour {
     
     private static GameManager instance;
 
-    internal float getHeight(int floor)
+    internal float GetHeight(int floor)
     {
         if (floor == 1)
         {
@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour {
             playerSpawner = this.gameObject.AddComponent<PlayerSpawner>();
         }
 
-        Debug.Log("ccccc : " + UIManager.chk);
+        Debug.Log("save : " + UIManager.chk);
         if (UIManager.chk)
         {
             var loadData = PlayerPrefs.GetString("save");

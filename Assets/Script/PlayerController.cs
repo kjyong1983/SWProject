@@ -34,7 +34,8 @@ public class PlayerController : MonoBehaviour {
     }
 
     void Start () {
-        if (isNewGame)
+        //if (isNewGame)
+        if(!UIManager.chk)
         {
             var startScene = GameObject.Find("StartScene");
             startScene.GetComponent<NPC>().StartDialogue();

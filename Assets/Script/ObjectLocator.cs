@@ -20,7 +20,7 @@ public class ObjectLocator : MonoBehaviour {
         //Debug.Log("floorOrigin " + floorOrigin);
         //Debug.Break();
 
-        transform.position = new Vector3(floorOrigin.x + x, floorOrigin.y + gameManager.getHeight(floor) - y);
+        transform.position = new Vector3(floorOrigin.x + x, floorOrigin.y + gameManager.GetHeight(floor) - y);
     }
 
     // Update is called once per frame

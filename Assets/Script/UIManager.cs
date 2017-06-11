@@ -207,64 +207,6 @@ public class UIManager : MonoBehaviour {
         Sprite temp = Resources.Load<Sprite>("cutscene/cut" + num.ToString());
         image.sprite = temp;
 
-
-        //if (data == "cut1")
-        //{
-        //    var image = cutscene.GetComponent<Image>();
-        //    Sprite temp = Resources.Load<Sprite>("cutscene/cut1");
-        //    image.sprite = temp;
-
-        //}
-        //else if (data == "cut2")
-        //{
-        //    var image = cutscene.GetComponent<Image>();
-        //    Sprite temp = Resources.Load<Sprite>("cutscene/cut2");
-        //    image.sprite = temp;
-
-        //}
-        //else if (data == "cut3")
-        //{
-        //    var image = cutscene.GetComponent<Image>();
-        //    Sprite temp = Resources.Load<Sprite>("cutscene/cut3");
-        //    image.sprite = temp;
-
-        //}
-        //else if (data == "cut4")
-        //{
-        //    var image = cutscene.GetComponent<Image>();
-        //    Sprite temp = Resources.Load<Sprite>("cutscene/cut4");
-        //    image.sprite = temp;
-
-        //}
-        //else if (data == "cut5")
-        //{
-        //    var image = cutscene.GetComponent<Image>();
-        //    Sprite temp = Resources.Load<Sprite>("cutscene/cut5");
-        //    image.sprite = temp;
-
-        //}
-        //else if (data == "cut6")
-        //{
-        //    var image = cutscene.GetComponent<Image>();
-        //    Sprite temp = Resources.Load<Sprite>("cutscene/cut6");
-        //    image.sprite = temp;
-
-        //}
-        //else if (data == "cut7")
-        //{
-        //    var image = cutscene.GetComponent<Image>();
-        //    Sprite temp = Resources.Load<Sprite>("cutscene/cut7");
-        //    image.sprite = temp;
-
-        //}
-        //else if (data == "cut8")
-        //{
-        //    var image = cutscene.GetComponent<Image>();
-        //    Sprite temp = Resources.Load<Sprite>("cutscene/cut8");
-        //    image.sprite = temp;
-
-        //}
-
         cutscene.SetActive(true);
         Debug.Log("showcutscene" + data + temp);        
     }
