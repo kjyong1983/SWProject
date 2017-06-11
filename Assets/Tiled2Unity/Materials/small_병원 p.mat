@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: "resize_\uAC00\uAD6C\uB4E42 p"
+  m_Name: "small_\uBCD1\uC6D0 p"
   m_Shader: {fileID: 4800000, guid: cf5fd84d5967d15429b0d90fb61432f4, type: 3}
   m_ShaderKeywords: PIXELSNAP_ON
   m_LightmapFlags: 5
@@ -18,7 +18,7 @@ Material:
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 2800000, guid: f0e7164ea92a5e843aa04ad7cbb90ef2, type: 3}
+        m_Texture: {fileID: 2800000, guid: b61e5b68816b555428815a0c0f492471, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
