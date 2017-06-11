@@ -60,6 +60,7 @@ public class PlayerInteract : MonoBehaviour {
             {
                 var npc = p.GetComponentInChildren<PlayerInteractTrigger>().objectInfo;
                 npc.GetComponent<NPC>().StartDialogue();
+                Debug.Log("PlayerInteract : " + npc.GetComponent<NPC>().csvFile);
                 Debug.Log("PlayerInteract : Start Dialogue");
             }
         }

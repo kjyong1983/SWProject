@@ -2,7 +2,7 @@
 __Line_NpcName	_Eng	6층 표지판
 		
 __Page_Welcome		
-__Line_NpcAnswer	_Eng	"왼쪽 - 실험실,교수실 외부강의실 - 618호,619호"
+__Line_NpcAnswer	_Eng	왼쪽 - 실험실, 교수실 외부강의실 - 618호,619호
 __Line_Exit	_Eng	…
 		
 __Page_Exit		

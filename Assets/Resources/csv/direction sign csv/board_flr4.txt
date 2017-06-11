@@ -2,7 +2,7 @@
 __Line_NpcName	_Eng	4층 표지판
 		
 __Page_Welcome		
-__Line_NpcAnswer	_Eng	왼쪽 - 401~414호 오른쪽 - 418~432호
+__Line_NpcAnswer	_Eng	왼쪽 - 401~414호, 오른쪽 - 418~432호
 __Line_Exit	_Eng	...
 		
 __Page_Exit		
