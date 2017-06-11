@@ -853,12 +853,12 @@ public class DialogueManager : MonoBehaviour
                                 {
                                     
                                     UIManager.instance.ShowCutScene(data);
-                                    Debug.Log(data);
+                                    Debug.Log("DialogueManager : " + data);
                                    //Debug.Break();
                                     
                                 }
 
-                                UIManager.instance.ShowCutScene("data");
+                                //UIManager.instance.ShowCutScene("data");
                                 //Debug.Break();
                             }
                             continue;

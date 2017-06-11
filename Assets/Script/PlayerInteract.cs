@@ -49,10 +49,10 @@ public class PlayerInteract : MonoBehaviour {
     public void GetInteract()
     {
         var interactTrigger = FindObjectOfType<PlayerInteractTrigger>();
-        //if (interactTrigger.IsObstacle)
-        //{
-        //    Debug.Log("interact!");
-        //}
+        if (interactTrigger.IsObstacle)
+        {
+            Debug.Log("interact!");
+        }
 
         if (p.GetComponentInChildren<PlayerInteractTrigger>().objectInfo != null)
         {
@@ -60,7 +60,7 @@ public class PlayerInteract : MonoBehaviour {
             {
                 var npc = p.GetComponentInChildren<PlayerInteractTrigger>().objectInfo;
                 npc.GetComponent<NPC>().StartDialogue();
-                Debug.Log("Start Dialogue");
+                Debug.Log("PlayerInteract : Start Dialogue");
             }
         }
 
