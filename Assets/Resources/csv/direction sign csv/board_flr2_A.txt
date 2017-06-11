@@ -1,0 +1,9 @@
+﻿__Page_Desc		
+__Line_NpcName	_Eng	2층 표지판(해동)
+		
+__Page_Welcome		
+__Line_NpcAnswer	_Eng	위쪽 - 실험실 아래쪽 - 해동정보자료실
+__Line_Exit	_Eng	…
+		
+__Page_Exit		
+__Line_Effect	_Exit	
