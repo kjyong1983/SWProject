@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour {
 
         if (hp <= 0)
         {
-            Debug.Log("Game Over");
+            //Debug.Log("Game Over");
             //Debug.Break();
         }
 

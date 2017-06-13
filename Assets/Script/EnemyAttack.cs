@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -33,8 +34,17 @@ public class EnemyAttack : MonoBehaviour {
             readyToAttack = true;
 
             GameObject.FindObjectOfType<FadeUI>().FadeOutFast();
+            StartCoroutine(WaitForTitle());
 
         }
+    }
+
+    private IEnumerator WaitForTitle()
+    {
+        yield return new WaitForSeconds(3f);
+        var player = GameObject.FindWithTag("Player");
+        Destroy(player);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
