@@ -64,6 +64,7 @@ public class DataManager : MonoBehaviour {
         saveData = JsonUtility.ToJson(playerLocation.locationData);
         var globalLoc = JsonUtility.ToJson(player.transform.position);
 
+        PlayerPrefs.SetInt("isSaved", 1);
         PlayerPrefs.SetString("save", saveData);
         PlayerPrefs.SetString("globalLoc", globalLoc);
         Debug.Log(saveData);

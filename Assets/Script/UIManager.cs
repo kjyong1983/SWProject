@@ -17,16 +17,47 @@ public class UIManager : MonoBehaviour {
 
     GameObject bgmManager;
 
-    public static bool chk;
+    public static bool isContinue;
     public static UIManager instance;
-
+    public UIManager Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = this;
+            }
+            return instance;
+        }
+    }
     private void Awake()
     {
-        instance = this;
+        if (instance == null)
+        {
+            instance = this;
+        }
+        Debug.Log("UImanager.Awake()");
     }
 
     // Use this for initialization
     void Start () {
+
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            if (GameObject.Find("settingDialogue") != null)
+            {
+                settingDialogue = GameObject.Find("settingDialogue");
+                Debug.Log(settingDialogue);
+                Debug.Log("settingDialogue : " + settingDialogue.activeSelf);
+            }
+
+            if (settingDialogue.activeSelf == true)
+            {
+                settingDialogue.SetActive(false);
+                Debug.Log("deactivate dialogue");
+            }
+
+        }
 
         if (SceneManager.GetActiveScene().buildIndex == 1)
         {
@@ -67,8 +98,20 @@ public class UIManager : MonoBehaviour {
 
     public void ContinueGame()
     {
-        chk = true;
-        SceneManager.LoadScene(1);
+        isContinue = true;
+        string loadData = PlayerPrefs.GetString("save");
+        Debug.Log("loadData : "+ "." + loadData + ".");
+        int isSaved = PlayerPrefs.GetInt("isSaved");
+        Debug.Log("isSaved : " + isSaved);
+        if (loadData != "")
+        {
+            SceneManager.LoadScene(1);
+        }
+        else
+        {
+            isContinue = false;
+            return;
+        } 
     }
 
     public void OpenGameMenu()

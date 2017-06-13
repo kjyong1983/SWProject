@@ -1,0 +1,14 @@
+﻿__Page_Desc		
+__Line_NpcName	_Eng	3층 친구
+		
+__Page_Welcome		
+__Line_NpcAnswer	_Eng	복사실에 시험 족보가 있다고 들었는데 복사실이 어딘지 모르겠어...
+__Line_Welcome2	_Eng	...
+	
+__Page_Welcome2		
+__Line_NpcAnswer	_Eng	211호를 찾는 중이라고? 족보를 찾아주면 알려줄게!
+__Line_Exit	_Eng	...
+
+	
+__Page_Exit		
+__Line_Effect	_Exit	

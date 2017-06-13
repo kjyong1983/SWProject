@@ -57,11 +57,17 @@ public class GameManager : MonoBehaviour {
             playerSpawner = this.gameObject.AddComponent<PlayerSpawner>();
         }
 
-        Debug.Log("save : " + UIManager.chk);
-        if (UIManager.chk)
+        Debug.Log("continue : " + UIManager.isContinue);
+        if (UIManager.isContinue)
         {
             var loadData = PlayerPrefs.GetString("save");
             var globalLoc = PlayerPrefs.GetString("globalLoc");
+
+            if (loadData == null || globalLoc == null)
+            {
+                playerSpawner.NewGame();
+                return;
+            }
 
             playerSpawner.PlayerSpawn(loadData, globalLoc);
         }
