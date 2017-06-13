@@ -61,7 +61,6 @@ public class QuestChecker : MonoBehaviour {
                 Debug.Log("myEvent " + doorEvent);
                 Debug.Log("QuestManager.instance " + QuestManager.instance);
                 doorEvent.Invoke(npc1, npc2, npc3);
-                Debug.Break();
                 triggerEvent = false;
 
             }

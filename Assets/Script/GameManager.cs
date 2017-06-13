@@ -61,6 +61,7 @@ public class GameManager : MonoBehaviour {
         if (UIManager.isContinue)
         {
             var loadData = PlayerPrefs.GetString("save");
+            var questProgress = PlayerPrefs.GetInt("questProgress");
             var globalLoc = PlayerPrefs.GetString("globalLoc");
 
             if (loadData == null || globalLoc == null)
@@ -70,6 +71,8 @@ public class GameManager : MonoBehaviour {
             }
 
             playerSpawner.PlayerSpawn(loadData, globalLoc);
+            QuestManager.instance.questProgress = questProgress;
+            Debug.Log("Load game : quest Progress" + questProgress);
         }
         //if (playerLocation == null)
         else

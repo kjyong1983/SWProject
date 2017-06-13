@@ -89,10 +89,9 @@ public class UIManager : MonoBehaviour {
 
     public void StartGame()
     {
+        PlayerPrefs.DeleteAll();
         SceneManager.LoadScene(1);
         var playerSpawner = GameObject.FindObjectOfType<PlayerSpawner>();
-        //playerSpawner.NewGame();//instantiate player but it destroys when scene is loaded
-        //Debug.Break();
         Debug.Log("Go to game Screen");
     }
 

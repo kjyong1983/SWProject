@@ -65,12 +65,14 @@ public class DataManager : MonoBehaviour {
         var globalLoc = JsonUtility.ToJson(player.transform.position);
 
         PlayerPrefs.SetInt("isSaved", 1);
+        PlayerPrefs.SetInt("questProgress", QuestManager.instance.questProgress);
         PlayerPrefs.SetString("save", saveData);
         PlayerPrefs.SetString("globalLoc", globalLoc);
         Debug.Log(saveData);
         Debug.Log(globalLoc);
     }
 
+    //not use
     public void Load()
     {
         //playerLocation = GameObject.FindWithTag("Player").GetComponent<PlayerLocation>();
