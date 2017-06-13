@@ -1,5 +1,5 @@
 ﻿__Page_Desc		
-__Line_NpcName		친구의 가방
+__Line_NpcName	_Eng	친구의 가방
 		
 __Page_Welcome		
 __Line_Effect	_Cut	_cut2

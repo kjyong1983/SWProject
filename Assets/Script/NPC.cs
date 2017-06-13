@@ -6,6 +6,7 @@ public class NPC : MonoBehaviour {
 
     public TextAsset csvFile;
     public bool setFalseAtStart;
+    public bool setBoxColliderDisabled;
     public bool isTriggered = false;
     public bool canDisappear;
 	// Use this for initialization
@@ -13,6 +14,10 @@ public class NPC : MonoBehaviour {
         if (setFalseAtStart)
         {
             this.gameObject.SetActive(false);
+        }
+        if (setBoxColliderDisabled)
+        {
+            this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
 	}
 	
@@ -46,8 +51,6 @@ public class NPC : MonoBehaviour {
 
         if (canDisappear)
         {
-            //this.GetComponentInChildren<SpriteRenderer>().enabled = false;
-            //this.gameObject.SetActive(false);
             Destroy(gameObject,1f);
         }
     }

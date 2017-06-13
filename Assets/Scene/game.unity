@@ -181,7 +181,7 @@ Transform:
   m_Children:
   - {fileID: 88453739}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 100
+  m_RootOrder: 99
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5582533
 MonoBehaviour:
@@ -436,7 +436,7 @@ Transform:
   m_Children:
   - {fileID: 245397482}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 36
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &16891366
 MonoBehaviour:
@@ -565,6 +565,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: d3ac4a24a7e3ed5418ff8ef118cd6c5f, type: 3}
   setFalseAtStart: 0
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 1
 --- !u!4 &26052694
@@ -579,7 +580,7 @@ Transform:
   m_Children:
   - {fileID: 510004612}
   m_Father: {fileID: 1250125682}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &26052695
 BoxCollider2D:
@@ -704,6 +705,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: 0fb9173e0ddb9e149a8218ad6b53ffcc, type: 3}
   setFalseAtStart: 0
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 1
 --- !u!4 &38780744
@@ -718,7 +720,7 @@ Transform:
   m_Children:
   - {fileID: 598134660}
   m_Father: {fileID: 1250125682}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &38780745
 BoxCollider2D:
@@ -777,7 +779,7 @@ Transform:
   m_Children:
   - {fileID: 361595889}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 92
+  m_RootOrder: 91
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &43086052
 MonoBehaviour:
@@ -900,7 +902,7 @@ Transform:
   m_Children:
   - {fileID: 1249235215}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 85
+  m_RootOrder: 84
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &47603138
 MonoBehaviour:
@@ -1164,7 +1166,7 @@ Transform:
   m_Children:
   - {fileID: 1056655582}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 57
+  m_RootOrder: 56
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &65592999
 MonoBehaviour:
@@ -1223,7 +1225,7 @@ Transform:
   m_Children:
   - {fileID: 503876002}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 89
+  m_RootOrder: 88
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &69211692
 MonoBehaviour:
@@ -1350,7 +1352,7 @@ Transform:
   m_Children:
   - {fileID: 1425018947}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 107
+  m_RootOrder: 106
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &76848636
 MonoBehaviour:
@@ -1620,7 +1622,7 @@ Transform:
   m_Children:
   - {fileID: 985603838}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 117
+  m_RootOrder: 116
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &89157853
 MonoBehaviour:
@@ -2147,7 +2149,7 @@ Transform:
   m_Children:
   - {fileID: 398970272}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 108
+  m_RootOrder: 107
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &126084591
 MonoBehaviour:
@@ -2267,7 +2269,7 @@ Transform:
   m_Children:
   - {fileID: 1594126334}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 127
+  m_RootOrder: 126
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &133889373
 MonoBehaviour:
@@ -2525,7 +2527,7 @@ Transform:
   m_Children:
   - {fileID: 270103213}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 141
+  m_RootOrder: 140
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &153352402
 MonoBehaviour:
@@ -2817,7 +2819,7 @@ Transform:
   m_Children:
   - {fileID: 809048649}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 48
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &159152623
 MonoBehaviour:
@@ -3242,7 +3244,7 @@ Transform:
   m_Children:
   - {fileID: 2081641865}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 79
+  m_RootOrder: 78
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &188170223
 MonoBehaviour:
@@ -3740,7 +3742,7 @@ Transform:
   m_Children:
   - {fileID: 892255406}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 124
+  m_RootOrder: 123
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &204901126
 MonoBehaviour:
@@ -3860,7 +3862,7 @@ Transform:
   m_Children:
   - {fileID: 263060261}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 64
+  m_RootOrder: 63
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &206453389
 MonoBehaviour:
@@ -4519,7 +4521,7 @@ Transform:
   m_Children:
   - {fileID: 1940554972}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 109
+  m_RootOrder: 108
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &245620470
 MonoBehaviour:
@@ -4850,7 +4852,7 @@ Transform:
   m_Children:
   - {fileID: 592343711}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 121
+  m_RootOrder: 120
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &280381857
 MonoBehaviour:
@@ -5007,7 +5009,7 @@ Transform:
   m_Children:
   - {fileID: 1533667065}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 104
+  m_RootOrder: 103
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &290435770
 MonoBehaviour:
@@ -5205,7 +5207,7 @@ Transform:
   m_Children:
   - {fileID: 8132516}
   m_Father: {fileID: 1250125682}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &310798770
 MonoBehaviour:
@@ -5342,7 +5344,7 @@ Transform:
   m_Children:
   - {fileID: 2102673361}
   m_Father: {fileID: 1250125682}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &322128922
 MonoBehaviour:
@@ -5401,7 +5403,7 @@ Transform:
   m_Children:
   - {fileID: 1133513282}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 45
+  m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &327876925
 MonoBehaviour:
@@ -5599,6 +5601,8 @@ GameObject:
   - component: {fileID: 342538022}
   - component: {fileID: 342538024}
   - component: {fileID: 342538025}
+  - component: {fileID: 342538027}
+  - component: {fileID: 342538026}
   m_Layer: 0
   m_Name: q1_bag_211
   m_TagString: NPC
@@ -5619,6 +5623,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: 66a278c8048ea5944a0e63218dd34c45, type: 3}
   setFalseAtStart: 0
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!4 &342538023
@@ -5663,6 +5668,37 @@ MonoBehaviour:
   floor: 2
   x: 24
   y: 45
+--- !u!114 &342538026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 342538021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6415ba71b3e2aae42adf29de8258767e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npc1: {fileID: 789284743}
+  npc2: {fileID: 1884269558}
+  npc3: {fileID: 1852608524}
+  csvFile: {fileID: 0}
+  isTriggered: 0
+  triggerEvent: 0
+  target: 1
+--- !u!114 &342538027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 342538021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63c6e36cc1d4eed4a909b74f18b329ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  progressValue: 2
+  isTriggered: 0
 --- !u!1 &345176342
 GameObject:
   m_ObjectHideFlags: 0
@@ -5887,7 +5923,7 @@ Transform:
   m_Children:
   - {fileID: 1979164941}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 65
+  m_RootOrder: 64
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &364877391
 MonoBehaviour:
@@ -6113,7 +6149,7 @@ Transform:
   m_Children:
   - {fileID: 1261862506}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 91
+  m_RootOrder: 90
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &373399158
 MonoBehaviour:
@@ -6172,7 +6208,7 @@ Transform:
   m_Children:
   - {fileID: 436289150}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 34
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &375610950
 MonoBehaviour:
@@ -6305,7 +6341,7 @@ Transform:
   m_Children:
   - {fileID: 1982111011}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &380322289
 MonoBehaviour:
@@ -6394,7 +6430,7 @@ Transform:
   m_Children:
   - {fileID: 686676089}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 35
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &387124299
 MonoBehaviour:
@@ -6453,7 +6489,7 @@ Transform:
   m_Children:
   - {fileID: 1629512692}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 129
+  m_RootOrder: 128
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &387573739
 MonoBehaviour:
@@ -6773,7 +6809,7 @@ Transform:
   m_Children:
   - {fileID: 2110376930}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 97
+  m_RootOrder: 96
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &408722321
 MonoBehaviour:
@@ -6959,7 +6995,7 @@ Transform:
   m_Children:
   - {fileID: 871710634}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 66
+  m_RootOrder: 65
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &417554540
 MonoBehaviour:
@@ -7154,7 +7190,7 @@ Transform:
   m_Children:
   - {fileID: 816500676}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 99
+  m_RootOrder: 98
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &437252090
 MonoBehaviour:
@@ -7603,7 +7639,7 @@ Transform:
   m_Children:
   - {fileID: 2009012966}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 103
+  m_RootOrder: 102
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &462007514
 MonoBehaviour:
@@ -7662,7 +7698,7 @@ Transform:
   m_Children:
   - {fileID: 846317618}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 98
+  m_RootOrder: 97
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &469490572
 MonoBehaviour:
@@ -8026,7 +8062,7 @@ Transform:
   m_Children:
   - {fileID: 2124044562}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 38
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &499204497
 MonoBehaviour:
@@ -8216,6 +8252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: 08432c2ad5814424e8d4a0a18345fd1f, type: 3}
   setFalseAtStart: 0
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!4 &506079359
@@ -8289,7 +8326,7 @@ Transform:
   m_Children:
   - {fileID: 997062980}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 120
+  m_RootOrder: 119
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &508059757
 MonoBehaviour:
@@ -8562,7 +8599,7 @@ Transform:
   m_Children:
   - {fileID: 1811243575}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 70
+  m_RootOrder: 69
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &525679934
 MonoBehaviour:
@@ -8651,7 +8688,7 @@ Transform:
   m_Children:
   - {fileID: 1560190534}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 74
+  m_RootOrder: 73
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &534742983
 MonoBehaviour:
@@ -9026,7 +9063,7 @@ Transform:
   m_Children:
   - {fileID: 536044027}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 69
+  m_RootOrder: 68
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &544338762
 MonoBehaviour:
@@ -9087,6 +9124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: 3a6c2ee31ce05c4439493c4c13320153, type: 3}
   setFalseAtStart: 0
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!4 &546010967
@@ -9101,7 +9139,7 @@ Transform:
   m_Children:
   - {fileID: 650955181}
   m_Father: {fileID: 1250125682}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &546010968
 BoxCollider2D:
@@ -9420,7 +9458,7 @@ Transform:
   m_Children:
   - {fileID: 1197508357}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 27
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &570548492
 MonoBehaviour:
@@ -10003,7 +10041,7 @@ Transform:
   m_Children:
   - {fileID: 1652218071}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 142
+  m_RootOrder: 141
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &594970731
 MonoBehaviour:
@@ -10330,7 +10368,7 @@ Transform:
   m_Children:
   - {fileID: 597842281}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 44
+  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &603817898
 MonoBehaviour:
@@ -10389,7 +10427,7 @@ Transform:
   m_Children:
   - {fileID: 162630478}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &605364930
 MonoBehaviour:
@@ -10904,7 +10942,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -11149,6 +11187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: 4e20ee71f211804468d36bd48ab7d4d6, type: 3}
   setFalseAtStart: 1
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!4 &653453419
@@ -11163,7 +11202,7 @@ Transform:
   m_Children:
   - {fileID: 859693540}
   m_Father: {fileID: 1250125682}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &653453420
 BoxCollider2D:
@@ -11193,6 +11232,70 @@ MonoBehaviour:
   floor: 4
   x: 35
   y: 44
+--- !u!1 &654127783
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 654127784}
+  - component: {fileID: 654127785}
+  m_Layer: 0
+  m_Name: Sprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &654127784
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 654127783}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_Children: []
+  m_Father: {fileID: 1706481866}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &654127785
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 654127783}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -276601455
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 8695e7d720c1f7643a3df8a01f7b20b4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1 &655235249
 GameObject:
   m_ObjectHideFlags: 0
@@ -11290,7 +11393,7 @@ Transform:
   m_Children:
   - {fileID: 1329115045}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 73
+  m_RootOrder: 72
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &658896769
 MonoBehaviour:
@@ -11448,7 +11551,7 @@ Transform:
   m_Children:
   - {fileID: 747232276}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 87
+  m_RootOrder: 86
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &672931568
 MonoBehaviour:
@@ -11643,7 +11746,7 @@ Transform:
   m_Children:
   - {fileID: 1855577083}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 86
+  m_RootOrder: 85
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &687794504
 MonoBehaviour:
@@ -11835,7 +11938,7 @@ Transform:
   m_Children:
   - {fileID: 432155303}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 83
+  m_RootOrder: 82
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &692734981
 MonoBehaviour:
@@ -12706,7 +12809,7 @@ Transform:
   m_Children:
   - {fileID: 1026243915}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 140
+  m_RootOrder: 139
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &705285960
 MonoBehaviour:
@@ -12736,74 +12839,6 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
---- !u!1 &708013996
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 708013997}
-  - component: {fileID: 708013999}
-  - component: {fileID: 708013998}
-  m_Layer: 0
-  m_Name: Sphere
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &708013997
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 708013996}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1594710649}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &708013998
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 708013996}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!33 &708013999
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 708013996}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &708907115
 GameObject:
   m_ObjectHideFlags: 0
@@ -13119,7 +13154,7 @@ Transform:
   m_Children:
   - {fileID: 1627149205}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 43
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &733283435
 MonoBehaviour:
@@ -13242,7 +13277,7 @@ Transform:
   m_Children:
   - {fileID: 441153470}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 51
+  m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &742892048
 MonoBehaviour:
@@ -13507,6 +13542,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: 0e9f8e6b3f5dedb48beb1d40fad850be, type: 3}
   setFalseAtStart: 0
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!4 &758250523
@@ -13553,6 +13589,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: fe74d4eed6dbb154f8b1041a9169541a, type: 3}
   setFalseAtStart: 0
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!4 &759058435
@@ -13567,7 +13604,7 @@ Transform:
   m_Children:
   - {fileID: 895022956}
   m_Father: {fileID: 1250125682}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &759058436
 BoxCollider2D:
@@ -13626,7 +13663,7 @@ Transform:
   m_Children:
   - {fileID: 1144610248}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 63
+  m_RootOrder: 62
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &761112309
 MonoBehaviour:
@@ -13685,7 +13722,7 @@ Transform:
   m_Children:
   - {fileID: 198943242}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 82
+  m_RootOrder: 81
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &762043451
 MonoBehaviour:
@@ -13814,6 +13851,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: 52b7cf97743137c49b3329a023d9e986, type: 3}
   setFalseAtStart: 0
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!4 &764943513
@@ -13828,7 +13866,7 @@ Transform:
   m_Children:
   - {fileID: 310065720}
   m_Father: {fileID: 1250125682}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &764943514
 BoxCollider2D:
@@ -13916,6 +13954,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: cb3be2fb393a6cb4a80d26cc1c3128c2, type: 3}
   setFalseAtStart: 0
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!1 &774478034
@@ -14161,7 +14200,7 @@ Transform:
   m_Children:
   - {fileID: 952857921}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 59
+  m_RootOrder: 58
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &785543050
 MonoBehaviour:
@@ -14288,7 +14327,7 @@ Transform:
   m_Children:
   - {fileID: 1377241467}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 95
+  m_RootOrder: 94
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &787177558
 MonoBehaviour:
@@ -14348,7 +14387,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: fc8c428619195d644876a47cf51f5a93, type: 3}
-  setFalseAtStart: 0
+  setFalseAtStart: 1
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!4 &789284744
@@ -14363,7 +14403,7 @@ Transform:
   m_Children:
   - {fileID: 448614487}
   m_Father: {fileID: 1250125682}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &789284745
 BoxCollider2D:
@@ -14422,7 +14462,7 @@ Transform:
   m_Children:
   - {fileID: 696282459}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 115
+  m_RootOrder: 114
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &793777691
 MonoBehaviour:
@@ -14481,7 +14521,7 @@ Transform:
   m_Children:
   - {fileID: 596337636}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 132
+  m_RootOrder: 131
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &794508482
 MonoBehaviour:
@@ -14542,6 +14582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: 25f3fccc8288d2b419baa721ffdaca2b, type: 3}
   setFalseAtStart: 0
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!4 &795221896
@@ -14556,7 +14597,7 @@ Transform:
   m_Children:
   - {fileID: 1938342257}
   m_Father: {fileID: 1250125682}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &795221897
 BoxCollider2D:
@@ -14752,7 +14793,7 @@ Transform:
   m_Children:
   - {fileID: 1416031482}
   m_Father: {fileID: 1250125682}
-  m_RootOrder: 34
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &801404514
 MonoBehaviour:
@@ -14795,6 +14836,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: 93b5b86bf69534c43befddeacf6aab08, type: 3}
   setFalseAtStart: 0
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!1 &806237230
@@ -15026,7 +15068,7 @@ Transform:
   m_Children:
   - {fileID: 1305021608}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 62
+  m_RootOrder: 61
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &816770553
 MonoBehaviour:
@@ -15551,7 +15593,7 @@ Transform:
   m_Children:
   - {fileID: 1504310189}
   m_Father: {fileID: 1250125682}
-  m_RootOrder: 30
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &843227028
 MonoBehaviour:
@@ -15594,6 +15636,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: a7ebb2decbd6bc34f914e09d18f408d2, type: 3}
   setFalseAtStart: 0
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!1 &846317617
@@ -15693,7 +15736,7 @@ Transform:
   m_Children:
   - {fileID: 1681559205}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 101
+  m_RootOrder: 100
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &847446425
 MonoBehaviour:
@@ -15914,7 +15957,7 @@ Transform:
   m_Children:
   - {fileID: 199492233}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 122
+  m_RootOrder: 121
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &867354205
 MonoBehaviour:
@@ -16041,7 +16084,7 @@ Transform:
   m_Children:
   - {fileID: 565152441}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 112
+  m_RootOrder: 111
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &873164230
 MonoBehaviour:
@@ -16168,7 +16211,7 @@ Transform:
   m_Children:
   - {fileID: 650304370}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 46
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &884383011
 MonoBehaviour:
@@ -16560,7 +16603,7 @@ Transform:
   m_Children:
   - {fileID: 764215864}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 136
+  m_RootOrder: 135
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &903064143
 MonoBehaviour:
@@ -16742,7 +16785,7 @@ Transform:
   m_Children:
   - {fileID: 278313915}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 105
+  m_RootOrder: 104
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &920398828
 MonoBehaviour:
@@ -16803,6 +16846,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: e36f9e469e607234397aec355215d49f, type: 3}
   setFalseAtStart: 0
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!4 &922586745
@@ -16817,7 +16861,7 @@ Transform:
   m_Children:
   - {fileID: 1924808306}
   m_Father: {fileID: 1250125682}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &922586746
 BoxCollider2D:
@@ -16876,7 +16920,7 @@ Transform:
   m_Children:
   - {fileID: 1141009799}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 50
+  m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &930202045
 MonoBehaviour:
@@ -16935,7 +16979,7 @@ Transform:
   m_Children:
   - {fileID: 1820813370}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 31
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &933127567
 MonoBehaviour:
@@ -16995,7 +17039,7 @@ Transform:
   m_Children:
   - {fileID: 994083075}
   m_Father: {fileID: 1250125682}
-  m_RootOrder: 32
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &935040894
 MonoBehaviour:
@@ -17038,6 +17082,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: 3a07599d81d37e041b87dab42b5eb80a, type: 3}
   setFalseAtStart: 0
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!1 &943241640
@@ -17452,7 +17497,7 @@ Transform:
   m_Children:
   - {fileID: 37670510}
   m_Father: {fileID: 1250125682}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &952407312
 MonoBehaviour:
@@ -17579,7 +17624,7 @@ Transform:
   m_Children:
   - {fileID: 396708561}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 113
+  m_RootOrder: 112
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &954885861
 MonoBehaviour:
@@ -17638,7 +17683,7 @@ Transform:
   m_Children:
   - {fileID: 286256892}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 134
+  m_RootOrder: 133
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &958836567
 MonoBehaviour:
@@ -18339,7 +18384,7 @@ Transform:
   m_Children:
   - {fileID: 122015757}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 37
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1019240494
 MonoBehaviour:
@@ -18398,7 +18443,7 @@ Transform:
   m_Children:
   - {fileID: 2071235852}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 60
+  m_RootOrder: 59
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1022494409
 MonoBehaviour:
@@ -18596,7 +18641,7 @@ Transform:
   m_Children:
   - {fileID: 10698738}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 114
+  m_RootOrder: 113
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1030032029
 MonoBehaviour:
@@ -18900,7 +18945,7 @@ Transform:
   m_Children:
   - {fileID: 2130292352}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 128
+  m_RootOrder: 127
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1037675600
 MonoBehaviour:
@@ -19085,7 +19130,7 @@ Transform:
   m_Children:
   - {fileID: 1423204519}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 47
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1049479362
 MonoBehaviour:
@@ -19657,7 +19702,7 @@ Transform:
   m_Children:
   - {fileID: 1466114137}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 53
+  m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1079958680
 MonoBehaviour:
@@ -19716,7 +19761,7 @@ Transform:
   m_Children:
   - {fileID: 1083900015}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 32
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1080526536
 MonoBehaviour:
@@ -19925,7 +19970,7 @@ Transform:
   m_Children:
   - {fileID: 69342477}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 29
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1087678986
 MonoBehaviour:
@@ -20205,7 +20250,7 @@ Transform:
   m_Children:
   - {fileID: 584545321}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 76
+  m_RootOrder: 75
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1108068759
 MonoBehaviour:
@@ -20510,6 +20555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: 4799ab98d7c630c42a050c4cc28e1d36, type: 3}
   setFalseAtStart: 0
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!4 &1121586595
@@ -20524,7 +20570,7 @@ Transform:
   m_Children:
   - {fileID: 44619117}
   m_Father: {fileID: 1250125682}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1121586596
 BoxCollider2D:
@@ -21094,7 +21140,7 @@ Transform:
   m_Children:
   - {fileID: 876814734}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 126
+  m_RootOrder: 125
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1141391513
 MonoBehaviour:
@@ -21322,6 +21368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: 1c3eec76ee8d7174789c83cd46346a6e, type: 3}
   setFalseAtStart: 0
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 1
 --- !u!114 &1149286193
@@ -21349,6 +21396,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c6e36cc1d4eed4a909b74f18b329ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  progressValue: 1
   isTriggered: 0
 --- !u!114 &1149286195
 MonoBehaviour:
@@ -21361,7 +21409,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6415ba71b3e2aae42adf29de8258767e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npc: {fileID: 2147032259}
+  npc1: {fileID: 2147032259}
+  npc2: {fileID: 0}
+  npc3: {fileID: 0}
   csvFile: {fileID: 4900000, guid: 4fd0c165f02a85947a6abe1bd69b4039, type: 3}
   isTriggered: 0
   triggerEvent: 0
@@ -21594,7 +21644,7 @@ Transform:
   m_Children:
   - {fileID: 1623705946}
   m_Father: {fileID: 1250125682}
-  m_RootOrder: 28
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1180660958
 MonoBehaviour:
@@ -21637,6 +21687,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: 724cb7893bb01dd45aaa7683cb5a0ae4, type: 3}
   setFalseAtStart: 0
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!1 &1186082707
@@ -21713,6 +21764,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: a8e4c6fad01273b49b23f7369db8bd4d, type: 3}
   setFalseAtStart: 0
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!61 &1194997302
@@ -21879,7 +21931,6 @@ Transform:
   - {fileID: 2064513633}
   - {fileID: 156509388}
   - {fileID: 230696870}
-  - {fileID: 1594710649}
   - {fileID: 1463511323}
   - {fileID: 1959797626}
   - {fileID: 380322288}
@@ -22161,7 +22212,7 @@ Transform:
   m_Children:
   - {fileID: 202650409}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 55
+  m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1229773307
 MonoBehaviour:
@@ -22485,6 +22536,7 @@ Transform:
   - {fileID: 2147032256}
   - {fileID: 506079359}
   - {fileID: 342538023}
+  - {fileID: 1706481866}
   - {fileID: 789284744}
   - {fileID: 1884269555}
   - {fileID: 1852608521}
@@ -22548,7 +22600,7 @@ Transform:
   m_Children:
   - {fileID: 1784966296}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1252683197
 MonoBehaviour:
@@ -22749,7 +22801,7 @@ Transform:
   m_Children:
   - {fileID: 1230714606}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 123
+  m_RootOrder: 122
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1265570974
 MonoBehaviour:
@@ -23139,7 +23191,7 @@ Transform:
   m_Children:
   - {fileID: 801002021}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 133
+  m_RootOrder: 132
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1302144159
 MonoBehaviour:
@@ -23336,6 +23388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: 48db90b30f4cd3b499bc717e9d19ba7b, type: 3}
   setFalseAtStart: 0
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!4 &1309806412
@@ -23350,7 +23403,7 @@ Transform:
   m_Children:
   - {fileID: 240336526}
   m_Father: {fileID: 1250125682}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1309806413
 BoxCollider2D:
@@ -23409,7 +23462,7 @@ Transform:
   m_Children:
   - {fileID: 859321589}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 41
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1311959407
 MonoBehaviour:
@@ -24130,7 +24183,7 @@ Transform:
   m_Children:
   - {fileID: 1062493255}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 110
+  m_RootOrder: 109
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1356755751
 MonoBehaviour:
@@ -24315,6 +24368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: c561fcf3223bc65488a4e5b2cd5de1b0, type: 3}
   setFalseAtStart: 0
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!4 &1370675488
@@ -24329,7 +24383,7 @@ Transform:
   m_Children:
   - {fileID: 589537261}
   m_Father: {fileID: 1250125682}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1370675489
 BoxCollider2D:
@@ -24388,7 +24442,7 @@ Transform:
   m_Children:
   - {fileID: 1855241973}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 106
+  m_RootOrder: 105
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1373704946
 MonoBehaviour:
@@ -24741,7 +24795,7 @@ Transform:
   m_Children:
   - {fileID: 798923617}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 30
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1404271077
 MonoBehaviour:
@@ -24830,7 +24884,7 @@ Transform:
   m_Children:
   - {fileID: 457866474}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 28
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1409184260
 MonoBehaviour:
@@ -25172,7 +25226,7 @@ Transform:
   m_Children:
   - {fileID: 1777331250}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 135
+  m_RootOrder: 134
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1423360750
 MonoBehaviour:
@@ -25231,7 +25285,7 @@ Transform:
   m_Children:
   - {fileID: 1591136120}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 52
+  m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1424288923
 MonoBehaviour:
@@ -25467,7 +25521,7 @@ Transform:
   m_Children:
   - {fileID: 204385243}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 39
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1435386549
 MonoBehaviour:
@@ -25589,6 +25643,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: d013fe9be4f8b4f42be7033c4aacbd4c, type: 3}
   setFalseAtStart: 0
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!4 &1439448179
@@ -25603,7 +25658,7 @@ Transform:
   m_Children:
   - {fileID: 817058921}
   m_Father: {fileID: 1250125682}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1439448180
 BoxCollider2D:
@@ -25784,7 +25839,7 @@ Transform:
   m_Children:
   - {fileID: 443375983}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 42
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1440900430
 MonoBehaviour:
@@ -25904,7 +25959,7 @@ Transform:
   m_Children:
   - {fileID: 1915319422}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 131
+  m_RootOrder: 130
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1446256491
 MonoBehaviour:
@@ -25963,7 +26018,7 @@ Transform:
   m_Children:
   - {fileID: 1616232867}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 68
+  m_RootOrder: 67
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1449114699
 MonoBehaviour:
@@ -26086,7 +26141,7 @@ Transform:
   m_Children:
   - {fileID: 48988409}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1463511324
 MonoBehaviour:
@@ -26281,7 +26336,7 @@ Transform:
   m_Children:
   - {fileID: 785971768}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 130
+  m_RootOrder: 129
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1477672466
 MonoBehaviour:
@@ -26341,7 +26396,7 @@ Transform:
   m_Children:
   - {fileID: 690399692}
   m_Father: {fileID: 1250125682}
-  m_RootOrder: 33
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1487056845
 MonoBehaviour:
@@ -26384,6 +26439,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: 277d9f55fc4f2714993f55651f45038b, type: 3}
   setFalseAtStart: 0
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!1 &1491766435
@@ -27042,7 +27098,7 @@ Transform:
   m_Children:
   - {fileID: 1905369997}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 58
+  m_RootOrder: 57
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1568233289
 MonoBehaviour:
@@ -27131,7 +27187,7 @@ Transform:
   m_Children:
   - {fileID: 636765225}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 81
+  m_RootOrder: 80
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1579495107
 MonoBehaviour:
@@ -27624,65 +27680,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1594126333}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1594710648
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1594710649}
-  - component: {fileID: 1594710651}
-  - component: {fileID: 1594710650}
-  m_Layer: 0
-  m_Name: "\uC5EC\uD559\uC0DD \uD734\uAC8C\uC2E4"
-  m_TagString: Ignored
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1594710649
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1594710648}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -272, y: -45.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 708013997}
-  m_Father: {fileID: 1203429525}
-  m_RootOrder: 19
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1594710650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1594710648}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7314fee63be334a4ab2be90f3fafab17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isTrigger: 0
-  coolTimer: 0
-  data: "\uC5EC\uD559\uC0DD \uD734\uAC8C\uC2E4"
---- !u!61 &1594710651
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1594710648}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.9}
 --- !u!1 &1607691629
 GameObject:
   m_ObjectHideFlags: 0
@@ -27755,6 +27752,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: cbd6db78976b79b4a893f106e50ece3f, type: 3}
   setFalseAtStart: 0
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!1 &1607988326
@@ -27854,7 +27852,7 @@ Transform:
   m_Children:
   - {fileID: 1351314153}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 33
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1609909750
 MonoBehaviour:
@@ -28304,7 +28302,7 @@ Transform:
   m_Children:
   - {fileID: 617674998}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 96
+  m_RootOrder: 95
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1639075952
 MonoBehaviour:
@@ -28363,7 +28361,7 @@ Transform:
   m_Children:
   - {fileID: 338405562}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 93
+  m_RootOrder: 92
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1639420842
 MonoBehaviour:
@@ -28698,7 +28696,7 @@ Transform:
   m_Children:
   - {fileID: 155533920}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 111
+  m_RootOrder: 110
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1660149996
 MonoBehaviour:
@@ -29172,6 +29170,104 @@ MonoBehaviour:
   dest: {fileID: 1751320440}
   destNum: 8
   dir: 0
+--- !u!1 &1706481865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1706481866}
+  - component: {fileID: 1706481869}
+  - component: {fileID: 1706481868}
+  - component: {fileID: 1706481867}
+  - component: {fileID: 1706481871}
+  - component: {fileID: 1706481870}
+  m_Layer: 0
+  m_Name: q1_doorActivator
+  m_TagString: Ignored
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1706481866
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1706481865}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -172, y: -31.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 654127784}
+  m_Father: {fileID: 1250125682}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1706481867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1706481865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8022407944b71a4aabc6dc48422968f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 789284742}
+--- !u!114 &1706481868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1706481865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cf9c0d7f3ac1a64893e7b8b3ea2921f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floor: 2
+  x: 19
+  y: 47
+--- !u!61 &1706481869
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1706481865}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 12.8, y: 0.9}
+--- !u!114 &1706481870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1706481865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8022407944b71a4aabc6dc48422968f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1852608520}
+--- !u!114 &1706481871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1706481865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8022407944b71a4aabc6dc48422968f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1884269554}
 --- !u!1 &1706812648
 GameObject:
   m_ObjectHideFlags: 0
@@ -29201,7 +29297,7 @@ Transform:
   m_Children:
   - {fileID: 1884213522}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 144
+  m_RootOrder: 143
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1706812650
 MonoBehaviour:
@@ -29260,7 +29356,7 @@ Transform:
   m_Children:
   - {fileID: 946418298}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 118
+  m_RootOrder: 117
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1711228457
 MonoBehaviour:
@@ -29320,7 +29416,7 @@ Transform:
   m_Children:
   - {fileID: 734988466}
   m_Father: {fileID: 1250125682}
-  m_RootOrder: 31
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1717446390
 MonoBehaviour:
@@ -29363,6 +29459,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: ee6f13ba4403e014dab9e3fefa9e3f3a, type: 3}
   setFalseAtStart: 0
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!1 &1718702593
@@ -29492,7 +29589,7 @@ Transform:
   m_Children:
   - {fileID: 1865030992}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 90
+  m_RootOrder: 89
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1723164202
 MonoBehaviour:
@@ -29567,6 +29664,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: 046e6aff4f1a4624e9a2dd9c0031cd8f, type: 3}
   setFalseAtStart: 0
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!61 &1725757194
@@ -29612,7 +29710,7 @@ Transform:
   m_Children:
   - {fileID: 1992736376}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 49
+  m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1728062837
 MonoBehaviour:
@@ -29671,7 +29769,7 @@ Transform:
   m_Children:
   - {fileID: 50886649}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 138
+  m_RootOrder: 137
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1730145058
 MonoBehaviour:
@@ -29772,7 +29870,7 @@ Transform:
   m_Children:
   - {fileID: 1910396090}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 139
+  m_RootOrder: 138
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1739441964
 MonoBehaviour:
@@ -29895,7 +29993,7 @@ Transform:
   m_Children:
   - {fileID: 948937837}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 125
+  m_RootOrder: 124
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1750046213
 MonoBehaviour:
@@ -29984,7 +30082,7 @@ Transform:
   m_Children:
   - {fileID: 2140770456}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 56
+  m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1758274382
 MonoBehaviour:
@@ -30646,6 +30744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: cf5283e1eecb62c46872f23bc59ea402, type: 3}
   setFalseAtStart: 0
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!4 &1789592895
@@ -30660,7 +30759,7 @@ Transform:
   m_Children:
   - {fileID: 1505282456}
   m_Father: {fileID: 1250125682}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1789592896
 BoxCollider2D:
@@ -30721,6 +30820,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: 18355bd1e92d9234996320dc78e893f8, type: 3}
   setFalseAtStart: 0
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!4 &1793587777
@@ -30735,7 +30835,7 @@ Transform:
   m_Children:
   - {fileID: 1225590949}
   m_Father: {fileID: 1250125682}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1793587778
 BoxCollider2D:
@@ -30794,7 +30894,7 @@ Transform:
   m_Children:
   - {fileID: 774778546}
   m_Father: {fileID: 1250125682}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1794814115
 MonoBehaviour:
@@ -30853,7 +30953,7 @@ Transform:
   m_Children:
   - {fileID: 1960534259}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 116
+  m_RootOrder: 115
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1795870258
 MonoBehaviour:
@@ -30912,7 +31012,7 @@ Transform:
   m_Children:
   - {fileID: 588418154}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 102
+  m_RootOrder: 101
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1801312538
 MonoBehaviour:
@@ -31158,7 +31258,7 @@ Transform:
   m_Children:
   - {fileID: 266426725}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 72
+  m_RootOrder: 71
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1818433268
 MonoBehaviour:
@@ -31285,7 +31385,7 @@ Transform:
   m_Children:
   - {fileID: 1321348031}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 119
+  m_RootOrder: 118
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1822062922
 MonoBehaviour:
@@ -31628,7 +31728,7 @@ Transform:
   m_Children:
   - {fileID: 1692864743}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 137
+  m_RootOrder: 136
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1845108681
 MonoBehaviour:
@@ -31688,7 +31788,7 @@ Transform:
   m_Children:
   - {fileID: 404680263}
   m_Father: {fileID: 1250125682}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1852608522
 MonoBehaviour:
@@ -31730,7 +31830,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: fc8c428619195d644876a47cf51f5a93, type: 3}
-  setFalseAtStart: 0
+  setFalseAtStart: 1
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!1 &1852899408
@@ -32050,7 +32151,7 @@ Transform:
   m_Children:
   - {fileID: 1722601814}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 71
+  m_RootOrder: 70
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1859796210
 MonoBehaviour:
@@ -32179,6 +32280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: c20a6500e73330042b9e4cfd6035567d, type: 3}
   setFalseAtStart: 0
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!4 &1866009868
@@ -32193,7 +32295,7 @@ Transform:
   m_Children:
   - {fileID: 609761369}
   m_Father: {fileID: 1250125682}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1866009869
 BoxCollider2D:
@@ -32444,7 +32546,7 @@ Transform:
   m_Children:
   - {fileID: 1852899409}
   m_Father: {fileID: 1250125682}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1884269556
 MonoBehaviour:
@@ -32486,7 +32588,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: fc8c428619195d644876a47cf51f5a93, type: 3}
-  setFalseAtStart: 0
+  setFalseAtStart: 1
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!1 &1905369996
@@ -34156,7 +34259,7 @@ Transform:
   m_Children:
   - {fileID: 1834807810}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1946324390
 MonoBehaviour:
@@ -34347,7 +34450,7 @@ Transform:
   m_Children:
   - {fileID: 943241641}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1959797627
 MonoBehaviour:
@@ -34863,7 +34966,7 @@ Transform:
   m_Children:
   - {fileID: 1351383578}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 143
+  m_RootOrder: 142
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1979554758
 MonoBehaviour:
@@ -34922,7 +35025,7 @@ Transform:
   m_Children:
   - {fileID: 1004516229}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 88
+  m_RootOrder: 87
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1981159155
 MonoBehaviour:
@@ -35049,7 +35152,7 @@ Transform:
   m_Children:
   - {fileID: 1368182850}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 77
+  m_RootOrder: 76
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1984267730
 MonoBehaviour:
@@ -35109,7 +35212,7 @@ Transform:
   m_Children:
   - {fileID: 1637585900}
   m_Father: {fileID: 1250125682}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1986359468
 MonoBehaviour:
@@ -35152,6 +35255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: 1458f52fb0db39540a1b0299276803e1, type: 3}
   setFalseAtStart: 0
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!1 &1992736375
@@ -36689,7 +36793,7 @@ Transform:
   m_Children:
   - {fileID: 1305722007}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 75
+  m_RootOrder: 74
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2024932602
 MonoBehaviour:
@@ -37307,7 +37411,7 @@ Transform:
   m_Children:
   - {fileID: 2053301616}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 54
+  m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2075426350
 MonoBehaviour:
@@ -37366,7 +37470,7 @@ Transform:
   m_Children:
   - {fileID: 146277607}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 80
+  m_RootOrder: 79
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2076285918
 MonoBehaviour:
@@ -37682,7 +37786,7 @@ Transform:
   m_Children:
   - {fileID: 1911331723}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2086839383
 MonoBehaviour:
@@ -37741,7 +37845,7 @@ Transform:
   m_Children:
   - {fileID: 600760602}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 78
+  m_RootOrder: 77
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2090042868
 MonoBehaviour:
@@ -37927,6 +38031,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: 5aefdea41c0e97c4ca856e739c4a6a57, type: 3}
   setFalseAtStart: 0
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!4 &2098572447
@@ -37941,7 +38046,7 @@ Transform:
   m_Children:
   - {fileID: 1780830949}
   m_Father: {fileID: 1250125682}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2098572448
 BoxCollider2D:
@@ -38002,6 +38107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: 56c9c1957502820448dc69a38a367618, type: 3}
   setFalseAtStart: 1
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0
 --- !u!4 &2098629186
@@ -38016,7 +38122,7 @@ Transform:
   m_Children:
   - {fileID: 1462538655}
   m_Father: {fileID: 1250125682}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2098629187
 BoxCollider2D:
@@ -38390,7 +38496,7 @@ Transform:
   m_Children:
   - {fileID: 573575276}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 84
+  m_RootOrder: 83
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2111531444
 MonoBehaviour:
@@ -38449,7 +38555,7 @@ Transform:
   m_Children:
   - {fileID: 1386740682}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 67
+  m_RootOrder: 66
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2112072040
 MonoBehaviour:
@@ -38508,7 +38614,7 @@ Transform:
   m_Children:
   - {fileID: 2039105214}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 40
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2118365044
 MonoBehaviour:
@@ -38567,7 +38673,7 @@ Transform:
   m_Children:
   - {fileID: 1056397633}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 61
+  m_RootOrder: 60
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2120030805
 MonoBehaviour:
@@ -38758,7 +38864,7 @@ Transform:
   m_Children:
   - {fileID: 224338477}
   m_Father: {fileID: 1203429525}
-  m_RootOrder: 94
+  m_RootOrder: 93
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2124227275
 MonoBehaviour:
@@ -39179,5 +39285,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   csvFile: {fileID: 4900000, guid: 166f0d73fb030cb47869fb3de4c262e3, type: 3}
   setFalseAtStart: 0
+  setBoxColliderDisabled: 0
   isTriggered: 0
   canDisappear: 0

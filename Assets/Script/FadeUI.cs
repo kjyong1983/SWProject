@@ -10,7 +10,7 @@ public class FadeUI : MonoBehaviour {
 
     public bool isFadeIn = false;
     public bool fadeTrigger = false;
-    float fadeSpeed = 4;
+    float fadeSpeed = 8;
 
     private void Awake()
     {
@@ -123,7 +123,7 @@ public class FadeUI : MonoBehaviour {
     IEnumerator DoFadeOutandIn()
     {
         yield return StartCoroutine(DoFadeOut());
-
+        yield return new WaitForSeconds(0.5f);
         yield return StartCoroutine(DoFadeIn());
 
         yield return null;

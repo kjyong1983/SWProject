@@ -42,7 +42,7 @@ public class PlayerInteractTrigger : MonoBehaviour {
         }
         else if (other.CompareTag("Warp"))
         {
-            Debug.Log("Warp Detected");
+            //Debug.Log("Warp Detected");
             objectInfo = other.gameObject;
             isObstacle = false;
             return;
@@ -80,5 +80,6 @@ public class PlayerInteractTrigger : MonoBehaviour {
     {
         objectInfo = null;
         IsObstacle = false;
+        collisionInfo = null;
     }
 }

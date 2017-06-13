@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class QuestMarker : MonoBehaviour {
 
+    public int progressValue;
     public bool isTriggered = false;
 
     private void Update()
@@ -20,7 +21,7 @@ public class QuestMarker : MonoBehaviour {
         {
             Debug.Log("QuestManager instance is null");
         }
-        QuestManager.instance.questProgress += 1;
+        QuestManager.instance.questProgress = progressValue;
     }
 
 }

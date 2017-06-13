@@ -387,6 +387,8 @@ public class DialogueManager : MonoBehaviour
             newAnswer.transform.SetParent(answerFolder.transform);                  // Place it into anwer folder
             newAnswer.name = name;                                                  // Set answer name
             Text text = newAnswer.GetComponent<Text>();
+            Debug.Log("Answer : " + answer);
+
             if (text != null)
             {
                 answersCounter++;                                                   // Increase answers counter (cleared by ClearAnswers)
