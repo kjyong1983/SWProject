@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class QuestManager : MonoBehaviour {
 
+    public int questProgress = 0;
+    
+
 	// Use this for initialization
 	void Start () {
 		
@@ -13,4 +16,9 @@ public class QuestManager : MonoBehaviour {
 	void Update () {
 		
 	}
+
+
+
+
+
 }

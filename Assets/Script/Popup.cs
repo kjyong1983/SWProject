@@ -5,7 +5,8 @@ using UnityEngine;
 public class Popup : MonoBehaviour {
 
     public bool isTrigger = false;
-    public const float coolTimer = 5f;
+    public float coolTimer = 0f;
+    public const float coolTimeMax = 5f;
 
     public string data;
     private void OnTriggerEnter2D(Collider2D collision)
@@ -17,6 +18,8 @@ public class Popup : MonoBehaviour {
                 Debug.Log("popup");
                 UIManager.instance.ShowPopup(data);
                 isTrigger = true;
+                coolTimer += coolTimeMax;
+
                 StartCoroutine(TimerActivate());
             }
         }
@@ -24,9 +27,18 @@ public class Popup : MonoBehaviour {
 
     IEnumerator TimerActivate()
     {
-        yield return new WaitForSeconds(coolTimer);
+        //yield return new WaitForSeconds(coolTimer);
+        while (coolTimer > 0)
+        {
+            coolTimer -= Time.deltaTime;
+            yield return null;
+        }
         isTrigger = false;
         yield break;
     }
 
+    private void OnDrawGizmos()
+    {
+        gameObject.name = data;
+    }
 }
