@@ -28,6 +28,10 @@ public class GameManager : MonoBehaviour {
         {
             return 30;
         }
+        else if (floor == 8)
+        {
+            return 31;
+        }
         else
         {
             return 58;

@@ -1,5 +1,5 @@
 ﻿__Page_Desc 		
-__Line_NpcName	_Eng	619호 휴대폰
+__Line_NpcName	_Eng	휴대폰
 		
 __Page_Welcome		
 __Line_NpcAnswer	_Eng	전화기다!

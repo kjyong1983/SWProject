@@ -1,5 +1,5 @@
 ﻿__Page_Desc 		
-__Line_NpcName	_Eng	517호 오브젝트
+__Line_NpcName	_Eng	일기
 		
 __Page_Welcome		
 __Line_NpcAnswer	_Eng	찢어진 다이어리 조각이다.
