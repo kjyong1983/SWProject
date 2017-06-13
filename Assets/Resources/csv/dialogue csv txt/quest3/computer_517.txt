@@ -1,5 +1,5 @@
 ﻿__Page_Desc 		
-__Line_NpcName	_Eng	517호 교수컴퓨터 오브젝트
+__Line_NpcName	_Eng	컴퓨터
 		
 __Page_Welcome		
 __Line_NpcAnswer	_Eng	..부팅중..

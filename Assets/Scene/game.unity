@@ -718,6 +718,8 @@ GameObject:
   - component: {fileID: 38780743}
   - component: {fileID: 38780745}
   - component: {fileID: 38780746}
+  - component: {fileID: 38780748}
+  - component: {fileID: 38780747}
   m_Layer: 0
   m_Name: q3_diary_piece_517
   m_TagString: NPC
@@ -783,6 +785,37 @@ MonoBehaviour:
   floor: 5
   x: 53
   y: 49
+--- !u!114 &38780747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 38780742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6415ba71b3e2aae42adf29de8258767e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npc1: {fileID: 2098629185}
+  npc2: {fileID: 0}
+  npc3: {fileID: 0}
+  csvFile: {fileID: 0}
+  isTriggered: 0
+  triggerEvent: 0
+  target: 4
+--- !u!114 &38780748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 38780742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63c6e36cc1d4eed4a909b74f18b329ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  progressValue: 5
+  isTriggered: 0
 --- !u!1 &43086050
 GameObject:
   m_ObjectHideFlags: 0
@@ -5358,9 +5391,10 @@ GameObject:
   - component: {fileID: 322128921}
   - component: {fileID: 322128923}
   - component: {fileID: 322128922}
+  - component: {fileID: 322128924}
   m_Layer: 0
   m_Name: q3_doorActivator
-  m_TagString: NPC
+  m_TagString: Ignored
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5407,6 +5441,18 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1.8, y: 0.9}
+--- !u!114 &322128924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 322128920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8022407944b71a4aabc6dc48422968f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 2098629184}
 --- !u!1 &327876923
 GameObject:
   m_ObjectHideFlags: 0
@@ -6927,9 +6973,9 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 10
-    m_Top: 20
-    m_Bottom: 20
-  m_ChildAlignment: 0
+    m_Top: 10
+    m_Bottom: 15
+  m_ChildAlignment: 3
   m_Spacing: 10
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 0
@@ -30949,7 +30995,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   floor: 5
   x: 54
-  y: 53
+  y: 52
 --- !u!1 &1793587775
 GameObject:
   m_ObjectHideFlags: 0
