@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class PlayerSpawner : MonoBehaviour {
 
-    float x = -275f;//-275f, -280
-    float y = -18.5f;//-18.5f, 35
+    float x = -289f;//-289f, -280
+    float y = -20.5f;//-20.5f, 35
 
     static PlayerSpawner instance;
     public PlayerSpawner Instance

@@ -3013,6 +3013,10 @@ Prefab:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 1671298812808170, guid: 7b09c693e1276864e9eabb5ae19f07bb, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7b09c693e1276864e9eabb5ae19f07bb, type: 2}
   m_IsPrefabParent: 0
@@ -5283,6 +5287,10 @@ Prefab:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1803044580367132, guid: 921c586886998a8458582ef1fe224490, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1764101849518300, guid: 921c586886998a8458582ef1fe224490, type: 2}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -8509,7 +8517,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &525287256
 Transform:
   m_ObjectHideFlags: 0
@@ -19608,6 +19616,10 @@ Prefab:
       propertyPath: m_Name
       value: FloorMarker11
       objectReference: {fileID: 0}
+    - target: {fileID: 1344452222846554, guid: aa37874a4d1af0a4bbe2ee5c23db12b8, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa37874a4d1af0a4bbe2ee5c23db12b8, type: 2}
   m_IsPrefabParent: 0
@@ -21260,6 +21272,8 @@ GameObject:
   - component: {fileID: 1149286192}
   - component: {fileID: 1149286191}
   - component: {fileID: 1149286193}
+  - component: {fileID: 1149286194}
+  - component: {fileID: 1149286195}
   m_Layer: 0
   m_Name: q1_test_paper_flr1
   m_TagString: NPC
@@ -21324,6 +21338,34 @@ MonoBehaviour:
   floor: 1
   x: 16
   y: 25
+--- !u!114 &1149286194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1149286189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63c6e36cc1d4eed4a909b74f18b329ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTriggered: 0
+--- !u!114 &1149286195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1149286189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6415ba71b3e2aae42adf29de8258767e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npc: {fileID: 2147032259}
+  csvFile: {fileID: 4900000, guid: 4fd0c165f02a85947a6abe1bd69b4039, type: 3}
+  isTriggered: 0
+  triggerEvent: 0
+  target: 0
 --- !u!1 &1151598144
 GameObject:
   m_ObjectHideFlags: 0
@@ -21406,7 +21448,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1155799225
 Transform:
   m_ObjectHideFlags: 0
@@ -21613,7 +21655,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1186082708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22013,6 +22055,10 @@ Prefab:
         type: 2}
       propertyPath: floorNum
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1344452222846554, guid: aa37874a4d1af0a4bbe2ee5c23db12b8, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa37874a4d1af0a4bbe2ee5c23db12b8, type: 2}
@@ -23041,6 +23087,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1818745451036066, guid: fe6b8793e4215904f93795475d389d7d, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fe6b8793e4215904f93795475d389d7d, type: 2}
   m_IsPrefabParent: 0
@@ -23647,7 +23697,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1330924985
 Transform:
   m_ObjectHideFlags: 0
@@ -24952,6 +25002,10 @@ Prefab:
       propertyPath: floorNum
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1344452222846554, guid: aa37874a4d1af0a4bbe2ee5c23db12b8, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa37874a4d1af0a4bbe2ee5c23db12b8, type: 2}
   m_IsPrefabParent: 0
@@ -24995,7 +25049,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1421532581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31759,7 +31813,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1853671427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31959,6 +32013,10 @@ Prefab:
     - target: {fileID: 4394438510712370, guid: 692596ca576f4954aa99d73597b4608f, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974114661966502, guid: 692596ca576f4954aa99d73597b4608f, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 692596ca576f4954aa99d73597b4608f, type: 2}
@@ -39059,7 +39117,6 @@ GameObject:
   - component: {fileID: 2147032259}
   - component: {fileID: 2147032258}
   - component: {fileID: 2147032257}
-  - component: {fileID: 2147032260}
   m_Layer: 0
   m_Name: q1_npc_student_flr3
   m_TagString: NPC
@@ -39124,14 +39181,3 @@ MonoBehaviour:
   setFalseAtStart: 0
   isTriggered: 0
   canDisappear: 0
---- !u!114 &2147032260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2147032255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63c6e36cc1d4eed4a909b74f18b329ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

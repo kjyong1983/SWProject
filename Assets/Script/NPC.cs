@@ -30,11 +30,25 @@ public class NPC : MonoBehaviour {
         Debug.Log("NPC : start dialogue");
         isTriggered = true;
 
+        var quest = gameObject.GetComponent<QuestMarker>();
+
+        if (quest != null)
+        {
+            quest.DoQuest();
+        }
+
+        var questChecker = gameObject.GetComponent<QuestChecker>();
+
+        if (quest != null)
+        {
+            questChecker.isTriggered = true;
+        }
+
         if (canDisappear)
         {
             //this.GetComponentInChildren<SpriteRenderer>().enabled = false;
             //this.gameObject.SetActive(false);
-            Destroy(gameObject);
+            Destroy(gameObject,1f);
         }
     }
 }

@@ -4,20 +4,30 @@ using UnityEngine;
 
 public class QuestManager : MonoBehaviour {
 
+    public static QuestManager instance;
+    public QuestManager Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = this;
+            }
+            return instance;
+        }
+    }
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
     public int questProgress = 0;
-    
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-
+    public void ChangeCSV(NPC npc, TextAsset file)
+    {
+        npc.csvFile = file;
+    }
 
 
 

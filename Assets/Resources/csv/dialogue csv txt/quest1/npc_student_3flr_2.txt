@@ -1,0 +1,18 @@
+﻿__Page_Desc		
+__Line_NpcName	_Eng	3층 친구
+		
+__Page_Welcome		
+__Line_NpcAnswer	_Eng	족보를 찾아주었구나! 고마워!
+__Line_Welcome2	_Eng	...
+	
+__Page_Welcome2		
+__Line_NpcAnswer	_Eng	211호는 여기서 남쪽으로 쭉 내려가서 동쪽으로 가면 내려가는 계단이 있어.
+__Line_Welcome3	_Eng	...
+
+__Page_Welcome3		
+__Line_NpcAnswer	_Eng	211호로 가는 길은 거기밖에 없으니까 잘 기억해두라구!
+__Line_Exit	_Eng	...
+
+	
+__Page_Exit		
+__Line_Effect	_Exit	
