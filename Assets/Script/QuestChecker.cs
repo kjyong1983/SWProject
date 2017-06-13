@@ -65,6 +65,13 @@ public class QuestChecker : MonoBehaviour {
                 triggerEvent = false;
 
             }
+            else if (csvFile == null && npc1 != null)
+            {
+                Debug.Log("Destroy door");
+                Destroy(npc1.gameObject);
+                triggerEvent = false;
+
+            }
         }
 
     }
